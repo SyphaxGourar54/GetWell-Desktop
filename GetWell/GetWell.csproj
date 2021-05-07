@@ -1,0 +1,346 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9738C45D-7FEE-4656-A95F-0014204412C4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GetWell</RootNamespace>
+    <AssemblyName>GetWell</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="GMap.NET.Core, Version=2.0.2.0, Culture=neutral, PublicKeyToken=b85b9027b614afef, processorArchitecture=MSIL">
+      <HintPath>..\packages\GMap.NET.Core.2.0.2\lib\net46\GMap.NET.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="GMap.NET.WindowsForms, Version=2.0.2.0, Culture=neutral, PublicKeyToken=b85b9027b614afef, processorArchitecture=MSIL">
+      <HintPath>..\packages\GMap.NET.WinForms.2.0.2\lib\net46\GMap.NET.WindowsForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Siticone.UI, Version=1.0.0.6, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Siticone.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlClient, Version=4.6.1.2, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SqlClient.4.8.2\lib\net461\System.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite, Version=1.0.113.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.113.3\lib\net46\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.EF6, Version=1.0.113.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.EF6.1.0.113.0\lib\net46\System.Data.SQLite.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.Linq, Version=1.0.113.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.Linq.1.0.113.0\lib\net46\System.Data.SQLite.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Resources.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL" />
+    <Reference Include="System.Security.Principal.Windows, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Principal.Windows.5.0.0\lib\net461\System.Security.Principal.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="XanderUI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\XanderUI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Calendar_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calendar_Form.Designer.cs">
+      <DependentUpon>Calendar_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConfirmLocalusation_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfirmLocalusation_Form.Designer.cs">
+      <DependentUpon>ConfirmLocalusation_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultation_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultation_Form.Designer.cs">
+      <DependentUpon>Consultation_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home_Form.Designer.cs">
+      <DependentUpon>Home_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LocalisationData.cs" />
+    <Compile Include="Localisation_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Localisation_Form.Designer.cs">
+      <DependentUpon>Localisation_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login_Form.Designer.cs">
+      <DependentUpon>Login_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewRV_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewRV_Form.Designer.cs">
+      <DependentUpon>NewRV_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Settings_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings_Form.Designer.cs">
+      <DependentUpon>Settings_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeleConsultation_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeleConsultation_Form.Designer.cs">
+      <DependentUpon>TeleConsultation_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateInfo_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateInfo_Form.Designer.cs">
+      <DependentUpon>UpdateInfo_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdatePass_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdatePass_Form.Designer.cs">
+      <DependentUpon>UpdatePass_Form.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Calendar_Form.resx">
+      <DependentUpon>Calendar_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfirmLocalusation_Form.resx">
+      <DependentUpon>ConfirmLocalusation_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultation_Form.resx">
+      <DependentUpon>Consultation_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home_Form.resx">
+      <DependentUpon>Home_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localisation_Form.resx">
+      <DependentUpon>Localisation_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login_Form.resx">
+      <DependentUpon>Login_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewRV_Form.resx">
+      <DependentUpon>NewRV_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings_Form.resx">
+      <DependentUpon>Settings_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeleConsultation_Form.resx">
+      <DependentUpon>TeleConsultation_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateInfo_Form.resx">
+      <DependentUpon>UpdateInfo_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdatePass_Form.resx">
+      <DependentUpon>UpdatePass_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profileIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.calendar.31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.eye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.list.check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.email.minimal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\passwordiconOrange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\undraw_Working_oh83.png" />
+    <None Include="Resources\undraw_Online_calendar_re_wk3t.png" />
+    <None Include="Resources\user21.png" />
+    <None Include="Resources\user2.png" />
+    <None Include="Resources\Logo5.bmp" />
+    <None Include="Resources\profileIcon2.png" />
+    <None Include="Resources\password2.png" />
+    <None Include="Resources\047-password.png" />
+    <None Include="Resources\icons_touch.png" />
+    <None Include="Resources\appbar.redo.png" />
+    <None Include="Resources\appbar.undo.png" />
+    <None Include="Resources\clip-doctor-looks-at-eeg.png" />
+    <None Include="Resources\design1.png" />
+    <None Include="Resources\016-login-1.png" />
+    <None Include="Resources\016-login-11.png" />
+    <None Include="Resources\appbar.eye.hide.png" />
+    <None Include="Resources\appbar.eye1.png" />
+    <None Include="Resources\3094350.png" />
+    <None Include="Resources\LogoWhiteIcon.png" />
+    <None Include="Resources\appbar.shield.png" />
+    <None Include="Resources\appbar.border.outside.png" />
+    <None Include="Resources\appbar.check.png" />
+    <None Include="Resources\appbar.alert.png" />
+    <None Include="Resources\appbar_alert_small.png" />
+    <None Include="Resources\appbar.phone.png" />
+    <None Include="Resources\appbar.email.minimal1.png" />
+    <None Include="Resources\appbar.city.png" />
+    <None Include="Resources\appbar.location.checkin.png" />
+    <None Include="Resources\appbar.social.facebook.variant.png" />
+    <None Include="Resources\appbar.social.whatsapp.png" />
+    <None Include="Resources\appbar.social.linkedin.variant.png" />
+    <None Include="Resources\appbar.social.twitter.png" />
+    <None Include="Resources\instagram.png" />
+    <None Include="Resources\appbar.map.location.png" />
+    <None Include="Resources\appbar.add.png" />
+    <None Include="Resources\appbar.clipboard.paper.check.png" />
+    <None Include="Resources\LogoMarker2.png" />
+    <None Include="Resources\LogoMarker3.png" />
+    <None Include="Resources\LogoMarker4.png" />
+    <None Include="Resources\LogoMarker21.png" />
+    <None Include="Resources\LogoMarker5.png" />
+    <None Include="Resources\logomarker7.png" />
+    <None Include="Resources\appbar.magnify.add.png" />
+    <None Include="Resources\appbar.magnify.minus.png" />
+    <None Include="Resources\appbar.social.amazon.appstore.png" />
+    <None Include="Resources\appbar.cursor.move.png" />
+    <None Include="Resources\appbar.location.checkin1.png" />
+    <None Include="Resources\appbar.location.circle.png" />
+    <None Include="Resources\notConnected.png" />
+    <None Include="Resources\notConnected2.png" />
+    <None Include="Resources\addicon.png" />
+    <None Include="Resources\addicon2.bmp" />
+    <None Include="Resources\Image1.bmp" />
+    <None Include="Resources\Image5.bmp" />
+    <None Include="Resources\appbar.magnify.png" />
+    <Content Include="Resources\profileIconOrange.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.113.3\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.113.3\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.113.3\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets" Condition="Exists('..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.113.3\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" />
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+</Project>
