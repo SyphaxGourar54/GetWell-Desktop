@@ -75,8 +75,8 @@ namespace GetWell
 
         private void siticoneButton4_Click(object sender, EventArgs e)
         {
-            Properties.Settings.Default.UserName = String.Empty;
-            Properties.Settings.Default.Save();
+            //Properties.Settings.Default.UserName = String.Empty;
+            //Properties.Settings.Default.Save();
         }
     }
 }

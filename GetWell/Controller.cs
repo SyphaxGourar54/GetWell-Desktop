@@ -12,7 +12,7 @@ namespace GetWell
 {
     public static class Controller
     {
-        public static readonly string ConnectionString = ConfigurationManager.ConnectionStrings["conString"].ConnectionString; 
+        public static readonly string ConnectionString = ConfigurationManager.ConnectionStrings["conStringHosted"].ConnectionString; 
 
 
 
