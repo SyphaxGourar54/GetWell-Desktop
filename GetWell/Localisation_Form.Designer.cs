@@ -34,21 +34,21 @@ namespace GetWell
             this.siticoneElipse1 = new Siticone.UI.WinForms.SiticoneElipse(this.components);
             this.siticoneElipse2 = new Siticone.UI.WinForms.SiticoneElipse(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_Minimize = new System.Windows.Forms.Button();
+            this.btn_Exit = new System.Windows.Forms.Button();
+            this.siticoneButton2 = new Siticone.UI.WinForms.SiticoneButton();
             this.buttons_panel = new Siticone.UI.WinForms.SiticoneGradientPanel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.siticoneElipse3 = new Siticone.UI.WinForms.SiticoneElipse(this.components);
-            this.siticoneButton3 = new Siticone.UI.WinForms.SiticoneButton();
             this.btn_mapZoomIn = new Siticone.UI.WinForms.SiticoneButton();
             this.btn_MyLocation = new Siticone.UI.WinForms.SiticoneButton();
             this.btn_MapPoint = new Siticone.UI.WinForms.SiticoneButton();
             this.btn_mapZoomOut = new Siticone.UI.WinForms.SiticoneButton();
             this.btn_MapNav = new Siticone.UI.WinForms.SiticoneButton();
-            this.btn_Minimize = new System.Windows.Forms.Button();
-            this.btn_Exit = new System.Windows.Forms.Button();
-            this.siticoneButton2 = new Siticone.UI.WinForms.SiticoneButton();
-            this.siticoneButton4 = new Siticone.UI.WinForms.SiticoneButton();
+            this.label2 = new System.Windows.Forms.Label();
+            this.siticoneElipse3 = new Siticone.UI.WinForms.SiticoneElipse(this.components);
             this.panel_error = new Siticone.UI.WinForms.SiticonePanel();
             this.btn_Refresh = new Siticone.UI.WinForms.SiticoneButton();
+            this.siticoneButton3 = new Siticone.UI.WinForms.SiticoneButton();
+            this.siticoneButton4 = new Siticone.UI.WinForms.SiticoneButton();
             this.panel1.SuspendLayout();
             this.buttons_panel.SuspendLayout();
             this.panel_error.SuspendLayout();
@@ -105,6 +105,56 @@ namespace GetWell
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Panel_MouseDown);
             // 
+            // btn_Minimize
+            // 
+            this.btn_Minimize.BackgroundImage = global::GetWell.Properties.Resources.appbar_minus;
+            this.btn_Minimize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_Minimize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Minimize.FlatAppearance.BorderSize = 0;
+            this.btn_Minimize.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn_Minimize.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn_Minimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Minimize.Location = new System.Drawing.Point(923, 7);
+            this.btn_Minimize.Name = "btn_Minimize";
+            this.btn_Minimize.Size = new System.Drawing.Size(30, 30);
+            this.btn_Minimize.TabIndex = 0;
+            this.btn_Minimize.UseVisualStyleBackColor = true;
+            this.btn_Minimize.Click += new System.EventHandler(this.btn_Minimize_Click);
+            // 
+            // btn_Exit
+            // 
+            this.btn_Exit.BackgroundImage = global::GetWell.Properties.Resources.appbar_close;
+            this.btn_Exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_Exit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Exit.FlatAppearance.BorderSize = 0;
+            this.btn_Exit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn_Exit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn_Exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Exit.Location = new System.Drawing.Point(959, 7);
+            this.btn_Exit.Name = "btn_Exit";
+            this.btn_Exit.Size = new System.Drawing.Size(30, 30);
+            this.btn_Exit.TabIndex = 0;
+            this.btn_Exit.UseVisualStyleBackColor = true;
+            this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click);
+            // 
+            // siticoneButton2
+            // 
+            this.siticoneButton2.BorderRadius = 80;
+            this.siticoneButton2.CheckedState.Parent = this.siticoneButton2;
+            this.siticoneButton2.CustomImages.Parent = this.siticoneButton2;
+            this.siticoneButton2.FillColor = System.Drawing.Color.Transparent;
+            this.siticoneButton2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.siticoneButton2.ForeColor = System.Drawing.Color.White;
+            this.siticoneButton2.HoveredState.Parent = this.siticoneButton2;
+            this.siticoneButton2.Image = global::GetWell.Properties.Resources.Logo3;
+            this.siticoneButton2.ImageSize = new System.Drawing.Size(110, 110);
+            this.siticoneButton2.Location = new System.Drawing.Point(12, 10);
+            this.siticoneButton2.Name = "siticoneButton2";
+            this.siticoneButton2.ShadowDecoration.Parent = this.siticoneButton2;
+            this.siticoneButton2.Size = new System.Drawing.Size(99, 24);
+            this.siticoneButton2.TabIndex = 0;
+            this.siticoneButton2.Click += new System.EventHandler(this.siticoneButton2_Click);
+            // 
             // buttons_panel
             // 
             this.buttons_panel.BackColor = System.Drawing.Color.Transparent;
@@ -126,39 +176,6 @@ namespace GetWell
             this.buttons_panel.Size = new System.Drawing.Size(50, 306);
             this.buttons_panel.TabIndex = 5;
             this.buttons_panel.UseTransparentBackground = true;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Calisto MT", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label2.Location = new System.Drawing.Point(376, 620);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(249, 14);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Tous Droits Réservés © copyright GetWell 2020 ";
-            // 
-            // siticoneElipse3
-            // 
-            this.siticoneElipse3.BorderRadius = 30;
-            this.siticoneElipse3.TargetControl = this.panel_error;
-            // 
-            // siticoneButton3
-            // 
-            this.siticoneButton3.BorderRadius = 80;
-            this.siticoneButton3.CheckedState.Parent = this.siticoneButton3;
-            this.siticoneButton3.CustomImages.Parent = this.siticoneButton3;
-            this.siticoneButton3.FillColor = System.Drawing.Color.Transparent;
-            this.siticoneButton3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.siticoneButton3.ForeColor = System.Drawing.Color.White;
-            this.siticoneButton3.HoveredState.Parent = this.siticoneButton3;
-            this.siticoneButton3.Image = global::GetWell.Properties.Resources.Logo3;
-            this.siticoneButton3.ImageSize = new System.Drawing.Size(80, 80);
-            this.siticoneButton3.Location = new System.Drawing.Point(445, 637);
-            this.siticoneButton3.Name = "siticoneButton3";
-            this.siticoneButton3.ShadowDecoration.Parent = this.siticoneButton3;
-            this.siticoneButton3.Size = new System.Drawing.Size(111, 24);
-            this.siticoneButton3.TabIndex = 6;
             // 
             // btn_mapZoomIn
             // 
@@ -254,72 +271,21 @@ namespace GetWell
             this.btn_MapNav.TabIndex = 0;
             this.btn_MapNav.Click += new System.EventHandler(this.btn_MapNav_Click);
             // 
-            // btn_Minimize
+            // label2
             // 
-            this.btn_Minimize.BackgroundImage = global::GetWell.Properties.Resources.appbar_minus;
-            this.btn_Minimize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_Minimize.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Minimize.FlatAppearance.BorderSize = 0;
-            this.btn_Minimize.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btn_Minimize.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btn_Minimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Minimize.Location = new System.Drawing.Point(923, 7);
-            this.btn_Minimize.Name = "btn_Minimize";
-            this.btn_Minimize.Size = new System.Drawing.Size(30, 30);
-            this.btn_Minimize.TabIndex = 0;
-            this.btn_Minimize.UseVisualStyleBackColor = true;
-            this.btn_Minimize.Click += new System.EventHandler(this.btn_Minimize_Click);
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Calisto MT", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label2.Location = new System.Drawing.Point(376, 620);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(249, 14);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Tous Droits Réservés © copyright GetWell 2020 ";
             // 
-            // btn_Exit
+            // siticoneElipse3
             // 
-            this.btn_Exit.BackgroundImage = global::GetWell.Properties.Resources.appbar_close;
-            this.btn_Exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_Exit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Exit.FlatAppearance.BorderSize = 0;
-            this.btn_Exit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btn_Exit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btn_Exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Exit.Location = new System.Drawing.Point(959, 7);
-            this.btn_Exit.Name = "btn_Exit";
-            this.btn_Exit.Size = new System.Drawing.Size(30, 30);
-            this.btn_Exit.TabIndex = 0;
-            this.btn_Exit.UseVisualStyleBackColor = true;
-            this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click);
-            // 
-            // siticoneButton2
-            // 
-            this.siticoneButton2.BorderRadius = 80;
-            this.siticoneButton2.CheckedState.Parent = this.siticoneButton2;
-            this.siticoneButton2.CustomImages.Parent = this.siticoneButton2;
-            this.siticoneButton2.FillColor = System.Drawing.Color.Transparent;
-            this.siticoneButton2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.siticoneButton2.ForeColor = System.Drawing.Color.White;
-            this.siticoneButton2.HoveredState.Parent = this.siticoneButton2;
-            this.siticoneButton2.Image = global::GetWell.Properties.Resources.Logo3;
-            this.siticoneButton2.ImageSize = new System.Drawing.Size(110, 110);
-            this.siticoneButton2.Location = new System.Drawing.Point(12, 10);
-            this.siticoneButton2.Name = "siticoneButton2";
-            this.siticoneButton2.ShadowDecoration.Parent = this.siticoneButton2;
-            this.siticoneButton2.Size = new System.Drawing.Size(99, 24);
-            this.siticoneButton2.TabIndex = 0;
-            this.siticoneButton2.Click += new System.EventHandler(this.siticoneButton2_Click);
-            // 
-            // siticoneButton4
-            // 
-            this.siticoneButton4.BorderRadius = 80;
-            this.siticoneButton4.CheckedState.Parent = this.siticoneButton4;
-            this.siticoneButton4.CustomImages.Parent = this.siticoneButton4;
-            this.siticoneButton4.FillColor = System.Drawing.Color.Transparent;
-            this.siticoneButton4.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.siticoneButton4.ForeColor = System.Drawing.Color.White;
-            this.siticoneButton4.HoveredState.Parent = this.siticoneButton4;
-            this.siticoneButton4.Image = global::GetWell.Properties.Resources.Logo3;
-            this.siticoneButton4.ImageSize = new System.Drawing.Size(110, 110);
-            this.siticoneButton4.Location = new System.Drawing.Point(39, 7);
-            this.siticoneButton4.Name = "siticoneButton4";
-            this.siticoneButton4.ShadowDecoration.Parent = this.siticoneButton4;
-            this.siticoneButton4.Size = new System.Drawing.Size(99, 24);
-            this.siticoneButton4.TabIndex = 3;
+            this.siticoneElipse3.BorderRadius = 30;
+            this.siticoneElipse3.TargetControl = this.panel_error;
             // 
             // panel_error
             // 
@@ -353,6 +319,40 @@ namespace GetWell
             this.btn_Refresh.TabIndex = 0;
             this.btn_Refresh.Text = "Actualiser";
             this.btn_Refresh.Click += new System.EventHandler(this.btn_Refresh_Click);
+            // 
+            // siticoneButton3
+            // 
+            this.siticoneButton3.BorderRadius = 80;
+            this.siticoneButton3.CheckedState.Parent = this.siticoneButton3;
+            this.siticoneButton3.CustomImages.Parent = this.siticoneButton3;
+            this.siticoneButton3.FillColor = System.Drawing.Color.Transparent;
+            this.siticoneButton3.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.siticoneButton3.ForeColor = System.Drawing.Color.White;
+            this.siticoneButton3.HoveredState.Parent = this.siticoneButton3;
+            this.siticoneButton3.Image = global::GetWell.Properties.Resources.Logo3;
+            this.siticoneButton3.ImageSize = new System.Drawing.Size(80, 80);
+            this.siticoneButton3.Location = new System.Drawing.Point(445, 637);
+            this.siticoneButton3.Name = "siticoneButton3";
+            this.siticoneButton3.ShadowDecoration.Parent = this.siticoneButton3;
+            this.siticoneButton3.Size = new System.Drawing.Size(111, 24);
+            this.siticoneButton3.TabIndex = 6;
+            // 
+            // siticoneButton4
+            // 
+            this.siticoneButton4.BorderRadius = 80;
+            this.siticoneButton4.CheckedState.Parent = this.siticoneButton4;
+            this.siticoneButton4.CustomImages.Parent = this.siticoneButton4;
+            this.siticoneButton4.FillColor = System.Drawing.Color.Transparent;
+            this.siticoneButton4.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.siticoneButton4.ForeColor = System.Drawing.Color.White;
+            this.siticoneButton4.HoveredState.Parent = this.siticoneButton4;
+            this.siticoneButton4.Image = global::GetWell.Properties.Resources.Logo3;
+            this.siticoneButton4.ImageSize = new System.Drawing.Size(110, 110);
+            this.siticoneButton4.Location = new System.Drawing.Point(39, 7);
+            this.siticoneButton4.Name = "siticoneButton4";
+            this.siticoneButton4.ShadowDecoration.Parent = this.siticoneButton4;
+            this.siticoneButton4.Size = new System.Drawing.Size(99, 24);
+            this.siticoneButton4.TabIndex = 3;
             // 
             // Localisation_Form
             // 

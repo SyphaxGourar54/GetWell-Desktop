@@ -116,6 +116,12 @@
     <Compile Include="ConfirmLocalusation_Form.Designer.cs">
       <DependentUpon>ConfirmLocalusation_Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="ConnectionError_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConnectionError_Form.Designer.cs">
+      <DependentUpon>ConnectionError_Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="Consultation_Form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -184,6 +190,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ConfirmLocalusation_Form.resx">
       <DependentUpon>ConfirmLocalusation_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConnectionError_Form.resx">
+      <DependentUpon>ConnectionError_Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Consultation_Form.resx">
       <DependentUpon>Consultation_Form.cs</DependentUpon>
@@ -280,6 +289,7 @@
     <None Include="Resources\passwordiconOrange.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\refresh-gif-8.gif" />
     <None Include="Resources\undraw_Working_oh83.png" />
     <None Include="Resources\undraw_Online_calendar_re_wk3t.png" />
     <None Include="Resources\user21.png" />
@@ -335,6 +345,9 @@
     <None Include="Resources\Image1.bmp" />
     <None Include="Resources\Image5.bmp" />
     <None Include="Resources\appbar.magnify.png" />
+    <None Include="Resources\200.gif" />
+    <None Include="Resources\loading-gif-orange-5.gif" />
+    <None Include="Resources\Image2.bmp" />
     <Content Include="Resources\profileIconOrange.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

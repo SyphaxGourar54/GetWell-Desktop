@@ -93,6 +93,16 @@ namespace GetWell.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _200 {
+            get {
+                object obj = ResourceManager.GetObject("200", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _3094350 {
             get {
                 object obj = ResourceManager.GetObject("3094350", resourceCulture);
@@ -503,6 +513,36 @@ namespace GetWell.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap loading_gif_orange_5 {
+            get {
+                object obj = ResourceManager.GetObject("loading-gif-orange-5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap login_gif_11 {
+            get {
+                object obj = ResourceManager.GetObject("login-gif-11", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap login_gif_111 {
+            get {
+                object obj = ResourceManager.GetObject("login-gif-111", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Logo {
             get {
                 object obj = ResourceManager.GetObject("Logo", resourceCulture);
@@ -686,6 +726,16 @@ namespace GetWell.Properties {
         internal static System.Drawing.Bitmap profileIcon2 {
             get {
                 object obj = ResourceManager.GetObject("profileIcon2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap refresh_gif_8 {
+            get {
+                object obj = ResourceManager.GetObject("refresh-gif-8", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net.NetworkInformation;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,6 +20,27 @@ namespace GetWell
         {
             InitializeComponent();
         }
+
+        ///////////////////////////////check connection state///////////////////////
+        public bool IsConnectedToInternet()
+        {
+            try
+            {
+                Ping myPing = new Ping();
+                String host = "google.com";
+                byte[] buffer = new byte[32];
+                int timeout = 1000;
+                PingOptions pingOptions = new PingOptions();
+                PingReply reply = myPing.Send(host, timeout, buffer, pingOptions);
+                return (reply.Status == IPStatus.Success);
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+        //////////////////////////////////////////////////////
+
         ////////////////////////code to move the form using the mouse/////////////////////////////
         public const int WM_NCLBUTTONDOWN = 0xA1;
         public const int HT_CAPTION = 0x2;
@@ -124,7 +146,13 @@ namespace GetWell
             //Properties.Settings.Default.UserName = String.Empty;
             //Properties.Settings.Default.Save();
 
+
+
+            checkInternetConnection(); 
+
+
             this.Name = "MainForm"; 
+
 
             if (Properties.Settings.Default.UserName != String.Empty)
             {
@@ -159,6 +187,23 @@ namespace GetWell
                 this.WindowState = FormWindowState.Normal;
                 this.ShowInTaskbar = true;
             }
+
+
+            
+
         }
+
+        public void checkInternetConnection()
+        {
+            ConnectionError_Form error_frm = new ConnectionError_Form();
+            error_frm.Name = "error_frm";
+
+            if (!IsConnectedToInternet())
+            {
+                error_frm.ShowDialog();
+            }
+            
+        }
+        
     }
 }

@@ -205,6 +205,9 @@
   <data name="appbar.add" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\appbar.add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="refresh-gif-8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\refresh-gif-8.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="profileIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\profileIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -244,8 +247,8 @@
   <data name="LogoMarker21" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LogoMarker21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="appbar.social.twitter" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\appbar.social.twitter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="appbar.magnify" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\appbar.magnify.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="appbar.home" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\appbar.home.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -259,14 +262,23 @@
   <data name="design1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\design1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="login-gif-11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\login-gif-11.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="appbar.redo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\appbar.redo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="appbar.location.checkin" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\appbar.location.checkin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="200" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\200.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="appbar.city" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\appbar.city.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="loading-gif-orange-5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\loading-gif-orange-5.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="appbar.minus" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\appbar.minus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -292,6 +304,9 @@
   <data name="appbar.email1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\appbar.email.minimal1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="appbar.social.twitter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\appbar.social.twitter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="appbar.settings" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\appbar.settings.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -316,7 +331,7 @@
   <data name="icons_touch" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons_touch.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="appbar.magnify" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\appbar.magnify.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="login-gif-111" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\login-gif-111.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
