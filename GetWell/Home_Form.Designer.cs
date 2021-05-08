@@ -35,7 +35,7 @@ namespace GetWell
             this.btn_Minimize = new System.Windows.Forms.Button();
             this.btn_Exit = new System.Windows.Forms.Button();
             this.siticoneElipse1 = new Siticone.UI.WinForms.SiticoneElipse(this.components);
-            this.label1 = new System.Windows.Forms.Label();
+            this.label_welcome = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.siticoneGradientPanel1 = new Siticone.UI.WinForms.SiticoneGradientPanel();
             this.siticoneButton2 = new Siticone.UI.WinForms.SiticoneButton();
@@ -120,17 +120,17 @@ namespace GetWell
             this.siticoneElipse1.BorderRadius = 20;
             this.siticoneElipse1.TargetControl = this;
             // 
-            // label1
+            // label_welcome
             // 
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label1.Location = new System.Drawing.Point(50, 137);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(207, 90);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Bienvenu!\nMr Mohamed";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_welcome.BackColor = System.Drawing.Color.Transparent;
+            this.label_welcome.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_welcome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.label_welcome.Location = new System.Drawing.Point(50, 137);
+            this.label_welcome.Name = "label_welcome";
+            this.label_welcome.Size = new System.Drawing.Size(207, 90);
+            this.label_welcome.TabIndex = 5;
+            this.label_welcome.Text = "Bienvenu!\nMr Mohamed";
+            this.label_welcome.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
             // 
@@ -151,7 +151,7 @@ namespace GetWell
             this.siticoneGradientPanel1.BorderRadius = 30;
             this.siticoneGradientPanel1.Controls.Add(this.siticoneButton2);
             this.siticoneGradientPanel1.Controls.Add(this.siticoneCirclePictureBox1);
-            this.siticoneGradientPanel1.Controls.Add(this.label1);
+            this.siticoneGradientPanel1.Controls.Add(this.label_welcome);
             this.siticoneGradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.siticoneGradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(87)))), ((int)(((byte)(159)))));
             this.siticoneGradientPanel1.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
@@ -301,6 +301,7 @@ namespace GetWell
             this.siticoneButton4.ShadowDecoration.Parent = this.siticoneButton4;
             this.siticoneButton4.Size = new System.Drawing.Size(111, 24);
             this.siticoneButton4.TabIndex = 10;
+            this.siticoneButton4.Click += new System.EventHandler(this.siticoneButton4_Click);
             // 
             // siticoneGradientButton2
             // 
@@ -438,6 +439,7 @@ namespace GetWell
             this.Name = "Home_Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home_Form";
+            this.Load += new System.EventHandler(this.Home_Form_Load);
             this.panel1.ResumeLayout(false);
             this.siticoneGradientPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.siticoneCirclePictureBox1)).EndInit();
@@ -455,7 +457,7 @@ namespace GetWell
         private Siticone.UI.WinForms.SiticoneButton siticoneButton3;
         private Siticone.UI.WinForms.SiticoneButton siticoneButton1;
         private Siticone.UI.WinForms.SiticoneCirclePictureBox siticoneCirclePictureBox1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label_welcome;
         private System.Windows.Forms.Label label2;
         private Siticone.UI.WinForms.SiticoneGradientPanel siticoneGradientPanel1;
         private Siticone.UI.WinForms.SiticoneButton siticoneButton2;

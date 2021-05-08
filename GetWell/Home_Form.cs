@@ -40,7 +40,7 @@ namespace GetWell
         
         private void btn_Exit_Click(object sender, EventArgs e)
         {
-            this.Close(); 
+            Application.Exit(); 
         }
 
         private void btn_Minimize_Click(object sender, EventArgs e)
@@ -56,6 +56,27 @@ namespace GetWell
         private void siticoneGradientPanel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void Home_Form_Load(object sender, EventArgs e)
+        {
+            //Properties.Settings.Default.UserName = String.Empty; 
+
+
+            if (Properties.Settings.Default.UserName != String.Empty)
+            {
+                label_welcome.Text = "Bienvenu!\nMr " + Properties.Settings.Default.UserName; 
+            }
+            else
+            {
+                this.Close();
+            }
+        }
+
+        private void siticoneButton4_Click(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.UserName = String.Empty;
+            Properties.Settings.Default.Save();
         }
     }
 }

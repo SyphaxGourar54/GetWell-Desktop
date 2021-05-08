@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace GetWell
 {
     public partial class Login_Form : Form
@@ -73,7 +74,28 @@ namespace GetWell
 
         private void btn_login_Click(object sender, EventArgs e)
         {
-
+            if(txt_UserName.Text != String.Empty && txt_Password.Text!= String.Empty)
+            {
+                if (Controller.Login(txt_UserName.Text, txt_Password.Text) > 0)
+                {
+                    Properties.Settings.Default.UserName = txt_UserName.Text;
+                    Properties.Settings.Default.Save();
+                    Home_Form hf = new Home_Form();
+                    hf.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    //
+                    label_error.Visible = true;
+                    label_error.Text = "incorrect user name or password!";
+                }
+            }
+            else
+            {
+                label_error.Visible = true;
+                label_error.Text = "merci de remplire tout les champs!"; 
+            }
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -99,9 +121,43 @@ namespace GetWell
 
         private void Login_Form_Load(object sender, EventArgs e)
         {
-            if(Properties.Settings.Default.UserName != String.Empty)
-            {
+            //Properties.Settings.Default.UserName = String.Empty;
+            //Properties.Settings.Default.Save();
 
+            this.Name = "MainForm"; 
+
+            if (Properties.Settings.Default.UserName != String.Empty)
+            {
+                this.WindowState = FormWindowState.Minimized;
+                this.ShowInTaskbar = false; 
+                Home_Form hf = new Home_Form();
+                hf.Show();
+            }
+            else
+            {
+                this.WindowState = FormWindowState.Normal;
+                this.ShowInTaskbar = true; 
+            }
+            
+        }
+
+        private void IsLoggedTimer_Tick(object sender, EventArgs e)
+        {
+            if (Properties.Settings.Default.UserName == String.Empty)
+            {
+                List<Form> openForms = new List<Form>();
+
+                foreach (Form f in Application.OpenForms)
+                    openForms.Add(f);
+
+                foreach (Form f in openForms)
+                {
+                    if (f.Name != "MainForm")
+                        f.Close();
+                }
+
+                this.WindowState = FormWindowState.Normal;
+                this.ShowInTaskbar = true;
             }
         }
     }
