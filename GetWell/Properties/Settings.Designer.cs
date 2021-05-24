@@ -58,5 +58,17 @@ namespace GetWell.Properties {
                 this["DocId"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool ShowNotification {
+            get {
+                return ((bool)(this["ShowNotification"]));
+            }
+            set {
+                this["ShowNotification"] = value;
+            }
+        }
     }
 }

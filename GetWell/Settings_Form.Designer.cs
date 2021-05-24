@@ -33,12 +33,12 @@ namespace GetWell
             this.siticoneElipse1 = new Siticone.UI.WinForms.SiticoneElipse(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.siticoneButton4 = new Siticone.UI.WinForms.SiticoneButton();
+            this.Cancel_btn = new Siticone.UI.WinForms.SiticoneButton();
             this.siticoneSeparator1 = new Siticone.UI.WinForms.SiticoneSeparator();
             this.siticoneSeparator2 = new Siticone.UI.WinForms.SiticoneSeparator();
             this.siticoneButton3 = new Siticone.UI.WinForms.SiticoneButton();
-            this.siticoneButton2 = new Siticone.UI.WinForms.SiticoneButton();
-            this.siticoneButton1 = new Siticone.UI.WinForms.SiticoneButton();
+            this.UpdateData_btn = new Siticone.UI.WinForms.SiticoneButton();
+            this.updatePass_btn = new Siticone.UI.WinForms.SiticoneButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -68,23 +68,23 @@ namespace GetWell
             this.label2.TabIndex = 2;
             this.label2.Text = "Informations Personnelles ";
             // 
-            // siticoneButton4
+            // Cancel_btn
             // 
-            this.siticoneButton4.BorderRadius = 23;
-            this.siticoneButton4.CheckedState.Parent = this.siticoneButton4;
-            this.siticoneButton4.CustomImages.Parent = this.siticoneButton4;
-            this.siticoneButton4.Font = new System.Drawing.Font("Segoe UI", 11F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
-            this.siticoneButton4.ForeColor = System.Drawing.Color.White;
-            this.siticoneButton4.HoveredState.Parent = this.siticoneButton4;
-            this.siticoneButton4.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.siticoneButton4.ImageSize = new System.Drawing.Size(30, 30);
-            this.siticoneButton4.Location = new System.Drawing.Point(139, 382);
-            this.siticoneButton4.Name = "siticoneButton4";
-            this.siticoneButton4.ShadowDecoration.Parent = this.siticoneButton4;
-            this.siticoneButton4.Size = new System.Drawing.Size(192, 46);
-            this.siticoneButton4.TabIndex = 3;
-            this.siticoneButton4.Text = "Annuler";
-            this.siticoneButton4.Click += new System.EventHandler(this.siticoneButton4_Click);
+            this.Cancel_btn.BorderRadius = 23;
+            this.Cancel_btn.CheckedState.Parent = this.Cancel_btn;
+            this.Cancel_btn.CustomImages.Parent = this.Cancel_btn;
+            this.Cancel_btn.Font = new System.Drawing.Font("Segoe UI", 11F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
+            this.Cancel_btn.ForeColor = System.Drawing.Color.White;
+            this.Cancel_btn.HoveredState.Parent = this.Cancel_btn;
+            this.Cancel_btn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.Cancel_btn.ImageSize = new System.Drawing.Size(30, 30);
+            this.Cancel_btn.Location = new System.Drawing.Point(139, 382);
+            this.Cancel_btn.Name = "Cancel_btn";
+            this.Cancel_btn.ShadowDecoration.Parent = this.Cancel_btn;
+            this.Cancel_btn.Size = new System.Drawing.Size(192, 46);
+            this.Cancel_btn.TabIndex = 3;
+            this.Cancel_btn.Text = "Annuler";
+            this.Cancel_btn.Click += new System.EventHandler(this.Cancel_btn_Click);
             // 
             // siticoneSeparator1
             // 
@@ -117,47 +117,49 @@ namespace GetWell
             this.siticoneButton3.Size = new System.Drawing.Size(180, 44);
             this.siticoneButton3.TabIndex = 1;
             // 
-            // siticoneButton2
+            // UpdateData_btn
             // 
-            this.siticoneButton2.BorderRadius = 25;
-            this.siticoneButton2.CheckedState.Parent = this.siticoneButton2;
-            this.siticoneButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.siticoneButton2.CustomImages.Parent = this.siticoneButton2;
-            this.siticoneButton2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(178)))), ((int)(((byte)(108)))));
-            this.siticoneButton2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.siticoneButton2.ForeColor = System.Drawing.Color.White;
-            this.siticoneButton2.HoveredState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(74)))), ((int)(((byte)(17)))));
-            this.siticoneButton2.HoveredState.Parent = this.siticoneButton2;
-            this.siticoneButton2.Image = global::GetWell.Properties.Resources.user2;
-            this.siticoneButton2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.siticoneButton2.ImageSize = new System.Drawing.Size(25, 25);
-            this.siticoneButton2.Location = new System.Drawing.Point(21, 275);
-            this.siticoneButton2.Name = "siticoneButton2";
-            this.siticoneButton2.ShadowDecoration.Parent = this.siticoneButton2;
-            this.siticoneButton2.Size = new System.Drawing.Size(428, 50);
-            this.siticoneButton2.TabIndex = 0;
-            this.siticoneButton2.Text = "changer votre informations personnelles ";
+            this.UpdateData_btn.BorderRadius = 25;
+            this.UpdateData_btn.CheckedState.Parent = this.UpdateData_btn;
+            this.UpdateData_btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.UpdateData_btn.CustomImages.Parent = this.UpdateData_btn;
+            this.UpdateData_btn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(178)))), ((int)(((byte)(108)))));
+            this.UpdateData_btn.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UpdateData_btn.ForeColor = System.Drawing.Color.White;
+            this.UpdateData_btn.HoveredState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(74)))), ((int)(((byte)(17)))));
+            this.UpdateData_btn.HoveredState.Parent = this.UpdateData_btn;
+            this.UpdateData_btn.Image = global::GetWell.Properties.Resources.user2;
+            this.UpdateData_btn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.UpdateData_btn.ImageSize = new System.Drawing.Size(25, 25);
+            this.UpdateData_btn.Location = new System.Drawing.Point(21, 275);
+            this.UpdateData_btn.Name = "UpdateData_btn";
+            this.UpdateData_btn.ShadowDecoration.Parent = this.UpdateData_btn;
+            this.UpdateData_btn.Size = new System.Drawing.Size(428, 50);
+            this.UpdateData_btn.TabIndex = 0;
+            this.UpdateData_btn.Text = "changer votre informations personnelles ";
+            this.UpdateData_btn.Click += new System.EventHandler(this.UpdateData_btn_Click);
             // 
-            // siticoneButton1
+            // updatePass_btn
             // 
-            this.siticoneButton1.BorderRadius = 25;
-            this.siticoneButton1.CheckedState.Parent = this.siticoneButton1;
-            this.siticoneButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.siticoneButton1.CustomImages.Parent = this.siticoneButton1;
-            this.siticoneButton1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(178)))), ((int)(((byte)(108)))));
-            this.siticoneButton1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.siticoneButton1.ForeColor = System.Drawing.Color.White;
-            this.siticoneButton1.HoveredState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(74)))), ((int)(((byte)(17)))));
-            this.siticoneButton1.HoveredState.Parent = this.siticoneButton1;
-            this.siticoneButton1.Image = global::GetWell.Properties.Resources.icons_touch;
-            this.siticoneButton1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.siticoneButton1.ImageSize = new System.Drawing.Size(30, 30);
-            this.siticoneButton1.Location = new System.Drawing.Point(21, 168);
-            this.siticoneButton1.Name = "siticoneButton1";
-            this.siticoneButton1.ShadowDecoration.Parent = this.siticoneButton1;
-            this.siticoneButton1.Size = new System.Drawing.Size(428, 50);
-            this.siticoneButton1.TabIndex = 0;
-            this.siticoneButton1.Text = "Modifier votre mot de passe ";
+            this.updatePass_btn.BorderRadius = 25;
+            this.updatePass_btn.CheckedState.Parent = this.updatePass_btn;
+            this.updatePass_btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.updatePass_btn.CustomImages.Parent = this.updatePass_btn;
+            this.updatePass_btn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(178)))), ((int)(((byte)(108)))));
+            this.updatePass_btn.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updatePass_btn.ForeColor = System.Drawing.Color.White;
+            this.updatePass_btn.HoveredState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(74)))), ((int)(((byte)(17)))));
+            this.updatePass_btn.HoveredState.Parent = this.updatePass_btn;
+            this.updatePass_btn.Image = global::GetWell.Properties.Resources.icons_touch;
+            this.updatePass_btn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.updatePass_btn.ImageSize = new System.Drawing.Size(30, 30);
+            this.updatePass_btn.Location = new System.Drawing.Point(21, 168);
+            this.updatePass_btn.Name = "updatePass_btn";
+            this.updatePass_btn.ShadowDecoration.Parent = this.updatePass_btn;
+            this.updatePass_btn.Size = new System.Drawing.Size(428, 50);
+            this.updatePass_btn.TabIndex = 0;
+            this.updatePass_btn.Text = "Modifier votre mot de passe ";
+            this.updatePass_btn.Click += new System.EventHandler(this.updatePass_btn_Click);
             // 
             // pictureBox1
             // 
@@ -175,12 +177,12 @@ namespace GetWell
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(832, 495);
-            this.Controls.Add(this.siticoneButton4);
+            this.Controls.Add(this.Cancel_btn);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.siticoneButton3);
-            this.Controls.Add(this.siticoneButton2);
-            this.Controls.Add(this.siticoneButton1);
+            this.Controls.Add(this.UpdateData_btn);
+            this.Controls.Add(this.updatePass_btn);
             this.Controls.Add(this.siticoneSeparator2);
             this.Controls.Add(this.siticoneSeparator1);
             this.Controls.Add(this.pictureBox1);
@@ -188,6 +190,7 @@ namespace GetWell
             this.Name = "Settings_Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UpdateInfoForm";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Settings_Form_FormClosing);
             this.Load += new System.EventHandler(this.Settings_Form_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Panel_MouseDown);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -199,12 +202,12 @@ namespace GetWell
         #endregion
 
         private Siticone.UI.WinForms.SiticoneElipse siticoneElipse1;
-        private Siticone.UI.WinForms.SiticoneButton siticoneButton2;
-        private Siticone.UI.WinForms.SiticoneButton siticoneButton1;
+        private Siticone.UI.WinForms.SiticoneButton UpdateData_btn;
+        private Siticone.UI.WinForms.SiticoneButton updatePass_btn;
         private System.Windows.Forms.Label label2;
         private Siticone.UI.WinForms.SiticoneButton siticoneButton3;
         private System.Windows.Forms.Label label1;
-        private Siticone.UI.WinForms.SiticoneButton siticoneButton4;
+        private Siticone.UI.WinForms.SiticoneButton Cancel_btn;
         private System.Windows.Forms.PictureBox pictureBox1;
         private Siticone.UI.WinForms.SiticoneSeparator siticoneSeparator2;
         private Siticone.UI.WinForms.SiticoneSeparator siticoneSeparator1;

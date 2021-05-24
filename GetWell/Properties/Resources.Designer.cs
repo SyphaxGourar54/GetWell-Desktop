@@ -143,6 +143,16 @@ namespace GetWell.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap appbar_app {
+            get {
+                object obj = ResourceManager.GetObject("appbar.app", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap appbar_border_outside {
             get {
                 object obj = ResourceManager.GetObject("appbar.border.outside", resourceCulture);
@@ -206,6 +216,16 @@ namespace GetWell.Properties {
         internal static System.Drawing.Bitmap appbar_cursor_move {
             get {
                 object obj = ResourceManager.GetObject("appbar.cursor.move", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap appbar_door_lock_open {
+            get {
+                object obj = ResourceManager.GetObject("appbar.door.lock.open", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -463,6 +483,16 @@ namespace GetWell.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap appbar2 {
+            get {
+                object obj = ResourceManager.GetObject("appbar2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap clip_doctor_looks_at_eeg {
             get {
                 object obj = ResourceManager.GetObject("clip-doctor-looks-at-eeg", resourceCulture);
@@ -676,6 +706,56 @@ namespace GetWell.Properties {
         internal static System.Drawing.Bitmap notConnected2 {
             get {
                 object obj = ResourceManager.GetObject("notConnected2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap notification {
+            get {
+                object obj = ResourceManager.GetObject("notification", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap notificationSmall {
+            get {
+                object obj = ResourceManager.GetObject("notificationSmall", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap notificationSmall2 {
+            get {
+                object obj = ResourceManager.GetObject("notificationSmall2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap notificationSmallBlack {
+            get {
+                object obj = ResourceManager.GetObject("notificationSmallBlack", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap notificationSmallWhite {
+            get {
+                object obj = ResourceManager.GetObject("notificationSmallWhite", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

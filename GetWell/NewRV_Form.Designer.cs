@@ -32,19 +32,29 @@ namespace GetWell
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.siticoneElipse1 = new Siticone.UI.WinForms.SiticoneElipse(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
+            this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.siticoneGradientButton1 = new Siticone.UI.WinForms.SiticoneGradientButton();
+            this.dataGridView_NewRv = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.btn_refuser = new Siticone.UI.WinForms.SiticoneButton();
             this.btn_Minimize = new System.Windows.Forms.Button();
             this.btn_Exit = new System.Windows.Forms.Button();
             this.siticoneButton4 = new Siticone.UI.WinForms.SiticoneButton();
-            this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.siticoneGradientButton1 = new Siticone.UI.WinForms.SiticoneGradientButton();
-            this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.siticoneRoundedTextBox1 = new Siticone.UI.WinForms.SiticoneRoundedTextBox();
+            this.btn_Accepter = new Siticone.UI.WinForms.SiticoneButton();
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.datePriseDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tempDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.patientDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rendezvousBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.NewRvchecker = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             this.guna2GradientPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_NewRv)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rendezvousBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // siticoneElipse1
@@ -63,6 +73,139 @@ namespace GetWell
             this.panel1.Size = new System.Drawing.Size(954, 37);
             this.panel1.TabIndex = 23;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Panel_MouseDown);
+            // 
+            // guna2GradientPanel1
+            // 
+            this.guna2GradientPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2GradientPanel1.BorderRadius = 20;
+            this.guna2GradientPanel1.Controls.Add(this.btn_Accepter);
+            this.guna2GradientPanel1.Controls.Add(this.btn_refuser);
+            this.guna2GradientPanel1.Controls.Add(this.siticoneGradientButton1);
+            this.guna2GradientPanel1.Controls.Add(this.dataGridView_NewRv);
+            this.guna2GradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(230)))), ((int)(((byte)(251)))));
+            this.guna2GradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(230)))), ((int)(((byte)(251)))));
+            this.guna2GradientPanel1.Location = new System.Drawing.Point(12, 43);
+            this.guna2GradientPanel1.Name = "guna2GradientPanel1";
+            this.guna2GradientPanel1.ShadowDecoration.Parent = this.guna2GradientPanel1;
+            this.guna2GradientPanel1.Size = new System.Drawing.Size(930, 632);
+            this.guna2GradientPanel1.TabIndex = 25;
+            // 
+            // siticoneGradientButton1
+            // 
+            this.siticoneGradientButton1.BackColor = System.Drawing.Color.Transparent;
+            this.siticoneGradientButton1.BorderRadius = 10;
+            this.siticoneGradientButton1.CheckedState.Parent = this.siticoneGradientButton1;
+            this.siticoneGradientButton1.CustomImages.Parent = this.siticoneGradientButton1;
+            this.siticoneGradientButton1.FillColor = System.Drawing.Color.Transparent;
+            this.siticoneGradientButton1.FillColor2 = System.Drawing.Color.Transparent;
+            this.siticoneGradientButton1.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Bold);
+            this.siticoneGradientButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.siticoneGradientButton1.HoveredState.Parent = this.siticoneGradientButton1;
+            this.siticoneGradientButton1.Location = new System.Drawing.Point(19, 9);
+            this.siticoneGradientButton1.Name = "siticoneGradientButton1";
+            this.siticoneGradientButton1.ShadowDecoration.Parent = this.siticoneGradientButton1;
+            this.siticoneGradientButton1.Size = new System.Drawing.Size(894, 45);
+            this.siticoneGradientButton1.TabIndex = 4;
+            this.siticoneGradientButton1.Text = "nouveaux rendez-vous";
+            // 
+            // dataGridView_NewRv
+            // 
+            this.dataGridView_NewRv.AllowUserToAddRows = false;
+            this.dataGridView_NewRv.AllowUserToDeleteRows = false;
+            this.dataGridView_NewRv.AllowUserToResizeColumns = false;
+            this.dataGridView_NewRv.AllowUserToResizeRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(230)))), ((int)(((byte)(251)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Tai Le", 9F);
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(207)))), ((int)(((byte)(246)))));
+            this.dataGridView_NewRv.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridView_NewRv.AutoGenerateColumns = false;
+            this.dataGridView_NewRv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView_NewRv.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(230)))), ((int)(((byte)(251)))));
+            this.dataGridView_NewRv.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridView_NewRv.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dataGridView_NewRv.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial", 10F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView_NewRv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridView_NewRv.ColumnHeadersHeight = 40;
+            this.dataGridView_NewRv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dataGridView_NewRv.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Id,
+            this.dateDataGridViewTextBoxColumn,
+            this.datePriseDataGridViewTextBoxColumn,
+            this.tempDataGridViewTextBoxColumn,
+            this.patientDataGridViewTextBoxColumn});
+            this.dataGridView_NewRv.DataSource = this.rendezvousBindingSource;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(230)))), ((int)(((byte)(251)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Tai Le", 9F);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(207)))), ((int)(((byte)(246)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView_NewRv.DefaultCellStyle = dataGridViewCellStyle4;
+            this.dataGridView_NewRv.EnableHeadersVisualStyles = false;
+            this.dataGridView_NewRv.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(230)))), ((int)(((byte)(251)))));
+            this.dataGridView_NewRv.Location = new System.Drawing.Point(19, 63);
+            this.dataGridView_NewRv.MultiSelect = false;
+            this.dataGridView_NewRv.Name = "dataGridView_NewRv";
+            this.dataGridView_NewRv.ReadOnly = true;
+            this.dataGridView_NewRv.RowHeadersVisible = false;
+            this.dataGridView_NewRv.RowTemplate.Height = 40;
+            this.dataGridView_NewRv.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView_NewRv.Size = new System.Drawing.Size(894, 443);
+            this.dataGridView_NewRv.TabIndex = 2;
+            this.dataGridView_NewRv.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.LightBlue;
+            this.dataGridView_NewRv.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(230)))), ((int)(((byte)(251)))));
+            this.dataGridView_NewRv.ThemeStyle.AlternatingRowsStyle.Font = new System.Drawing.Font("Microsoft Tai Le", 9F);
+            this.dataGridView_NewRv.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.dataGridView_NewRv.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(207)))), ((int)(((byte)(246)))));
+            this.dataGridView_NewRv.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.dataGridView_NewRv.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(230)))), ((int)(((byte)(251)))));
+            this.dataGridView_NewRv.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(230)))), ((int)(((byte)(251)))));
+            this.dataGridView_NewRv.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
+            this.dataGridView_NewRv.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dataGridView_NewRv.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Arial", 10F);
+            this.dataGridView_NewRv.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.dataGridView_NewRv.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dataGridView_NewRv.ThemeStyle.HeaderStyle.Height = 40;
+            this.dataGridView_NewRv.ThemeStyle.ReadOnly = true;
+            this.dataGridView_NewRv.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(230)))), ((int)(((byte)(251)))));
+            this.dataGridView_NewRv.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dataGridView_NewRv.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Tai Le", 9F);
+            this.dataGridView_NewRv.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.dataGridView_NewRv.ThemeStyle.RowsStyle.Height = 40;
+            this.dataGridView_NewRv.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(207)))), ((int)(((byte)(246)))));
+            this.dataGridView_NewRv.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            // 
+            // btn_refuser
+            // 
+            this.btn_refuser.BorderRadius = 20;
+            this.btn_refuser.CheckedState.Parent = this.btn_refuser;
+            this.btn_refuser.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_refuser.CustomImages.Parent = this.btn_refuser;
+            this.btn_refuser.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(35)))), ((int)(((byte)(27)))));
+            this.btn_refuser.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.btn_refuser.ForeColor = System.Drawing.Color.White;
+            this.btn_refuser.HoveredState.Parent = this.btn_refuser;
+            this.btn_refuser.Image = global::GetWell.Properties.Resources.appbar2;
+            this.btn_refuser.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btn_refuser.ImageOffset = new System.Drawing.Point(10, 0);
+            this.btn_refuser.ImageSize = new System.Drawing.Size(30, 30);
+            this.btn_refuser.Location = new System.Drawing.Point(789, 563);
+            this.btn_refuser.Name = "btn_refuser";
+            this.btn_refuser.ShadowDecoration.Parent = this.btn_refuser;
+            this.btn_refuser.Size = new System.Drawing.Size(124, 40);
+            this.btn_refuser.TabIndex = 5;
+            this.btn_refuser.Text = "Refuser";
+            this.btn_refuser.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_refuser.TextOffset = new System.Drawing.Point(10, 0);
+            this.btn_refuser.Click += new System.EventHandler(this.btn_refuser_Click);
             // 
             // btn_Minimize
             // 
@@ -113,133 +256,81 @@ namespace GetWell
             this.siticoneButton4.Size = new System.Drawing.Size(99, 24);
             this.siticoneButton4.TabIndex = 0;
             // 
-            // guna2GradientPanel1
+            // btn_Accepter
             // 
-            this.guna2GradientPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2GradientPanel1.BorderRadius = 20;
-            this.guna2GradientPanel1.Controls.Add(this.siticoneGradientButton1);
-            this.guna2GradientPanel1.Controls.Add(this.guna2DataGridView1);
-            this.guna2GradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(230)))), ((int)(((byte)(251)))));
-            this.guna2GradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(230)))), ((int)(((byte)(251)))));
-            this.guna2GradientPanel1.Location = new System.Drawing.Point(76, 103);
-            this.guna2GradientPanel1.Name = "guna2GradientPanel1";
-            this.guna2GradientPanel1.ShadowDecoration.Parent = this.guna2GradientPanel1;
-            this.guna2GradientPanel1.Size = new System.Drawing.Size(803, 537);
-            this.guna2GradientPanel1.TabIndex = 25;
+            this.btn_Accepter.BorderRadius = 20;
+            this.btn_Accepter.CheckedState.Parent = this.btn_Accepter;
+            this.btn_Accepter.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Accepter.CustomImages.Parent = this.btn_Accepter;
+            this.btn_Accepter.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(162)))), ((int)(((byte)(70)))));
+            this.btn_Accepter.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.btn_Accepter.ForeColor = System.Drawing.Color.White;
+            this.btn_Accepter.HoveredState.Parent = this.btn_Accepter;
+            this.btn_Accepter.Image = global::GetWell.Properties.Resources.appbar_check;
+            this.btn_Accepter.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btn_Accepter.ImageOffset = new System.Drawing.Point(5, 0);
+            this.btn_Accepter.ImageSize = new System.Drawing.Size(30, 30);
+            this.btn_Accepter.Location = new System.Drawing.Point(659, 563);
+            this.btn_Accepter.Name = "btn_Accepter";
+            this.btn_Accepter.ShadowDecoration.Parent = this.btn_Accepter;
+            this.btn_Accepter.Size = new System.Drawing.Size(124, 40);
+            this.btn_Accepter.TabIndex = 5;
+            this.btn_Accepter.Text = "Accepter";
+            this.btn_Accepter.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_Accepter.TextOffset = new System.Drawing.Point(10, 0);
+            this.btn_Accepter.Click += new System.EventHandler(this.btn_Accepter_Click);
             // 
-            // siticoneGradientButton1
+            // Id
             // 
-            this.siticoneGradientButton1.BackColor = System.Drawing.Color.Transparent;
-            this.siticoneGradientButton1.BorderRadius = 10;
-            this.siticoneGradientButton1.CheckedState.Parent = this.siticoneGradientButton1;
-            this.siticoneGradientButton1.CustomImages.Parent = this.siticoneGradientButton1;
-            this.siticoneGradientButton1.FillColor = System.Drawing.Color.Transparent;
-            this.siticoneGradientButton1.FillColor2 = System.Drawing.Color.Transparent;
-            this.siticoneGradientButton1.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Bold);
-            this.siticoneGradientButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.siticoneGradientButton1.HoveredState.Parent = this.siticoneGradientButton1;
-            this.siticoneGradientButton1.Location = new System.Drawing.Point(19, 9);
-            this.siticoneGradientButton1.Name = "siticoneGradientButton1";
-            this.siticoneGradientButton1.ShadowDecoration.Parent = this.siticoneGradientButton1;
-            this.siticoneGradientButton1.Size = new System.Drawing.Size(763, 45);
-            this.siticoneGradientButton1.TabIndex = 4;
-            this.siticoneGradientButton1.Text = "nouveaux rendez-vous";
+            this.Id.DataPropertyName = "Id";
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(230)))), ((int)(((byte)(251)))));
+            this.Id.DefaultCellStyle = dataGridViewCellStyle3;
+            this.Id.FillWeight = 30.97797F;
+            this.Id.HeaderText = "Id";
+            this.Id.Name = "Id";
+            this.Id.ReadOnly = true;
             // 
-            // guna2DataGridView1
+            // dateDataGridViewTextBoxColumn
             // 
-            this.guna2DataGridView1.AllowUserToAddRows = false;
-            this.guna2DataGridView1.AllowUserToDeleteRows = false;
-            this.guna2DataGridView1.AllowUserToResizeColumns = false;
-            this.guna2DataGridView1.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(229)))), ((int)(((byte)(251)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.guna2DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.guna2DataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(230)))), ((int)(((byte)(251)))));
-            this.guna2DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.guna2DataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.guna2DataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(243)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.guna2DataGridView1.ColumnHeadersHeight = 40;
-            this.guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(237)))), ((int)(((byte)(252)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(197)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
-            this.guna2DataGridView1.EnableHeadersVisualStyles = false;
-            this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(230)))), ((int)(((byte)(251)))));
-            this.guna2DataGridView1.Location = new System.Drawing.Point(19, 63);
-            this.guna2DataGridView1.MultiSelect = false;
-            this.guna2DataGridView1.Name = "guna2DataGridView1";
-            this.guna2DataGridView1.ReadOnly = true;
-            this.guna2DataGridView1.RowHeadersVisible = false;
-            this.guna2DataGridView1.RowTemplate.Height = 40;
-            this.guna2DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(763, 458);
-            this.guna2DataGridView1.TabIndex = 2;
-            this.guna2DataGridView1.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.LightBlue;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(229)))), ((int)(((byte)(251)))));
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(230)))), ((int)(((byte)(251)))));
-            this.guna2DataGridView1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(230)))), ((int)(((byte)(251)))));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(243)))));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 40;
-            this.guna2DataGridView1.ThemeStyle.ReadOnly = true;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(237)))), ((int)(((byte)(252)))));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F);
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.Height = 40;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(197)))), ((int)(((byte)(247)))));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.dateDataGridViewTextBoxColumn.DataPropertyName = "Date";
+            this.dateDataGridViewTextBoxColumn.FillWeight = 87.67332F;
+            this.dateDataGridViewTextBoxColumn.HeaderText = "Date";
+            this.dateDataGridViewTextBoxColumn.Name = "dateDataGridViewTextBoxColumn";
+            this.dateDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // siticoneRoundedTextBox1
+            // datePriseDataGridViewTextBoxColumn
             // 
-            this.siticoneRoundedTextBox1.Animated = false;
-            this.siticoneRoundedTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.siticoneRoundedTextBox1.DefaultText = "";
-            this.siticoneRoundedTextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.siticoneRoundedTextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.siticoneRoundedTextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.siticoneRoundedTextBox1.DisabledState.Parent = this.siticoneRoundedTextBox1;
-            this.siticoneRoundedTextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.siticoneRoundedTextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.siticoneRoundedTextBox1.FocusedState.Parent = this.siticoneRoundedTextBox1;
-            this.siticoneRoundedTextBox1.Font = new System.Drawing.Font("Consolas", 10F, System.Drawing.FontStyle.Bold);
-            this.siticoneRoundedTextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.siticoneRoundedTextBox1.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.siticoneRoundedTextBox1.HoveredState.Parent = this.siticoneRoundedTextBox1;
-            this.siticoneRoundedTextBox1.IconLeftSize = new System.Drawing.Size(35, 35);
-            this.siticoneRoundedTextBox1.IconRight = global::GetWell.Properties.Resources.appbar_magnify;
-            this.siticoneRoundedTextBox1.IconRightSize = new System.Drawing.Size(40, 40);
-            this.siticoneRoundedTextBox1.Location = new System.Drawing.Point(637, 60);
-            this.siticoneRoundedTextBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.siticoneRoundedTextBox1.Name = "siticoneRoundedTextBox1";
-            this.siticoneRoundedTextBox1.PasswordChar = '\0';
-            this.siticoneRoundedTextBox1.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.siticoneRoundedTextBox1.PlaceholderText = "Entrer Le nom de Patient";
-            this.siticoneRoundedTextBox1.SelectedText = "";
-            this.siticoneRoundedTextBox1.ShadowDecoration.Parent = this.siticoneRoundedTextBox1;
-            this.siticoneRoundedTextBox1.Size = new System.Drawing.Size(242, 36);
-            this.siticoneRoundedTextBox1.TabIndex = 24;
+            this.datePriseDataGridViewTextBoxColumn.DataPropertyName = "DatePrise";
+            this.datePriseDataGridViewTextBoxColumn.FillWeight = 87.67332F;
+            this.datePriseDataGridViewTextBoxColumn.HeaderText = "DatePrise";
+            this.datePriseDataGridViewTextBoxColumn.Name = "datePriseDataGridViewTextBoxColumn";
+            this.datePriseDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // tempDataGridViewTextBoxColumn
+            // 
+            this.tempDataGridViewTextBoxColumn.DataPropertyName = "Temp";
+            this.tempDataGridViewTextBoxColumn.FillWeight = 87.67332F;
+            this.tempDataGridViewTextBoxColumn.HeaderText = "Temp";
+            this.tempDataGridViewTextBoxColumn.Name = "tempDataGridViewTextBoxColumn";
+            this.tempDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // patientDataGridViewTextBoxColumn
+            // 
+            this.patientDataGridViewTextBoxColumn.DataPropertyName = "patient";
+            this.patientDataGridViewTextBoxColumn.FillWeight = 100.6733F;
+            this.patientDataGridViewTextBoxColumn.HeaderText = "patient";
+            this.patientDataGridViewTextBoxColumn.Name = "patientDataGridViewTextBoxColumn";
+            this.patientDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // rendezvousBindingSource
+            // 
+            this.rendezvousBindingSource.DataSource = typeof(GetWell.Rendezvous);
+            // 
+            // NewRvchecker
+            // 
+            this.NewRvchecker.Enabled = true;
+            this.NewRvchecker.Interval = 3000;
+            this.NewRvchecker.Tick += new System.EventHandler(this.NewRvchecker_Tick);
             // 
             // NewRV_Form
             // 
@@ -248,15 +339,17 @@ namespace GetWell
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(47)))), ((int)(((byte)(50)))));
             this.ClientSize = new System.Drawing.Size(954, 687);
             this.Controls.Add(this.guna2GradientPanel1);
-            this.Controls.Add(this.siticoneRoundedTextBox1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "NewRV_Form";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "NewRV_Form";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.NewRV_Form_FormClosing);
             this.Load += new System.EventHandler(this.NewRV_Form_Load);
             this.panel1.ResumeLayout(false);
             this.guna2GradientPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_NewRv)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rendezvousBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -270,7 +363,15 @@ namespace GetWell
         private Siticone.UI.WinForms.SiticoneButton siticoneButton4;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
         private Siticone.UI.WinForms.SiticoneGradientButton siticoneGradientButton1;
-        private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
-        private Siticone.UI.WinForms.SiticoneRoundedTextBox siticoneRoundedTextBox1;
+        private Guna.UI2.WinForms.Guna2DataGridView dataGridView_NewRv;
+        private System.Windows.Forms.BindingSource rendezvousBindingSource;
+        private Siticone.UI.WinForms.SiticoneButton btn_refuser;
+        private Siticone.UI.WinForms.SiticoneButton btn_Accepter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dateDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn datePriseDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tempDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn patientDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Timer NewRvchecker;
     }
 }

@@ -117,7 +117,7 @@ namespace GetWell
         {
             if(txt_NewPass.Text == txt_confNewPass.Text)
             {
-
+                MedecinController.UpdatePasword(txt_NewPass.Text, Medecin.Id_doc);
             }
             else
             {
@@ -140,6 +140,11 @@ namespace GetWell
             {
                 label_error.Visible = false;
             }
+        }
+
+        private void UpdatePass_Form_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Login_Form.hf.Show();
         }
     }
 }

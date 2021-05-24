@@ -89,12 +89,14 @@ namespace GetWell
             this.txt_NewPass.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(172)))), ((int)(((byte)(17)))));
             this.txt_NewPass.FocusedState.Parent = this.txt_NewPass;
             this.txt_NewPass.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.txt_NewPass.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.txt_NewPass.HoveredState.BorderColor = System.Drawing.Color.LightSkyBlue;
             this.txt_NewPass.HoveredState.Parent = this.txt_NewPass;
             this.txt_NewPass.Location = new System.Drawing.Point(103, 258);
             this.txt_NewPass.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_NewPass.Name = "txt_NewPass";
             this.txt_NewPass.PasswordChar = '\0';
+            this.txt_NewPass.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.txt_NewPass.PlaceholderText = "";
             this.txt_NewPass.SelectedText = "";
             this.txt_NewPass.ShadowDecoration.Parent = this.txt_NewPass;
@@ -117,12 +119,14 @@ namespace GetWell
             this.txt_confNewPass.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(172)))), ((int)(((byte)(17)))));
             this.txt_confNewPass.FocusedState.Parent = this.txt_confNewPass;
             this.txt_confNewPass.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.txt_confNewPass.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.txt_confNewPass.HoveredState.BorderColor = System.Drawing.Color.LightSkyBlue;
             this.txt_confNewPass.HoveredState.Parent = this.txt_confNewPass;
             this.txt_confNewPass.Location = new System.Drawing.Point(103, 324);
             this.txt_confNewPass.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_confNewPass.Name = "txt_confNewPass";
             this.txt_confNewPass.PasswordChar = '\0';
+            this.txt_confNewPass.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.txt_confNewPass.PlaceholderText = "";
             this.txt_confNewPass.SelectedText = "";
             this.txt_confNewPass.ShadowDecoration.Parent = this.txt_confNewPass;
@@ -156,36 +160,48 @@ namespace GetWell
             // 
             // btn_pw2
             // 
+            this.btn_pw2.BackColor = System.Drawing.Color.Transparent;
+            this.btn_pw2.CheckedState.FillColor = System.Drawing.Color.Transparent;
             this.btn_pw2.CheckedState.Parent = this.btn_pw2;
+            this.btn_pw2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_pw2.CustomImages.Parent = this.btn_pw2;
             this.btn_pw2.FillColor = System.Drawing.Color.Transparent;
             this.btn_pw2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btn_pw2.ForeColor = System.Drawing.Color.White;
+            this.btn_pw2.HoveredState.FillColor = System.Drawing.Color.Transparent;
             this.btn_pw2.HoveredState.Parent = this.btn_pw2;
             this.btn_pw2.Image = global::GetWell.Properties.Resources.appbar1;
             this.btn_pw2.ImageSize = new System.Drawing.Size(40, 40);
             this.btn_pw2.Location = new System.Drawing.Point(441, 333);
             this.btn_pw2.Name = "btn_pw2";
+            this.btn_pw2.PressedColor = System.Drawing.Color.Transparent;
             this.btn_pw2.ShadowDecoration.Parent = this.btn_pw2;
             this.btn_pw2.Size = new System.Drawing.Size(37, 20);
             this.btn_pw2.TabIndex = 8;
+            this.btn_pw2.UseTransparentBackground = true;
             this.btn_pw2.Click += new System.EventHandler(this.btn_pw2_Click);
             // 
             // btn_pw1
             // 
+            this.btn_pw1.BackColor = System.Drawing.Color.Transparent;
+            this.btn_pw1.CheckedState.FillColor = System.Drawing.Color.Transparent;
             this.btn_pw1.CheckedState.Parent = this.btn_pw1;
+            this.btn_pw1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_pw1.CustomImages.Parent = this.btn_pw1;
             this.btn_pw1.FillColor = System.Drawing.Color.Transparent;
             this.btn_pw1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btn_pw1.ForeColor = System.Drawing.Color.White;
+            this.btn_pw1.HoveredState.FillColor = System.Drawing.Color.Transparent;
             this.btn_pw1.HoveredState.Parent = this.btn_pw1;
             this.btn_pw1.Image = global::GetWell.Properties.Resources.appbar1;
             this.btn_pw1.ImageSize = new System.Drawing.Size(40, 40);
             this.btn_pw1.Location = new System.Drawing.Point(441, 267);
             this.btn_pw1.Name = "btn_pw1";
+            this.btn_pw1.PressedColor = System.Drawing.Color.Transparent;
             this.btn_pw1.ShadowDecoration.Parent = this.btn_pw1;
             this.btn_pw1.Size = new System.Drawing.Size(37, 20);
             this.btn_pw1.TabIndex = 8;
+            this.btn_pw1.UseTransparentBackground = true;
             this.btn_pw1.Click += new System.EventHandler(this.btn_pw1_Click);
             // 
             // btn_Exit
@@ -287,6 +303,7 @@ namespace GetWell
             this.Name = "UpdatePass_Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UpdatePass_Form";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.UpdatePass_Form_FormClosing);
             this.Load += new System.EventHandler(this.UpdatePass_Form_Load);
             this.Click += new System.EventHandler(this.UpdatePass_Form_Click);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Panel_MouseDown);

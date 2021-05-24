@@ -205,5 +205,10 @@ namespace GetWell
         {
 
         }
+
+        private void Localisation_Form_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            
+        } 
     }
 }

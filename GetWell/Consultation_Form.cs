@@ -49,5 +49,10 @@ namespace GetWell
         {
             this.Close(); 
         }
+
+        private void Consultation_Form_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Login_Form.hf.Show();
+        }
     }
 }

@@ -36,15 +36,67 @@ namespace GetWell
             }
         }
         //////////////////////////////////////////////////////////////////////////////////////
+
         
+
+
+        FormCollection fc = Application.OpenForms;
+        private void OpenForm(Form frm, string name)
+        {
+
+            bool bFormNameOpen = false;
+            foreach (Form form in fc)
+            {
+                //iterate through
+                if (form.Name == name)
+                {
+                    bFormNameOpen = true;
+                    form.TopMost = true;
+                }
+            }
+
+            if (!bFormNameOpen)
+            {
+
+                frm.Name = name;
+                frm.Show();
+                this.Close();
+            }
+        }
+
+
         private void siticoneButton4_Click(object sender, EventArgs e)
         {
-            this.Close(); 
+            
         }
 
         private void Settings_Form_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void Settings_Form_FormClosing(object sender, FormClosingEventArgs e)
+        {
+
+        }
+
+        private void updatePass_btn_Click(object sender, EventArgs e)
+        {
+            UpdatePass_Form frm = new UpdatePass_Form();
+            OpenForm(frm, "StPass_Frm");
+        }
+
+        private void UpdateData_btn_Click(object sender, EventArgs e)
+        {
+
+            UpdateInfo_Form Infofrm = new UpdateInfo_Form();
+            OpenForm(Infofrm, "StDAta_Frm");
+        }
+
+        private void Cancel_btn_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Login_Form.hf.Show();
         }
     }
 }

@@ -382,6 +382,7 @@ namespace GetWell
             this.Name = "Calendar_Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calendar_Form";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Calendar_Form_FormClosing);
             this.Load += new System.EventHandler(this.Calendar_Form_Load);
             this.panel1.ResumeLayout(false);
             this.siticoneGradientPanel1.ResumeLayout(false);

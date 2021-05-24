@@ -51,5 +51,10 @@ namespace GetWell
         {
             this.ActiveControl = siticoneGradientButton1; 
         }
+
+        private void TeleConsultation_Form_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Login_Form.hf.Show();
+        }
     }
 }

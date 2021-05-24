@@ -31,8 +31,6 @@ namespace GetWell
         {
             this.components = new System.ComponentModel.Container();
             this.siticoneElipse1 = new Siticone.UI.WinForms.SiticoneElipse(this.components);
-            this.txt_confNewPass = new Siticone.UI.WinForms.SiticoneMaterialTextBox();
-            this.siticoneMaterialTextBox1 = new Siticone.UI.WinForms.SiticoneMaterialTextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.siticoneSeparator1 = new Siticone.UI.WinForms.SiticoneSeparator();
             this.siticoneSeparator2 = new Siticone.UI.WinForms.SiticoneSeparator();
@@ -57,70 +55,14 @@ namespace GetWell
             this.siticoneMaterialTextBox7 = new Siticone.UI.WinForms.SiticoneMaterialTextBox();
             this.siticoneMaterialTextBox6 = new Siticone.UI.WinForms.SiticoneMaterialTextBox();
             this.txt_NewPass = new Siticone.UI.WinForms.SiticoneMaterialTextBox();
+            this.siticoneMaterialTextBox1 = new Siticone.UI.WinForms.SiticoneMaterialTextBox();
+            this.siticoneMaterialTextBox11 = new Siticone.UI.WinForms.SiticoneMaterialTextBox();
             this.SuspendLayout();
             // 
             // siticoneElipse1
             // 
             this.siticoneElipse1.BorderRadius = 30;
             this.siticoneElipse1.TargetControl = this;
-            // 
-            // txt_confNewPass
-            // 
-            this.txt_confNewPass.Animated = false;
-            this.txt_confNewPass.BorderThickness = 2;
-            this.txt_confNewPass.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_confNewPass.DefaultText = "";
-            this.txt_confNewPass.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txt_confNewPass.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_confNewPass.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_confNewPass.DisabledState.Parent = this.txt_confNewPass;
-            this.txt_confNewPass.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_confNewPass.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(47)))), ((int)(((byte)(50)))));
-            this.txt_confNewPass.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(172)))), ((int)(((byte)(17)))));
-            this.txt_confNewPass.FocusedState.Parent = this.txt_confNewPass;
-            this.txt_confNewPass.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.txt_confNewPass.HoveredState.BorderColor = System.Drawing.Color.LightSkyBlue;
-            this.txt_confNewPass.HoveredState.Parent = this.txt_confNewPass;
-            this.txt_confNewPass.Location = new System.Drawing.Point(83, 218);
-            this.txt_confNewPass.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txt_confNewPass.Name = "txt_confNewPass";
-            this.txt_confNewPass.PasswordChar = '\0';
-            this.txt_confNewPass.PlaceholderText = "Nom";
-            this.txt_confNewPass.SelectedText = "";
-            this.txt_confNewPass.ShadowDecoration.Parent = this.txt_confNewPass;
-            this.txt_confNewPass.Size = new System.Drawing.Size(226, 39);
-            this.txt_confNewPass.TabIndex = 1;
-            this.txt_confNewPass.TextOffset = new System.Drawing.Point(20, 0);
-            this.txt_confNewPass.TextChanged += new System.EventHandler(this.txt_confNewPass_TextChanged);
-            // 
-            // siticoneMaterialTextBox1
-            // 
-            this.siticoneMaterialTextBox1.Animated = false;
-            this.siticoneMaterialTextBox1.BorderThickness = 2;
-            this.siticoneMaterialTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.siticoneMaterialTextBox1.DefaultText = "";
-            this.siticoneMaterialTextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.siticoneMaterialTextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.siticoneMaterialTextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.siticoneMaterialTextBox1.DisabledState.Parent = this.siticoneMaterialTextBox1;
-            this.siticoneMaterialTextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.siticoneMaterialTextBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(47)))), ((int)(((byte)(50)))));
-            this.siticoneMaterialTextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(172)))), ((int)(((byte)(17)))));
-            this.siticoneMaterialTextBox1.FocusedState.Parent = this.siticoneMaterialTextBox1;
-            this.siticoneMaterialTextBox1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.siticoneMaterialTextBox1.HoveredState.BorderColor = System.Drawing.Color.LightSkyBlue;
-            this.siticoneMaterialTextBox1.HoveredState.Parent = this.siticoneMaterialTextBox1;
-            this.siticoneMaterialTextBox1.Location = new System.Drawing.Point(83, 286);
-            this.siticoneMaterialTextBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.siticoneMaterialTextBox1.Name = "siticoneMaterialTextBox1";
-            this.siticoneMaterialTextBox1.PasswordChar = '\0';
-            this.siticoneMaterialTextBox1.PlaceholderText = "Prenom";
-            this.siticoneMaterialTextBox1.SelectedText = "";
-            this.siticoneMaterialTextBox1.ShadowDecoration.Parent = this.siticoneMaterialTextBox1;
-            this.siticoneMaterialTextBox1.Size = new System.Drawing.Size(226, 39);
-            this.siticoneMaterialTextBox1.TabIndex = 2;
-            this.siticoneMaterialTextBox1.TextOffset = new System.Drawing.Point(20, 0);
-            this.siticoneMaterialTextBox1.TextChanged += new System.EventHandler(this.txt_confNewPass_TextChanged);
             // 
             // panel1
             // 
@@ -287,6 +229,7 @@ namespace GetWell
             this.siticoneButton1.Size = new System.Drawing.Size(226, 39);
             this.siticoneButton1.TabIndex = 12;
             this.siticoneButton1.Text = "Modifier votre localisation";
+            this.siticoneButton1.Click += new System.EventHandler(this.siticoneButton1_Click);
             // 
             // siticoneMaterialTextBox10
             // 
@@ -578,6 +521,7 @@ namespace GetWell
             this.txt_NewPass.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(172)))), ((int)(((byte)(17)))));
             this.txt_NewPass.FocusedState.Parent = this.txt_NewPass;
             this.txt_NewPass.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.txt_NewPass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txt_NewPass.HoveredState.BorderColor = System.Drawing.Color.LightSkyBlue;
             this.txt_NewPass.HoveredState.Parent = this.txt_NewPass;
             this.txt_NewPass.IconLeft = global::GetWell.Properties.Resources.user21;
@@ -585,11 +529,68 @@ namespace GetWell
             this.txt_NewPass.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_NewPass.Name = "txt_NewPass";
             this.txt_NewPass.PasswordChar = '\0';
+            this.txt_NewPass.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.txt_NewPass.PlaceholderText = "Nom d\'utilisateur";
             this.txt_NewPass.SelectedText = "";
             this.txt_NewPass.ShadowDecoration.Parent = this.txt_NewPass;
             this.txt_NewPass.Size = new System.Drawing.Size(226, 39);
             this.txt_NewPass.TabIndex = 0;
+            // 
+            // siticoneMaterialTextBox1
+            // 
+            this.siticoneMaterialTextBox1.Animated = false;
+            this.siticoneMaterialTextBox1.BorderThickness = 2;
+            this.siticoneMaterialTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.siticoneMaterialTextBox1.DefaultText = "";
+            this.siticoneMaterialTextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.siticoneMaterialTextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.siticoneMaterialTextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.siticoneMaterialTextBox1.DisabledState.Parent = this.siticoneMaterialTextBox1;
+            this.siticoneMaterialTextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.siticoneMaterialTextBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(47)))), ((int)(((byte)(50)))));
+            this.siticoneMaterialTextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(172)))), ((int)(((byte)(17)))));
+            this.siticoneMaterialTextBox1.FocusedState.Parent = this.siticoneMaterialTextBox1;
+            this.siticoneMaterialTextBox1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.siticoneMaterialTextBox1.HoveredState.BorderColor = System.Drawing.Color.LightSkyBlue;
+            this.siticoneMaterialTextBox1.HoveredState.Parent = this.siticoneMaterialTextBox1;
+            this.siticoneMaterialTextBox1.IconLeft = global::GetWell.Properties.Resources.user21;
+            this.siticoneMaterialTextBox1.Location = new System.Drawing.Point(83, 218);
+            this.siticoneMaterialTextBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.siticoneMaterialTextBox1.Name = "siticoneMaterialTextBox1";
+            this.siticoneMaterialTextBox1.PasswordChar = '\0';
+            this.siticoneMaterialTextBox1.PlaceholderText = "Nom";
+            this.siticoneMaterialTextBox1.SelectedText = "";
+            this.siticoneMaterialTextBox1.ShadowDecoration.Parent = this.siticoneMaterialTextBox1;
+            this.siticoneMaterialTextBox1.Size = new System.Drawing.Size(226, 39);
+            this.siticoneMaterialTextBox1.TabIndex = 1;
+            // 
+            // siticoneMaterialTextBox11
+            // 
+            this.siticoneMaterialTextBox11.Animated = false;
+            this.siticoneMaterialTextBox11.BorderThickness = 2;
+            this.siticoneMaterialTextBox11.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.siticoneMaterialTextBox11.DefaultText = "";
+            this.siticoneMaterialTextBox11.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.siticoneMaterialTextBox11.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.siticoneMaterialTextBox11.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.siticoneMaterialTextBox11.DisabledState.Parent = this.siticoneMaterialTextBox11;
+            this.siticoneMaterialTextBox11.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.siticoneMaterialTextBox11.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(47)))), ((int)(((byte)(50)))));
+            this.siticoneMaterialTextBox11.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(172)))), ((int)(((byte)(17)))));
+            this.siticoneMaterialTextBox11.FocusedState.Parent = this.siticoneMaterialTextBox11;
+            this.siticoneMaterialTextBox11.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.siticoneMaterialTextBox11.HoveredState.BorderColor = System.Drawing.Color.LightSkyBlue;
+            this.siticoneMaterialTextBox11.HoveredState.Parent = this.siticoneMaterialTextBox11;
+            this.siticoneMaterialTextBox11.IconLeft = global::GetWell.Properties.Resources.user21;
+            this.siticoneMaterialTextBox11.Location = new System.Drawing.Point(83, 286);
+            this.siticoneMaterialTextBox11.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.siticoneMaterialTextBox11.Name = "siticoneMaterialTextBox11";
+            this.siticoneMaterialTextBox11.PasswordChar = '\0';
+            this.siticoneMaterialTextBox11.PlaceholderText = "Prenom";
+            this.siticoneMaterialTextBox11.SelectedText = "";
+            this.siticoneMaterialTextBox11.ShadowDecoration.Parent = this.siticoneMaterialTextBox11;
+            this.siticoneMaterialTextBox11.Size = new System.Drawing.Size(226, 39);
+            this.siticoneMaterialTextBox11.TabIndex = 2;
             // 
             // UpdateInfo_Form
             // 
@@ -616,16 +617,18 @@ namespace GetWell
             this.Controls.Add(this.siticoneMaterialTextBox4);
             this.Controls.Add(this.siticoneMaterialTextBox3);
             this.Controls.Add(this.siticoneMaterialTextBox2);
-            this.Controls.Add(this.siticoneMaterialTextBox1);
-            this.Controls.Add(this.txt_confNewPass);
             this.Controls.Add(this.siticoneMaterialTextBox8);
             this.Controls.Add(this.siticoneMaterialTextBox7);
             this.Controls.Add(this.siticoneMaterialTextBox6);
+            this.Controls.Add(this.siticoneMaterialTextBox11);
+            this.Controls.Add(this.siticoneMaterialTextBox1);
             this.Controls.Add(this.txt_NewPass);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "UpdateInfo_Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "11";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.UpdateInfo_Form_FormClosing);
             this.Load += new System.EventHandler(this.UpdateInfo_Form_Load);
             this.Click += new System.EventHandler(this.UpdateInfo_Form_Click);
             this.ResumeLayout(false);
@@ -636,11 +639,9 @@ namespace GetWell
         #endregion
 
         private Siticone.UI.WinForms.SiticoneElipse siticoneElipse1;
-        private Siticone.UI.WinForms.SiticoneMaterialTextBox txt_confNewPass;
         private Siticone.UI.WinForms.SiticoneMaterialTextBox txt_NewPass;
         private Siticone.UI.WinForms.SiticoneMaterialTextBox siticoneMaterialTextBox3;
         private Siticone.UI.WinForms.SiticoneMaterialTextBox siticoneMaterialTextBox2;
-        private Siticone.UI.WinForms.SiticoneMaterialTextBox siticoneMaterialTextBox1;
         private Siticone.UI.WinForms.SiticoneButton siticoneButton1;
         private Siticone.UI.WinForms.SiticoneMaterialTextBox siticoneMaterialTextBox10;
         private Siticone.UI.WinForms.SiticoneMaterialTextBox siticoneMaterialTextBox9;
@@ -662,5 +663,7 @@ namespace GetWell
         private System.Windows.Forms.Button btn_Exit;
         private Siticone.UI.WinForms.SiticoneVSeparator siticoneVSeparator1;
         private System.Windows.Forms.Panel panel2;
+        private Siticone.UI.WinForms.SiticoneMaterialTextBox siticoneMaterialTextBox11;
+        private Siticone.UI.WinForms.SiticoneMaterialTextBox siticoneMaterialTextBox1;
     }
 }

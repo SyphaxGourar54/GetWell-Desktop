@@ -279,6 +279,7 @@ namespace GetWell
             this.Name = "Consultation_Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consultation_Form";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Consultation_Form_FormClosing);
             this.Load += new System.EventHandler(this.Consultation_Form_Load);
             this.siticonePanel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);

@@ -49,7 +49,7 @@ namespace GetWell
 
         private void btn_Exit_Click(object sender, EventArgs e)
         {
-            this.Close(); 
+            this.Close();
         }
 
         private void btn_Minimize_Click(object sender, EventArgs e)
@@ -70,6 +70,18 @@ namespace GetWell
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void UpdateInfo_Form_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Login_Form.hf.Show();
+            
+        }
+
+        private void siticoneButton1_Click(object sender, EventArgs e)
+        {
+            Localisation_Form lcf = new Localisation_Form();
+            lcf.Show();
         }
     }
 }

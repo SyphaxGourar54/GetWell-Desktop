@@ -46,9 +46,68 @@ namespace GetWell
             this.WindowState = FormWindowState.Minimized; 
         }
 
+
+        public void RemplireDataGridView()
+        {
+            
+            List<Rendezvous> list = RendezvousController.GetNonValidatedRvs(Medecin.Id_doc);
+            rendezvousBindingSource.Clear(); 
+            foreach (Rendezvous rv in list)
+            {
+                rendezvousBindingSource.Add(rv);
+            }
+        }
         private void NewRV_Form_Load(object sender, EventArgs e)
         {
 
+            Home_Form.Newrv = false;
+            RemplireDataGridView(); 
+
+
+        }
+
+        private void NewRV_Form_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Login_Form.hf.Show();
+        }
+
+        private void btn_Accepter_Click(object sender, EventArgs e)
+        {
+            if(dataGridView_NewRv.SelectedCells.Count > 0)
+            {
+                int selectedrowindex = dataGridView_NewRv.SelectedCells[0].RowIndex;
+                DataGridViewRow row = dataGridView_NewRv.Rows[selectedrowindex];
+                int id = Convert.ToInt32(row.Cells["Id"].Value);
+
+                RendezvousController.AcceptRv(id);
+                rendezvousBindingSource.RemoveCurrent();
+                MessageBox.Show("rendez-vous accepté!", "information", MessageBoxButtons.OK, MessageBoxIcon.Asterisk); 
+            
+            }
+        }
+
+        private void btn_refuser_Click(object sender, EventArgs e)
+        {
+            if (dataGridView_NewRv.SelectedCells.Count > 0)
+            {
+                int selectedrowindex = dataGridView_NewRv.SelectedCells[0].RowIndex;
+                DataGridViewRow row = dataGridView_NewRv.Rows[selectedrowindex];
+                int id = Convert.ToInt32(row.Cells["Id"].Value);
+
+                RendezvousController.RefuserRv(id);
+                rendezvousBindingSource.RemoveCurrent();
+                MessageBox.Show("rendez-vous Refusé!", "information", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+
+            }
+        }
+
+        private void NewRvchecker_Tick(object sender, EventArgs e)
+        {
+            if(Home_Form.Newrv == true)
+            {
+                RemplireDataGridView();
+                Home_Form.Newrv = false; 
+            }
         }
     }
 }

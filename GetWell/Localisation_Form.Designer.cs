@@ -371,6 +371,7 @@ namespace GetWell
             this.Name = "Localisation_Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Localisation_Form";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Localisation_Form_FormClosing);
             this.Load += new System.EventHandler(this.Localisation_Form_Load);
             this.panel1.ResumeLayout(false);
             this.buttons_panel.ResumeLayout(false);

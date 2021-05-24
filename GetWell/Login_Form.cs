@@ -21,6 +21,10 @@ namespace GetWell
             InitializeComponent();
         }
 
+
+
+        public static Home_Form hf = new Home_Form();
+
         ///////////////////////////////check connection state///////////////////////
         public bool IsConnectedToInternet()
         {
@@ -94,15 +98,18 @@ namespace GetWell
 
         }
 
+
+
         private void btn_login_Click(object sender, EventArgs e)
         {
             if(txt_UserName.Text != String.Empty && txt_Password.Text!= String.Empty)
             {
-                if (Controller.Login(txt_UserName.Text, txt_Password.Text) > 0)
+                if (MedecinController.Login(txt_UserName.Text, txt_Password.Text) > 0)
                 {
                     Properties.Settings.Default.UserName = txt_UserName.Text;
                     Properties.Settings.Default.Save();
-                    Home_Form hf = new Home_Form();
+                    MedecinController.GetDocData();
+                    hf = new Home_Form();
                     hf.Show();
                     this.Hide();
                 }
@@ -148,7 +155,7 @@ namespace GetWell
 
 
 
-            checkInternetConnection(); 
+            //checkInternetConnection(); 
 
 
             this.Name = "MainForm"; 
@@ -157,8 +164,8 @@ namespace GetWell
             if (Properties.Settings.Default.UserName != String.Empty)
             {
                 this.WindowState = FormWindowState.Minimized;
-                this.ShowInTaskbar = false; 
-                Home_Form hf = new Home_Form();
+                this.ShowInTaskbar = false;
+                MedecinController.GetDocData();
                 hf.Show();
             }
             else
@@ -171,7 +178,7 @@ namespace GetWell
 
         private void IsLoggedTimer_Tick(object sender, EventArgs e)
         {
-            if (Properties.Settings.Default.UserName == String.Empty)
+            if (Properties.Settings.Default.UserName == String.Empty )
             {
                 List<Form> openForms = new List<Form>();
 
@@ -180,16 +187,13 @@ namespace GetWell
 
                 foreach (Form f in openForms)
                 {
-                    if (f.Name != "MainForm")
+                    if (f.Name != "MainForm" && f.Name != "error_frm")
                         f.Close();
                 }
 
                 this.WindowState = FormWindowState.Normal;
                 this.ShowInTaskbar = true;
             }
-
-
-            
 
         }
 
@@ -204,6 +208,10 @@ namespace GetWell
             }
             
         }
-        
+
+        private void label_error_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

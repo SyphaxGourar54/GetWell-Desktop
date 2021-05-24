@@ -55,5 +55,10 @@ namespace GetWell
         {
 
         }
+
+        private void Calendar_Form_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Login_Form.hf.Show();
+        }
     }
 }
