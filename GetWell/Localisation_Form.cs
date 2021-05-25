@@ -151,6 +151,9 @@ namespace GetWell
                         GMapOverlay markers = new GMapOverlay("markers");
                         markers.Markers.Add(marker);
                         map.Overlays.Add(markers);
+                        MedecinController.UpdateLocal(Medecin.Id_doc, lat, lng);
+                        OperationDone_Form op = new OperationDone_Form();
+                        op.ShowDialog(); 
                     }
 
                 }
@@ -168,8 +171,8 @@ namespace GetWell
             if (IsConnectedToInternet() == true)
             {
                 panel_error.Visible = false;
-                lat = 31.628257577053745;//31.628257577053745, -8.057650526354239
-                longt = -8.057650526354239;
+                lat = Medecin.latitude;//31.628257577053745, -8.057650526354239
+                longt = Medecin.longitude;
                 map.MapProvider = GMapProviders.GoogleMap;
                 map.MinZoom = 2;
                 map.MaxZoom = 100;

@@ -44,7 +44,19 @@ namespace GetWell
 
         private void UpdateInfo_Form_Load(object sender, EventArgs e)
         {
-            this.ActiveControl = label1; 
+            this.ActiveControl = label1;
+            txt_username.Text = Medecin.Username;
+            text_nom.Text = Medecin.Nom;
+            txt_prenom.Text = Medecin.Prenom;
+            txt_tel.Text = Medecin.Tel;
+            txt_email.Text = Medecin.Email;
+            txt_ville.Text = Medecin.ville;
+            txt_adresse.Text = Medecin.Adresse;
+            txt_facebook.Text = Medecin.Facebook;
+            txt_whatsapp.Text = Medecin.Whatsapp;
+            txt_instagram.Text = Medecin.Instagram;
+            txt_twitter.Text = Medecin.Twitter;
+            txt_linkeden.Text = Medecin.Linkeden; 
         }
 
         private void btn_Exit_Click(object sender, EventArgs e)
@@ -82,6 +94,24 @@ namespace GetWell
         {
             Localisation_Form lcf = new Localisation_Form();
             lcf.Show();
+        }
+
+        private void btn_save_Click(object sender, EventArgs e)
+        {
+            try
+            { 
+                MedecinController.UpdateData(Medecin.Id_doc, txt_username.Text, text_nom.Text, txt_prenom.Text, txt_tel.Text, txt_email.Text, txt_ville.Text, txt_adresse.Text, txt_facebook.Text, txt_whatsapp.Text, txt_instagram.Text, txt_twitter.Text, txt_linkeden.Text);
+                MedecinController.GetDocData();
+                Home_Form.dataUpdated = true;
+                OperationDone_Form op = new OperationDone_Form();
+                op.ShowDialog();
+
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message); 
+            }
+
         }
     }
 }

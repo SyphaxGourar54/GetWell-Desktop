@@ -43,6 +43,9 @@
     <Reference Include="Dapper, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Dapper.2.0.90\lib\net461\Dapper.dll</HintPath>
     </Reference>
+    <Reference Include="DynamicData, Version=7.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DynamicData.7.1.16\lib\net461\DynamicData.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -59,13 +62,28 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Debug\Guna.UI2.dll</HintPath>
     </Reference>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="ReactiveUI, Version=13.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ReactiveUI.13.3.2\lib\net472\ReactiveUI.dll</HintPath>
+    </Reference>
     <Reference Include="Siticone.UI, Version=1.0.0.6, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Debug\Siticone.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Splat, Version=11.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Splat.11.1.1\lib\net472\Splat.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -85,10 +103,20 @@
     </Reference>
     <Reference Include="System.Design" />
     <Reference Include="System.Management" />
+    <Reference Include="System.Reactive, Version=5.0.0.0, Culture=neutral, PublicKeyToken=94bc3704cddfc263, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Reactive.5.0.0\lib\net472\System.Reactive.dll</HintPath>
+    </Reference>
     <Reference Include="System.Resources.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL" />
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.3\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
     <Reference Include="System.Security.Principal.Windows, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Security.Principal.Windows.5.0.0\lib\net461\System.Security.Principal.Windows.dll</HintPath>
     </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -101,6 +129,7 @@
     <Reference Include="Tulpep.NotificationWindow, Version=1.1.38.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Tulpep.NotificationWindow.1.1.38\lib\net40\Tulpep.NotificationWindow.dll</HintPath>
     </Reference>
+    <Reference Include="WindowsBase" />
     <Reference Include="XanderUI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Debug\XanderUI.dll</HintPath>
@@ -131,6 +160,14 @@
     <Compile Include="Consultation_Form.Designer.cs">
       <DependentUpon>Consultation_Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="Diagnostique.cs" />
+    <Compile Include="DiagnostiqueController.cs" />
+    <Compile Include="listDiag_and_listPatient_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="listDiag_and_listPatient_Form.Designer.cs">
+      <DependentUpon>listDiag_and_listPatient_Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="MedecinController.cs" />
     <Compile Include="Home_Form.cs">
       <SubType>Form</SubType>
@@ -157,6 +194,12 @@
     </Compile>
     <Compile Include="NewRV_Form.Designer.cs">
       <DependentUpon>NewRV_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OperationDone_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OperationDone_Form.Designer.cs">
+      <DependentUpon>OperationDone_Form.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -206,6 +249,9 @@
     <EmbeddedResource Include="Home_Form.resx">
       <DependentUpon>Home_Form.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="listDiag_and_listPatient_Form.resx">
+      <DependentUpon>listDiag_and_listPatient_Form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Localisation_Form.resx">
       <DependentUpon>Localisation_Form.cs</DependentUpon>
     </EmbeddedResource>
@@ -214,6 +260,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="NewRV_Form.resx">
       <DependentUpon>NewRV_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OperationDone_Form.resx">
+      <DependentUpon>OperationDone_Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -363,6 +412,7 @@
     <None Include="Resources\notificationSmallWhite.png" />
     <None Include="Resources\appbar.app.png" />
     <None Include="Resources\appbar.close1.png" />
+    <None Include="Resources\donegif.gif" />
     <Content Include="Resources\profileIconOrange.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

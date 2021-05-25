@@ -40,7 +40,8 @@ namespace GetWell
 
         /////////////////////////////////////////////////////
 
-        public static bool Newrv = false; 
+        public static bool Newrv = false;
+        public static bool dataUpdated = false; 
         FormCollection fc = Application.OpenForms;
         private void OpenForm(Form frm, string name)
         {
@@ -141,6 +142,7 @@ namespace GetWell
         {
             Properties.Settings.Default.UserName = String.Empty;
             Properties.Settings.Default.Save();
+            Application.Exit(); 
         }
 
         private void CheckForNewRV_Tick(object sender, EventArgs e)
@@ -148,6 +150,13 @@ namespace GetWell
             if (Properties.Settings.Default.UserName != String.Empty)
             {
                 label_NewRV.Text = MedecinController.NewRV(Medecin.Id_doc).ToString();
+            }
+
+            if(dataUpdated)
+            {
+                dataUpdated = false;
+                label_welcome.Text = "Bienvenu!\nMr " + Medecin.Nom;
+
             }
         }
 

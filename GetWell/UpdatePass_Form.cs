@@ -118,6 +118,8 @@ namespace GetWell
             if(txt_NewPass.Text == txt_confNewPass.Text)
             {
                 MedecinController.UpdatePasword(txt_NewPass.Text, Medecin.Id_doc);
+                OperationDone_Form op = new OperationDone_Form();
+                op.ShowDialog();
             }
             else
             {

@@ -109,5 +109,30 @@ namespace GetWell
 
             }
         }
+
+        public static void UpdateLocal(int Id, double lat, double longt)
+        {
+            using (var connection = new SqlConnection(ConnectionString))
+            {
+                if (connection.State != ConnectionState.Closed)
+                    connection.Open();
+
+                connection.Execute("UpdateLocalisation", new { lat = lat, longt = longt, Id = Id }, commandType: CommandType.StoredProcedure);
+                connection.Close();
+
+            }
+        }
+
+        public static void UpdateData(int id, string username, string nom, string prenom, string tel, string email, string ville, string adresse, string facebook, string whatsapp, string instagram, string twitter, string linkeden)
+        {
+            using (var connection = new SqlConnection(ConnectionString))
+            {
+                if (connection.State != ConnectionState.Closed)
+                    connection.Open();
+
+                connection.Execute("UpdateMedData", new { Id = id, username = username, nom = nom, prenom = prenom, tel = tel, email = email, ville = ville, adress = adresse, facebook = facebook, whatsapp = whatsapp, instagram = instagram, twitter= twitter, linkeden = linkeden}, commandType: CommandType.StoredProcedure);
+                connection.Close();
+            }
+        }
     }
 }

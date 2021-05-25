@@ -232,9 +232,6 @@
   <data name="appbar.location1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\appbar.location.checkin1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="appbar1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\appbar.eye1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="appbar.magnify.add" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\appbar.magnify.add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -277,6 +274,9 @@
   <data name="appbar.redo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\appbar.redo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="appbar2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\appbar.close1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="appbar.location.checkin" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\appbar.location.checkin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -288,6 +288,9 @@
   </data>
   <data name="appbar.app" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\appbar.app.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="200" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\200.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="appbar.city" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\appbar.city.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -334,8 +337,8 @@
   <data name="appbar.social.linkedin.variant" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\appbar.social.linkedin.variant.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="200" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\200.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="appbar1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\appbar.eye1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Image5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Image5.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -355,7 +358,7 @@
   <data name="icons_touch" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons_touch.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="appbar2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\appbar.close1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="donegif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\donegif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

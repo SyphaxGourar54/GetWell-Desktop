@@ -68,6 +68,36 @@ begin
 update rendezvous set validation = 0 where rendezvous.Id_rv = @Id_rv; 
 end
 
+create proc UpdateLocalisation @lat float, @longt float, @Id int
+as
+begin
+update medecin set latitude = @lat, longitude = @longt where Id_doc = @Id
+end
+
+
+create proc UpdateMedData @Id int,
+						  @username varchar(20), 
+					      @nom varchar(20),
+						  @prenom varchar(20), 
+						  @tel varchar(30), 
+						  @email varchar(40),
+						  @ville varchar(30), 
+						  @adress varchar(50), 
+						  @facebook varchar(20), 
+						  @whatsapp varchar(30),
+						  @instagram varchar(20),
+						  @twitter varchar(20),
+						  @linkeden varchar(20)
+
+as
+begin
+update medecin set Username = @username, Nom = @nom, Prenom = @prenom, Tel = @tel, Email = @email, ville = @ville, Adresse = @adress, Facebook = @facebook, Whatsapp = @whatsapp, Instagram = @instagram, Twitter = @twitter, Linkeden = @linkeden
+where Id_doc = @Id; 
+end
+
+
+alter table diagnostique alter column Description varchar(300); 
+
 
 
 

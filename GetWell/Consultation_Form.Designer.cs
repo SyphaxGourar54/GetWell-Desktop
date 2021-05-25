@@ -31,10 +31,10 @@ namespace GetWell
         {
             this.components = new System.ComponentModel.Container();
             this.siticoneElipse1 = new Siticone.UI.WinForms.SiticoneElipse(this.components);
-            this.siticoneRoundedComboBox1 = new Siticone.UI.WinForms.SiticoneRoundedComboBox();
-            this.siticoneRoundedDateTimePicker1 = new Siticone.UI.WinForms.SiticoneRoundedDateTimePicker();
+            this.Patient_combobox = new Siticone.UI.WinForms.SiticoneRoundedComboBox();
+            this.DateTimePicker1 = new Siticone.UI.WinForms.SiticoneRoundedDateTimePicker();
             this.siticonePanel1 = new Siticone.UI.WinForms.SiticonePanel();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.Description_text = new System.Windows.Forms.RichTextBox();
             this.btn_save = new Siticone.UI.WinForms.SiticoneButton();
             this.label1 = new System.Windows.Forms.Label();
             this.siticoneSeparator1 = new Siticone.UI.WinForms.SiticoneSeparator();
@@ -47,6 +47,7 @@ namespace GetWell
             this.siticoneButton3 = new Siticone.UI.WinForms.SiticoneButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
+            this.show_consultations_btn = new System.Windows.Forms.Button();
             this.siticonePanel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -56,43 +57,43 @@ namespace GetWell
             this.siticoneElipse1.BorderRadius = 30;
             this.siticoneElipse1.TargetControl = this;
             // 
-            // siticoneRoundedComboBox1
+            // Patient_combobox
             // 
-            this.siticoneRoundedComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.siticoneRoundedComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.siticoneRoundedComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.siticoneRoundedComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.siticoneRoundedComboBox1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.siticoneRoundedComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.siticoneRoundedComboBox1.HoveredState.Parent = this.siticoneRoundedComboBox1;
-            this.siticoneRoundedComboBox1.ItemHeight = 30;
-            this.siticoneRoundedComboBox1.ItemsAppearance.Parent = this.siticoneRoundedComboBox1;
-            this.siticoneRoundedComboBox1.Location = new System.Drawing.Point(116, 165);
-            this.siticoneRoundedComboBox1.Name = "siticoneRoundedComboBox1";
-            this.siticoneRoundedComboBox1.ShadowDecoration.Parent = this.siticoneRoundedComboBox1;
-            this.siticoneRoundedComboBox1.Size = new System.Drawing.Size(261, 36);
-            this.siticoneRoundedComboBox1.TabIndex = 0;
+            this.Patient_combobox.BackColor = System.Drawing.Color.Transparent;
+            this.Patient_combobox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.Patient_combobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Patient_combobox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.Patient_combobox.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Patient_combobox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.Patient_combobox.HoveredState.Parent = this.Patient_combobox;
+            this.Patient_combobox.ItemHeight = 30;
+            this.Patient_combobox.ItemsAppearance.Parent = this.Patient_combobox;
+            this.Patient_combobox.Location = new System.Drawing.Point(116, 165);
+            this.Patient_combobox.Name = "Patient_combobox";
+            this.Patient_combobox.ShadowDecoration.Parent = this.Patient_combobox;
+            this.Patient_combobox.Size = new System.Drawing.Size(261, 36);
+            this.Patient_combobox.TabIndex = 0;
             // 
-            // siticoneRoundedDateTimePicker1
+            // DateTimePicker1
             // 
-            this.siticoneRoundedDateTimePicker1.CheckedState.Parent = this.siticoneRoundedDateTimePicker1;
-            this.siticoneRoundedDateTimePicker1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.siticoneRoundedDateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.siticoneRoundedDateTimePicker1.HoveredState.Parent = this.siticoneRoundedDateTimePicker1;
-            this.siticoneRoundedDateTimePicker1.Location = new System.Drawing.Point(383, 165);
-            this.siticoneRoundedDateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.siticoneRoundedDateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.siticoneRoundedDateTimePicker1.Name = "siticoneRoundedDateTimePicker1";
-            this.siticoneRoundedDateTimePicker1.ShadowDecoration.Parent = this.siticoneRoundedDateTimePicker1;
-            this.siticoneRoundedDateTimePicker1.Size = new System.Drawing.Size(302, 36);
-            this.siticoneRoundedDateTimePicker1.TabIndex = 1;
-            this.siticoneRoundedDateTimePicker1.Value = new System.DateTime(2021, 5, 2, 15, 39, 1, 552);
+            this.DateTimePicker1.CheckedState.Parent = this.DateTimePicker1;
+            this.DateTimePicker1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.DateTimePicker1.HoveredState.Parent = this.DateTimePicker1;
+            this.DateTimePicker1.Location = new System.Drawing.Point(383, 165);
+            this.DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.DateTimePicker1.Name = "DateTimePicker1";
+            this.DateTimePicker1.ShadowDecoration.Parent = this.DateTimePicker1;
+            this.DateTimePicker1.Size = new System.Drawing.Size(302, 36);
+            this.DateTimePicker1.TabIndex = 1;
+            this.DateTimePicker1.Value = new System.DateTime(2021, 5, 2, 15, 39, 1, 552);
             // 
             // siticonePanel1
             // 
             this.siticonePanel1.BackColor = System.Drawing.Color.Transparent;
             this.siticonePanel1.BorderRadius = 20;
-            this.siticonePanel1.Controls.Add(this.richTextBox1);
+            this.siticonePanel1.Controls.Add(this.Description_text);
             this.siticonePanel1.FillColor = System.Drawing.Color.WhiteSmoke;
             this.siticonePanel1.Location = new System.Drawing.Point(116, 264);
             this.siticonePanel1.Name = "siticonePanel1";
@@ -100,16 +101,16 @@ namespace GetWell
             this.siticonePanel1.Size = new System.Drawing.Size(569, 190);
             this.siticonePanel1.TabIndex = 4;
             // 
-            // richTextBox1
+            // Description_text
             // 
-            this.richTextBox1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox1.Location = new System.Drawing.Point(13, 11);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(542, 170);
-            this.richTextBox1.TabIndex = 0;
-            this.richTextBox1.Text = "";
+            this.Description_text.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.Description_text.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Description_text.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Description_text.Location = new System.Drawing.Point(13, 11);
+            this.Description_text.Name = "Description_text";
+            this.Description_text.Size = new System.Drawing.Size(542, 170);
+            this.Description_text.TabIndex = 0;
+            this.Description_text.Text = "";
             // 
             // btn_save
             // 
@@ -130,6 +131,7 @@ namespace GetWell
             this.btn_save.Size = new System.Drawing.Size(569, 44);
             this.btn_save.TabIndex = 14;
             this.btn_save.Text = "Ajoutter";
+            this.btn_save.Click += new System.EventHandler(this.btn_save_Click);
             // 
             // label1
             // 
@@ -257,12 +259,30 @@ namespace GetWell
             this.label4.TabIndex = 19;
             this.label4.Text = "Ajout d\'une consultation";
             // 
+            // show_consultations_btn
+            // 
+            this.show_consultations_btn.BackColor = System.Drawing.Color.Transparent;
+            this.show_consultations_btn.FlatAppearance.BorderSize = 0;
+            this.show_consultations_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.show_consultations_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.show_consultations_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.show_consultations_btn.Font = new System.Drawing.Font("MCS ROUND", 10F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.show_consultations_btn.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.show_consultations_btn.Location = new System.Drawing.Point(116, 541);
+            this.show_consultations_btn.Name = "show_consultations_btn";
+            this.show_consultations_btn.Size = new System.Drawing.Size(569, 23);
+            this.show_consultations_btn.TabIndex = 26;
+            this.show_consultations_btn.Text = "Afficher liste de consultations et patients";
+            this.show_consultations_btn.UseVisualStyleBackColor = false;
+            this.show_consultations_btn.Click += new System.EventHandler(this.show_consultations_btn_Click);
+            // 
             // Consultation_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(47)))), ((int)(((byte)(50)))));
             this.ClientSize = new System.Drawing.Size(800, 619);
+            this.Controls.Add(this.show_consultations_btn);
             this.Controls.Add(this.siticoneButton3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label3);
@@ -273,8 +293,8 @@ namespace GetWell
             this.Controls.Add(this.siticoneSeparator1);
             this.Controls.Add(this.btn_save);
             this.Controls.Add(this.siticonePanel1);
-            this.Controls.Add(this.siticoneRoundedDateTimePicker1);
-            this.Controls.Add(this.siticoneRoundedComboBox1);
+            this.Controls.Add(this.DateTimePicker1);
+            this.Controls.Add(this.Patient_combobox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Consultation_Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -292,10 +312,10 @@ namespace GetWell
         #endregion
 
         private Siticone.UI.WinForms.SiticoneElipse siticoneElipse1;
-        private Siticone.UI.WinForms.SiticoneRoundedDateTimePicker siticoneRoundedDateTimePicker1;
-        private Siticone.UI.WinForms.SiticoneRoundedComboBox siticoneRoundedComboBox1;
+        private Siticone.UI.WinForms.SiticoneRoundedDateTimePicker DateTimePicker1;
+        private Siticone.UI.WinForms.SiticoneRoundedComboBox Patient_combobox;
         private Siticone.UI.WinForms.SiticonePanel siticonePanel1;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox Description_text;
         private Siticone.UI.WinForms.SiticoneButton btn_save;
         private System.Windows.Forms.Label label3;
         private Siticone.UI.WinForms.SiticoneSeparator siticoneSeparator3;
@@ -308,5 +328,6 @@ namespace GetWell
         private System.Windows.Forms.Button btn_Minimize;
         private System.Windows.Forms.Button btn_Exit;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button show_consultations_btn;
     }
 }
