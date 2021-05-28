@@ -118,8 +118,8 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="notConnected2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\notConnected2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="password2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\password2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="instagram" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\instagram.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -214,14 +214,17 @@
   <data name="login-gif-111" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\login-gif-111.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="notificationSmallWhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\notificationSmallWhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Untitled-122" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Untitled-122.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="appbar.check" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\appbar.check.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="appbar.shield" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\appbar.shield.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Untitled-13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Untitled-13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="appbar.map.location" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\appbar.map.location.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -232,6 +235,12 @@
   <data name="appbar.location1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\appbar.location.checkin1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="appbar1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\appbar.eye1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="appbar3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\appbar.close2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="appbar.magnify.add" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\appbar.magnify.add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -241,8 +250,8 @@
   <data name="047-password" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\047-password.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="password2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\password2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Untitled-1223" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Untitled-1223.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Logo2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Logo2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -262,8 +271,14 @@
   <data name="LogoWhiteIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LogoWhiteIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="appbar_alert_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\appbar_alert_small.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="clip-doctor-looks-at-eeg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\clip-doctor-looks-at-eeg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Untitled-111" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Untitled-111.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="design1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\design1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -289,8 +304,8 @@
   <data name="appbar.app" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\appbar.app.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="200" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\200.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="donegif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\donegif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="appbar.city" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\appbar.city.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -331,14 +346,17 @@
   <data name="appbar.settings" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\appbar.settings.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="appbar_alert_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\appbar_alert_small.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="notConnected2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\notConnected2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="appbar.social.linkedin.variant" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\appbar.social.linkedin.variant.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="appbar1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\appbar.eye1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Untitled-12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Untitled-12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="200" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\200.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Image5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Image5.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -355,10 +373,13 @@
   <data name="user2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\user2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="notificationSmallWhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\notificationSmallWhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icons_touch" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons_touch.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="donegif" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\donegif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="LogoInline" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LogoInline.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

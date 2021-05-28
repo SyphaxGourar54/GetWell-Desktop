@@ -10,6 +10,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
 
 
 namespace GetWell
@@ -80,17 +81,17 @@ namespace GetWell
 
         private void btn_Exit_Click(object sender, EventArgs e)
         {
-            Application.Exit(); 
+            Application.Exit();
         }
 
         private void btn_Minimize_Click(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Minimized; 
+            this.WindowState = FormWindowState.Minimized;
         }
 
         private void Form1_Click(object sender, EventArgs e)
         {
-            this.ActiveControl = label2; 
+            this.ActiveControl = label2;
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -99,19 +100,29 @@ namespace GetWell
         }
 
 
+        private void OpenForm()
+        {
+            hf = new Home_Form();
 
+            hf.Show();
+
+            this.Hide();
+        }
         private void btn_login_Click(object sender, EventArgs e)
         {
-            if(txt_UserName.Text != String.Empty && txt_Password.Text!= String.Empty)
+            if (txt_UserName.Text != String.Empty && txt_Password.Text != String.Empty)
             {
                 if (MedecinController.Login(txt_UserName.Text, txt_Password.Text) > 0)
                 {
                     Properties.Settings.Default.UserName = txt_UserName.Text;
                     Properties.Settings.Default.Save();
                     MedecinController.GetDocData();
-                    hf = new Home_Form();
-                    hf.Show();
-                    this.Hide();
+                    Task.Delay(1000);
+                    OpenForm(); 
+                    
+
+
+
                 }
                 else
                 {
@@ -123,15 +134,15 @@ namespace GetWell
             else
             {
                 label_error.Visible = true;
-                label_error.Text = "merci de remplire tout les champs!"; 
+                label_error.Text = "merci de remplire tout les champs!";
             }
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if(txt_UserName.Focused)
+            if (txt_UserName.Focused)
             {
-                txt_UserName.IconLeft = Resources.profileIcon2; 
+                txt_UserName.IconLeft = Resources.profileIcon2;
             }
             else
             {
@@ -155,10 +166,10 @@ namespace GetWell
 
 
 
-            //checkInternetConnection(); 
+            checkInternetConnection();
 
 
-            this.Name = "MainForm"; 
+            this.Name = "MainForm";
 
 
             if (Properties.Settings.Default.UserName != String.Empty)
@@ -171,14 +182,14 @@ namespace GetWell
             else
             {
                 this.WindowState = FormWindowState.Normal;
-                this.ShowInTaskbar = true; 
+                this.ShowInTaskbar = true;
             }
-            
+
         }
 
         private void IsLoggedTimer_Tick(object sender, EventArgs e)
         {
-            if (Properties.Settings.Default.UserName == String.Empty )
+            if (Properties.Settings.Default.UserName == String.Empty)
             {
                 List<Form> openForms = new List<Form>();
 
@@ -206,10 +217,20 @@ namespace GetWell
             {
                 error_frm.ShowDialog();
             }
-            
+
         }
 
         private void label_error_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_close_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void siticonePictureBox1_Click(object sender, EventArgs e)
         {
 
         }

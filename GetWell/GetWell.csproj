@@ -345,6 +345,11 @@
     <None Include="Resources\passwordiconOrange.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Untitled-111.png" />
+    <None Include="Resources\Untitled-122.png" />
+    <None Include="Resources\Untitled-1223.png" />
+    <None Include="Resources\Untitled-13.png" />
+    <None Include="Resources\Untitled-12.png" />
     <None Include="Resources\refresh-gif-8.gif" />
     <None Include="Resources\undraw_Working_oh83.png" />
     <None Include="Resources\undraw_Online_calendar_re_wk3t.png" />
@@ -413,6 +418,8 @@
     <None Include="Resources\appbar.app.png" />
     <None Include="Resources\appbar.close1.png" />
     <None Include="Resources\donegif.gif" />
+    <None Include="Resources\appbar.close2.png" />
+    <None Include="Resources\LogoInline.png" />
     <Content Include="Resources\profileIconOrange.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

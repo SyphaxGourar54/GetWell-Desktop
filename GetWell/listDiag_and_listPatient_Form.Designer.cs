@@ -47,6 +47,7 @@ namespace GetWell
             this.siticoneGradientButton2 = new Siticone.UI.WinForms.SiticoneGradientButton();
             this.dgv_patient = new Guna.UI2.WinForms.Guna2DataGridView();
             this.siticoneElipse1 = new Siticone.UI.WinForms.SiticoneElipse(this.components);
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.guna2GradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_consultation)).BeginInit();
@@ -62,7 +63,7 @@ namespace GetWell
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1077, 37);
+            this.panel1.Size = new System.Drawing.Size(1068, 37);
             this.panel1.TabIndex = 3;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Panel_MouseDown);
             // 
@@ -91,7 +92,7 @@ namespace GetWell
             this.btn_Minimize.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Minimize.FlatAppearance.BorderSize = 0;
             this.btn_Minimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Minimize.Location = new System.Drawing.Point(984, 4);
+            this.btn_Minimize.Location = new System.Drawing.Point(975, 4);
             this.btn_Minimize.Name = "btn_Minimize";
             this.btn_Minimize.Size = new System.Drawing.Size(30, 30);
             this.btn_Minimize.TabIndex = 0;
@@ -106,7 +107,7 @@ namespace GetWell
             this.btn_Exit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Exit.FlatAppearance.BorderSize = 0;
             this.btn_Exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Exit.Location = new System.Drawing.Point(1021, 3);
+            this.btn_Exit.Location = new System.Drawing.Point(1012, 3);
             this.btn_Exit.Name = "btn_Exit";
             this.btn_Exit.Size = new System.Drawing.Size(30, 30);
             this.btn_Exit.TabIndex = 0;
@@ -314,13 +315,22 @@ namespace GetWell
             this.siticoneElipse1.BorderRadius = 30;
             this.siticoneElipse1.TargetControl = this;
             // 
+            // panel2
+            // 
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(0, 1149);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1068, 100);
+            this.panel2.TabIndex = 23;
+            // 
             // listDiag_and_listPatient_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(47)))), ((int)(((byte)(50)))));
-            this.ClientSize = new System.Drawing.Size(1094, 627);
+            this.ClientSize = new System.Drawing.Size(1085, 627);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.guna2GradientPanel2);
             this.Controls.Add(this.guna2GradientPanel1);
             this.Controls.Add(this.panel1);
@@ -351,5 +361,6 @@ namespace GetWell
         private Siticone.UI.WinForms.SiticoneGradientButton siticoneGradientButton2;
         private Guna.UI2.WinForms.Guna2DataGridView dgv_patient;
         private Siticone.UI.WinForms.SiticoneElipse siticoneElipse1;
+        private System.Windows.Forms.Panel panel2;
     }
 }

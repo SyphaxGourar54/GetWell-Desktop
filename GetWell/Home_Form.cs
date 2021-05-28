@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net.NetworkInformation;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
@@ -93,7 +94,7 @@ namespace GetWell
         {
             //Properties.Settings.Default.UserName = String.Empty; 
 
-
+            
             if (Properties.Settings.Default.UserName != String.Empty)
             {
                 label_welcome.Text = "Bienvenu!\nMr " + Medecin.Nom;
@@ -215,6 +216,35 @@ namespace GetWell
             OpenForm(frm, "Cal_Frm");
         }
 
-        
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            label_Time.Text = DateTime.Now.ToString("h:mm:ss tt");
+        }
+
+        private void Home_Form_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if(Properties.Settings.Default.UserName != String.Empty && IsConnectedToInternet() == true)
+            {
+                Application.Exit(); 
+            }
+        }
+
+        public bool IsConnectedToInternet()
+        {
+            try
+            {
+                Ping myPing = new Ping();
+                String host = "google.com";
+                byte[] buffer = new byte[32];
+                int timeout = 1000;
+                PingOptions pingOptions = new PingOptions();
+                PingReply reply = myPing.Send(host, timeout, buffer, pingOptions);
+                return (reply.Status == IPStatus.Success);
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
     }
 }
