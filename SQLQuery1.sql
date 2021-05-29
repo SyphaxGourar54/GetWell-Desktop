@@ -23,16 +23,16 @@ alter table rendezvous add validation bit;
 
 insert into patient values('EE93930', 'Ahmed', 'Mansour', '2000-03-12', '0653228478', 'Ahmed.Ahmed@gmail.com')
 insert into patient values('EE92290', 'Mahmoud', 'Aalian', '1990-04-02', '0698278726', 'Mahmoud15@gmail.com')
-insert into categorie values('la radiologie', 'diagnostiques et thérapeutiques utilisant les rayons X', 2); 
-insert into rendezvous(Date, dateprise, temp_rdv, #Id_patient, #Id_doc, #Id_cat) values('2021-05-12', '2021-05-02', '09:00', 2, 2, 2)
-insert into rendezvous(Date, dateprise, temp_rdv, #Id_patient, #Id_doc, #Id_cat) values('2021-05-12', '2021-05-01', '11:00', 3, 2, 2)
+insert into categorie(Nom, Description, #Id_doc) values('la radiologie', 'diagnostiques et thérapeutiques utilisant les rayons X', 2); 
+insert into rendezvous(Date, dateprise, temp_rdv, #Id_patient, #Id_doc, #Id_cat) values('2021-05-12', '2021-05-02', '09:00', 2, 2, 2);
+insert into rendezvous(Date, dateprise, temp_rdv, #Id_patient, #Id_doc, #Id_cat) values('2021-05-12', '2021-05-01', '11:00', 3, 2, 2);
 
 
-insert into rendezvous(Date, dateprise, temp_rdv, #Id_patient, #Id_doc, #Id_cat) values('2021-05-12', '2021-05-01', '14:00', 3, 2, 2)
-insert into rendezvous(Date, dateprise, temp_rdv, #Id_patient, #Id_doc, #Id_cat) values('2021-05-12', '2021-05-01', '16:00', 3, 2, 2)
+insert into rendezvous(Date, dateprise, temp_rdv, #Id_patient, #Id_doc, #Id_cat) values('2021-05-12', '2021-05-01', '14:00', 3, 2, 2);
+insert into rendezvous(Date, dateprise, temp_rdv, #Id_patient, #Id_doc, #Id_cat) values('2021-05-12', '2021-05-01', '16:00', 3, 2, 2);
 
-insert into rendezvous(Date, dateprise, temp_rdv, #Id_patient, #Id_doc, #Id_cat) values('2021-05-22', '2021-05-21', '15:00', 3, 2, 2)
-insert into rendezvous(Date, dateprise, temp_rdv, #Id_patient, #Id_doc, #Id_cat) values('2021-05-22', '2021-05-21', '14:00', 3, 2, 2)
+insert into rendezvous(Date, dateprise, temp_rdv, #Id_patient, #Id_doc, #Id_cat) values('2021-05-22', '2021-05-21', '15:00', 3, 2, 2);
+insert into rendezvous(Date, dateprise, temp_rdv, #Id_patient, #Id_doc, #Id_cat) values('2021-05-22', '2021-05-21', '14:00', 3, 2, 2);
 
 
 

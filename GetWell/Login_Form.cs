@@ -140,6 +140,7 @@ namespace GetWell
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+            
             if (txt_UserName.Focused)
             {
                 txt_UserName.IconLeft = Resources.profileIcon2;
@@ -161,8 +162,9 @@ namespace GetWell
 
         private void Login_Form_Load(object sender, EventArgs e)
         {
-            //Properties.Settings.Default.UserName = String.Empty;
+            //Properties.Settings.Default.UserName = "Test1";  //String.Empty;
             //Properties.Settings.Default.Save();
+            //MessageBox.Show(Properties.Settings.Default.UserName); 
 
 
 
@@ -176,8 +178,10 @@ namespace GetWell
             {
                 this.WindowState = FormWindowState.Minimized;
                 this.ShowInTaskbar = false;
-                MedecinController.GetDocData();
-                hf.Show();
+                if (MedecinController.GetDocData())
+                    hf.Show();
+                else
+                    Properties.Settings.Default.UserName = String.Empty;
             }
             else
             {
@@ -187,8 +191,12 @@ namespace GetWell
 
         }
 
+        
         private void IsLoggedTimer_Tick(object sender, EventArgs e)
         {
+            
+            checkInternetConnection();
+            
             if (Properties.Settings.Default.UserName == String.Empty)
             {
                 List<Form> openForms = new List<Form>();
@@ -198,7 +206,7 @@ namespace GetWell
 
                 foreach (Form f in openForms)
                 {
-                    if (f.Name != "MainForm" && f.Name != "error_frm")
+                    if (f != this && f.Name != "error_frm")
                         f.Close();
                 }
 
@@ -208,14 +216,31 @@ namespace GetWell
 
         }
 
+        FormCollection fc = Application.OpenForms;
         public void checkInternetConnection()
         {
-            ConnectionError_Form error_frm = new ConnectionError_Form();
-            error_frm.Name = "error_frm";
-
             if (!IsConnectedToInternet())
             {
-                error_frm.ShowDialog();
+               
+                bool bFormNameOpen = false;
+                foreach (Form form in fc)
+                {
+                    if (form.Name == "error_frm")
+                    {
+                        bFormNameOpen = true;
+                    }
+                }
+
+                if (!bFormNameOpen)
+                {
+                    ConnectionError_Form error_frm = new ConnectionError_Form();
+                    error_frm.Name = "error_frm";
+                    error_frm.ShowDialog();
+                    error_frm.TopMost = true;
+                         
+                    
+                }
+                
             }
 
         }

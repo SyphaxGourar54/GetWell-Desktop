@@ -12,7 +12,7 @@ namespace GetWell
 {
     public static class RendezvousController
     {
-        public static readonly string ConnectionString = ConfigurationManager.ConnectionStrings["conString"].ConnectionString;
+        public static readonly string ConnectionString = ConfigurationManager.ConnectionStrings["conStringHosted"].ConnectionString;
         public static List<Rendezvous> rvList; 
 
         public static List<Rendezvous> GetNonValidatedRvs(int Id)

@@ -90,6 +90,9 @@ namespace GetWell
 
         }
 
+
+        int[] numberOfNewRv = new int[2];
+
         private void Home_Form_Load(object sender, EventArgs e)
         {
             //Properties.Settings.Default.UserName = String.Empty; 
@@ -98,8 +101,18 @@ namespace GetWell
             if (Properties.Settings.Default.UserName != String.Empty)
             {
                 label_welcome.Text = "Bienvenu!\nMr " + Medecin.Nom;
-                label_NewRV.Text = MedecinController.NewRV(Medecin.Id_doc).ToString(); 
-
+                if(MedecinController.NewRV(Medecin.Id_doc) != -1)
+                {
+                    label_NewRV.Text = MedecinController.NewRV(Medecin.Id_doc).ToString();
+                    numberOfNewRv[0] = 0;
+                    numberOfNewRv[1] = int.Parse(label_NewRV.Text);
+                }
+                else
+                {
+                    label_NewRV.Text = "!"; 
+                }
+                
+                
             }
             else
             {
@@ -146,11 +159,17 @@ namespace GetWell
             Application.Exit(); 
         }
 
+        int newrv; 
         private void CheckForNewRV_Tick(object sender, EventArgs e)
         {
             if (Properties.Settings.Default.UserName != String.Empty)
             {
-                label_NewRV.Text = MedecinController.NewRV(Medecin.Id_doc).ToString();
+                newrv = MedecinController.NewRV(Medecin.Id_doc); 
+                if (newrv != -1)
+                {
+                    label_NewRV.Text = newrv.ToString();
+                }
+                
             }
 
             if(dataUpdated)
@@ -161,14 +180,23 @@ namespace GetWell
             }
         }
 
+        
         private void label_NewRV_TextChanged(object sender, EventArgs e)
         {
-            if(Properties.Settings.Default.ShowNotification)
-            {
-                notification.Popup();
+            if(label_NewRV.Text != "!")
+            { 
+                if(Properties.Settings.Default.ShowNotification )
+                {
+                 
+                    numberOfNewRv[0] = numberOfNewRv[1];
+                    numberOfNewRv[1] = int.Parse(label_NewRV.Text);
+                
+                    if(numberOfNewRv[1] > numberOfNewRv[0])
+                        notification.Popup();
+                
+                }
+                Newrv = true;
             }
-
-            Newrv = true; 
 
 
         }

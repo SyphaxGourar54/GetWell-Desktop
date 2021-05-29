@@ -420,6 +420,8 @@
     <None Include="Resources\donegif.gif" />
     <None Include="Resources\appbar.close2.png" />
     <None Include="Resources\LogoInline.png" />
+    <None Include="Resources\appbar.magnify1.png" />
+    <None Include="Resources\icons8-fingerprint-error-100.png" />
     <Content Include="Resources\profileIconOrange.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

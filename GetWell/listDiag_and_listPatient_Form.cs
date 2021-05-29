@@ -61,9 +61,67 @@ namespace GetWell
             dgv_consultation.DataSource = DiagnostiqueController.ConsultationsList();
             dgv_consultation.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.DisplayedCells;
             dgv_consultation.Columns["Description"].DefaultCellStyle.WrapMode = DataGridViewTriState.True;
-
+            NoResult_lbl1.Visible = false;
+            NoResult_lbl2.Visible = false; 
             
 
+        }
+
+        
+
+        private void siticoneGradientButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void search_txtbox_TextChanged(object sender, EventArgs e)
+        {
+            if(search_txtbox.Text != "")
+            {
+                if(DiagnostiqueController.DiagRecherche(search_txtbox.Text).Rows.Count > 0)
+                { 
+                    dgv_consultation.DataSource = DiagnostiqueController.DiagRecherche(search_txtbox.Text); 
+                    dgv_consultation.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.DisplayedCells;
+                    dgv_consultation.Columns["Description"].DefaultCellStyle.WrapMode = DataGridViewTriState.True;
+                }
+                else
+                {
+                    dgv_consultation.DataSource = null; 
+                    NoResult_lbl1.Visible = true; 
+                }
+            }
+            else
+            {
+                RemplireTables(); 
+            }
+        }
+
+      
+
+        private void search_textbox2_TextChanged(object sender, EventArgs e)
+        {
+
+            if (search_textbox2.Text != "")
+            {
+                if (DiagnostiqueController.PatientRecherche(search_textbox2.Text).Rows.Count > 0)
+                {
+                    dgv_patient.DataSource = DiagnostiqueController.PatientRecherche(search_textbox2.Text);
+                    dgv_patient.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.DisplayedCells;
+                    dgv_patient.Columns["Id_Patient"].Width = 50;
+                    dgv_patient.Columns["Id_Patient"].HeaderText = "Id";
+                    dgv_patient.Columns["Email"].Width = 400;
+                }
+                else
+                {
+                    dgv_patient.DataSource = null;
+                    NoResult_lbl2.Visible = true;
+                }
+                
+            }
+            else
+            {
+                RemplireTables();
+            }
         }
     }
 }

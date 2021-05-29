@@ -13,6 +13,5 @@ namespace GetWell
         public Nullable<System.DateTime> DatePrise { get; set; }
         public Nullable<System.TimeSpan> Temp { get; set; }
         public string patient { get; set; }
-        public string Categorie { get; set; }
     }
 }

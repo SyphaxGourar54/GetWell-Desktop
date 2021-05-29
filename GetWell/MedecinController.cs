@@ -12,7 +12,7 @@ namespace GetWell
 {
     public static class MedecinController
     {
-        public static readonly string ConnectionString = ConfigurationManager.ConnectionStrings["conString"].ConnectionString; 
+        public static readonly string ConnectionString = ConfigurationManager.ConnectionStrings["conStringHosted"].ConnectionString; 
 
 
 
@@ -41,44 +41,58 @@ namespace GetWell
         }
 
 
-        public static void GetDocData()
+        public static bool GetDocData()
         {
             var userName = Properties.Settings.Default.UserName;
             if (userName != String.Empty)
-            { 
-                using (var connection = new SqlConnection(ConnectionString))
+            {
+                try
                 {
-                    var sql = "select * from medecin where Username = @Username";
 
-                    if (connection.State != ConnectionState.Closed)
-                        connection.Open();
 
-                    var Med = connection.QuerySingle(sql, new { Username = userName });
-
-                    connection.Close();
-                    if (Med != null)
+                    using (var connection = new SqlConnection(ConnectionString))
                     {
-                        Medecin.Id_doc = Med.Id_doc;
-                        Properties.Settings.Default.DocId = Med.Id_doc;
+                        var sql = "select * from medecin where Username = @Username";
 
-                        Medecin.Username = Med.Username;
-                        Medecin.Nom = Med.Nom;
-                        Medecin.Prenom = Med.Prenom;
-                        Medecin.Tel = Med.Tel;
-                        Medecin.Image = Med.Image;
-                        Medecin.Email = Med.Email;
-                        Medecin.Nbrpatients = Med.Nbrpatients;
-                        Medecin.ville = Med.ville;
-                        Medecin.Adresse = Med.Adresse;
-                        Medecin.Facebook = Med.Facebook;
-                        Medecin.Whatsapp = Med.Whatsapp;
-                        Medecin.Instagram = Med.Instagram;
-                        Medecin.Twitter = Med.Twitter;
-                        Medecin.Linkeden = Med.Linkeden;
-                        Medecin.latitude = Med.latitude;
-                        Medecin.longitude = Med.longitude;
+                        if (connection.State != ConnectionState.Closed)
+                            connection.Open();
+
+                        var Med = connection.QuerySingle(sql, new { Username = userName });
+
+                        connection.Close();
+                        if (Med != null)
+                        {
+                            Medecin.Id_doc = Med.Id_doc;
+                            Properties.Settings.Default.DocId = Med.Id_doc;
+
+                            Medecin.Username = Med.Username;
+                            Medecin.Nom = Med.Nom;
+                            Medecin.Prenom = Med.Prenom;
+                            Medecin.Tel = Med.Tel;
+                            Medecin.Image = Med.Image;
+                            Medecin.Email = Med.Email;
+                            Medecin.Nbrpatients = Med.Nbrpatients;
+                            Medecin.ville = Med.ville;
+                            Medecin.Adresse = Med.Adresse;
+                            Medecin.Facebook = Med.Facebook;
+                            Medecin.Whatsapp = Med.Whatsapp;
+                            Medecin.Instagram = Med.Instagram;
+                            Medecin.Twitter = Med.Twitter;
+                            Medecin.Linkeden = Med.Linkeden;
+                            Medecin.latitude = Med.latitude;
+                            Medecin.longitude = Med.longitude;
+                        }
                     }
+                    return true; 
                 }
+                catch (Exception)
+                {
+                    return false; 
+                }
+            }
+            else
+            {
+                return false; 
             }
         }
 
@@ -87,13 +101,20 @@ namespace GetWell
             int result = 0; 
             using (var connection = new SqlConnection(ConnectionString))
             {
-                if (connection.State != ConnectionState.Closed)
-                    connection.Open();
+                try
+                { 
+                    if (connection.State != ConnectionState.Closed)
+                        connection.Open();
 
-                result = (int)connection.ExecuteScalar<int>("NewRv", new { Id_Doc = id}, commandType: CommandType.StoredProcedure);
-                connection.Close();
+                    result = (int)connection.ExecuteScalar<int>("NewRv", new { Id_Doc = id}, commandType: CommandType.StoredProcedure);
+                    connection.Close();
 
-                return result; 
+                    return result;
+                }
+                catch
+                {
+                    return -1; 
+                }
             }
         }
 

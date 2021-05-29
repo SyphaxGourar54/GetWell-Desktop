@@ -12,7 +12,7 @@ namespace GetWell
 {
     public static class DiagnostiqueController
     {
-        public static readonly string ConnectionString = ConfigurationManager.ConnectionStrings["conString"].ConnectionString;
+        public static readonly string ConnectionString = ConfigurationManager.ConnectionStrings["conStringHosted"].ConnectionString;
         
 
         public static void AddDiag(Diagnostique diag)
@@ -73,5 +73,54 @@ namespace GetWell
             }
         }
 
+        public static DataTable PatientRecherche(string nom)
+        {
+            using (SqlConnection conn = new SqlConnection(DiagnostiqueController.ConnectionString))
+            {
+                DataTable dt = new DataTable();
+                try
+                {
+                    string query = "patientSearch";
+                    SqlCommand cmd = new SqlCommand(query, conn);
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("@nom", nom); 
+                    conn.Open();
+                    SqlDataReader dr = cmd.ExecuteReader();
+                    dt.Load(dr);
+
+                }
+                catch (Exception)
+                {
+                }
+
+                return dt;
+            }
+        }
+
+
+        public static DataTable DiagRecherche(string nom)
+        {
+            using (SqlConnection conn = new SqlConnection(DiagnostiqueController.ConnectionString))
+            {
+                DataTable dt = new DataTable();
+                try
+                {
+                    string query = "diagnostiqueSearch";
+                    SqlCommand cmd = new SqlCommand(query, conn);
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("@nom", nom);
+                    cmd.Parameters.AddWithValue("@Id_Doc", Medecin.Id_doc); 
+                    conn.Open();
+                    SqlDataReader dr = cmd.ExecuteReader();
+                    dt.Load(dr);
+
+                }
+                catch (Exception)
+                {
+                }
+
+                return dt;
+            }
+        }
     }
 }

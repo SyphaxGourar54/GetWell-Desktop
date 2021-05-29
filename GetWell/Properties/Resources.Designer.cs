@@ -503,6 +503,16 @@ namespace GetWell.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap appbar4 {
+            get {
+                object obj = ResourceManager.GetObject("appbar4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap clip_doctor_looks_at_eeg {
             get {
                 object obj = ResourceManager.GetObject("clip-doctor-looks-at-eeg", resourceCulture);
@@ -536,6 +546,16 @@ namespace GetWell.Properties {
         internal static System.Drawing.Bitmap icons_touch {
             get {
                 object obj = ResourceManager.GetObject("icons_touch", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_fingerprint_error_100 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-fingerprint-error-100", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -102,6 +102,7 @@ namespace GetWell
             { 
                 MedecinController.UpdateData(Medecin.Id_doc, txt_username.Text, text_nom.Text, txt_prenom.Text, txt_tel.Text, txt_email.Text, txt_ville.Text, txt_adresse.Text, txt_facebook.Text, txt_whatsapp.Text, txt_instagram.Text, txt_twitter.Text, txt_linkeden.Text);
                 MedecinController.GetDocData();
+                Properties.Settings.Default.UserName = txt_username.Text; 
                 Home_Form.dataUpdated = true;
                 OperationDone_Form op = new OperationDone_Form();
                 op.ShowDialog();

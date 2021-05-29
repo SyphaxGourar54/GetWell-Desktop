@@ -95,6 +95,7 @@ namespace GetWell
             // IsLoggedTimer
             // 
             this.IsLoggedTimer.Enabled = true;
+            this.IsLoggedTimer.Interval = 5000;
             this.IsLoggedTimer.Tick += new System.EventHandler(this.IsLoggedTimer_Tick);
             // 
             // siticoneButton1
