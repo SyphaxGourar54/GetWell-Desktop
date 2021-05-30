@@ -149,7 +149,7 @@ namespace GetWell
             //notification.Image = Resources.notificationSmall2;
             //notification.TitleText = "nouveau rendez-vous";
             //notification.ContentText = "vous avez un nouveau rendez-vous, vous peuvez le valider maintenent";
-            //notification.Popup();
+            notification.Popup();
         }
 
         private void siticoneButton6_Click(object sender, EventArgs e)

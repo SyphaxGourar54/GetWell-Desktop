@@ -99,6 +99,19 @@ end
 alter table diagnostique alter column Description varchar(300); 
 
 
+create proc patientSearch @nom varchar(30)
+as 
+begin
+select * from patient where Nom like (@nom + '%') or Prenom like (@nom + '%') or (Nom + ' ' + Prenom) like (@nom + '%') or ( Prenom + ' ' + Nom) like (@nom + '%')
+end
 
+create proc diagnostiqueSearch @nom varchar(30), @Id_Doc int
+as 
+begin
+select diagnostique.Date_diag, patient.Nom + ' ' + patient.Prenom as 'Patient', diagnostique.Description from diagnostique inner join patient on patient.Id_patient = diagnostique.#Id_Patient where diagnostique.#Id_doc = @Id_Doc and (patient.Nom like (@nom + '%') or patient.Prenom like (@nom + '%') or (patient.Nom + ' ' + patient.Prenom) like (@nom + '%') or ( patient.Prenom + ' ' + patient.Nom) like (@nom + '%'))
+end
+
+
+----------------------------------------
 
 

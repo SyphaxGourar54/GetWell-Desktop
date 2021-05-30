@@ -79,6 +79,7 @@ namespace GetWell
             this.map.Size = new System.Drawing.Size(897, 538);
             this.map.TabIndex = 1;
             this.map.Zoom = 0D;
+            this.map.Load += new System.EventHandler(this.map_Load);
             this.map.Click += new System.EventHandler(this.map_Click);
             this.map.MouseClick += new System.Windows.Forms.MouseEventHandler(this.map_MouseClick);
             // 

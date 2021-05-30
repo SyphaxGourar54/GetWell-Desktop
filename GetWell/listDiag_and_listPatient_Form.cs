@@ -53,16 +53,22 @@ namespace GetWell
 
         public void RemplireTables()
         {
-            dgv_patient.DataSource = DiagnostiqueController.PatientsList();
-            dgv_patient.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.DisplayedCells;
-            dgv_patient.Columns["Id_Patient"].Width = 50;
-            dgv_patient.Columns["Id_Patient"].HeaderText = "Id"; 
-            dgv_patient.Columns["Email"].Width = 400; 
-            dgv_consultation.DataSource = DiagnostiqueController.ConsultationsList();
-            dgv_consultation.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.DisplayedCells;
-            dgv_consultation.Columns["Description"].DefaultCellStyle.WrapMode = DataGridViewTriState.True;
-            NoResult_lbl1.Visible = false;
-            NoResult_lbl2.Visible = false; 
+            if (DiagnostiqueController.PatientsList().Rows.Count > 0)
+            {
+                dgv_patient.DataSource = DiagnostiqueController.PatientsList();
+                dgv_patient.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.DisplayedCells;
+                dgv_patient.Columns["Id_Patient"].Width = 50;
+                dgv_patient.Columns["Id_Patient"].HeaderText = "Id";
+                dgv_patient.Columns["Email"].Width = 400;
+            }
+            if (DiagnostiqueController.ConsultationsList().Rows.Count > 0)
+            {
+                dgv_consultation.DataSource = DiagnostiqueController.ConsultationsList();
+                dgv_consultation.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.DisplayedCells;
+                dgv_consultation.Columns["Description"].DefaultCellStyle.WrapMode = DataGridViewTriState.True;
+                NoResult_lbl1.Visible = false;
+                NoResult_lbl2.Visible = false;
+            }
             
 
         }

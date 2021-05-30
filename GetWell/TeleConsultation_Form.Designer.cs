@@ -30,155 +30,38 @@ namespace GetWell
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.siticoneElipse1 = new Siticone.UI.WinForms.SiticoneElipse(this.components);
-            this.siticoneGradientButton1 = new Siticone.UI.WinForms.SiticoneGradientButton();
-            this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.siticoneRoundedTextBox1 = new Siticone.UI.WinForms.SiticoneRoundedTextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.siticoneGradientButton1 = new Siticone.UI.WinForms.SiticoneGradientButton();
+            this.dgv_teleconsultation = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.siticonePanel1 = new Siticone.UI.WinForms.SiticonePanel();
+            this.Response_text = new System.Windows.Forms.RichTextBox();
+            this.Email_textbox = new Siticone.UI.WinForms.SiticoneRoundedTextBox();
+            this.patient_TextBox = new Siticone.UI.WinForms.SiticoneRoundedTextBox();
+            this.siticoneButton1 = new Siticone.UI.WinForms.SiticoneButton();
+            this.NoResult_lbl1 = new System.Windows.Forms.Label();
+            this.search_txtbox = new Siticone.UI.WinForms.SiticoneRoundedTextBox();
             this.btn_Minimize = new System.Windows.Forms.Button();
             this.btn_Exit = new System.Windows.Forms.Button();
             this.siticoneButton4 = new Siticone.UI.WinForms.SiticoneButton();
-            this.guna2GradientPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.siticoneSeparator2 = new Siticone.UI.WinForms.SiticoneSeparator();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            this.guna2GradientPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_teleconsultation)).BeginInit();
+            this.siticonePanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // siticoneElipse1
             // 
             this.siticoneElipse1.BorderRadius = 30;
             this.siticoneElipse1.TargetControl = this;
-            // 
-            // siticoneGradientButton1
-            // 
-            this.siticoneGradientButton1.BackColor = System.Drawing.Color.Transparent;
-            this.siticoneGradientButton1.BorderRadius = 10;
-            this.siticoneGradientButton1.CheckedState.Parent = this.siticoneGradientButton1;
-            this.siticoneGradientButton1.CustomImages.Parent = this.siticoneGradientButton1;
-            this.siticoneGradientButton1.FillColor = System.Drawing.Color.Transparent;
-            this.siticoneGradientButton1.FillColor2 = System.Drawing.Color.Transparent;
-            this.siticoneGradientButton1.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Bold);
-            this.siticoneGradientButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.siticoneGradientButton1.HoveredState.Parent = this.siticoneGradientButton1;
-            this.siticoneGradientButton1.Location = new System.Drawing.Point(19, 9);
-            this.siticoneGradientButton1.Name = "siticoneGradientButton1";
-            this.siticoneGradientButton1.ShadowDecoration.Parent = this.siticoneGradientButton1;
-            this.siticoneGradientButton1.Size = new System.Drawing.Size(763, 45);
-            this.siticoneGradientButton1.TabIndex = 4;
-            this.siticoneGradientButton1.Text = "Liste de Tele-Consultations";
-            // 
-            // guna2GradientPanel1
-            // 
-            this.guna2GradientPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2GradientPanel1.BorderRadius = 20;
-            this.guna2GradientPanel1.Controls.Add(this.siticoneGradientButton1);
-            this.guna2GradientPanel1.Controls.Add(this.guna2DataGridView1);
-            this.guna2GradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(230)))), ((int)(((byte)(251)))));
-            this.guna2GradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(230)))), ((int)(((byte)(251)))));
-            this.guna2GradientPanel1.Location = new System.Drawing.Point(35, 108);
-            this.guna2GradientPanel1.Name = "guna2GradientPanel1";
-            this.guna2GradientPanel1.ShadowDecoration.Parent = this.guna2GradientPanel1;
-            this.guna2GradientPanel1.Size = new System.Drawing.Size(803, 537);
-            this.guna2GradientPanel1.TabIndex = 21;
-            // 
-            // guna2DataGridView1
-            // 
-            this.guna2DataGridView1.AllowUserToAddRows = false;
-            this.guna2DataGridView1.AllowUserToDeleteRows = false;
-            this.guna2DataGridView1.AllowUserToResizeColumns = false;
-            this.guna2DataGridView1.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(229)))), ((int)(((byte)(251)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.guna2DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.guna2DataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(230)))), ((int)(((byte)(251)))));
-            this.guna2DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.guna2DataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.guna2DataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(243)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.guna2DataGridView1.ColumnHeadersHeight = 40;
-            this.guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(237)))), ((int)(((byte)(252)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(197)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
-            this.guna2DataGridView1.EnableHeadersVisualStyles = false;
-            this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(230)))), ((int)(((byte)(251)))));
-            this.guna2DataGridView1.Location = new System.Drawing.Point(19, 63);
-            this.guna2DataGridView1.MultiSelect = false;
-            this.guna2DataGridView1.Name = "guna2DataGridView1";
-            this.guna2DataGridView1.ReadOnly = true;
-            this.guna2DataGridView1.RowHeadersVisible = false;
-            this.guna2DataGridView1.RowTemplate.Height = 40;
-            this.guna2DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(763, 458);
-            this.guna2DataGridView1.TabIndex = 2;
-            this.guna2DataGridView1.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.LightBlue;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(229)))), ((int)(((byte)(251)))));
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(230)))), ((int)(((byte)(251)))));
-            this.guna2DataGridView1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(230)))), ((int)(((byte)(251)))));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(243)))));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 40;
-            this.guna2DataGridView1.ThemeStyle.ReadOnly = true;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(237)))), ((int)(((byte)(252)))));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F);
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.Height = 40;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(197)))), ((int)(((byte)(247)))));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            // 
-            // siticoneRoundedTextBox1
-            // 
-            this.siticoneRoundedTextBox1.Animated = false;
-            this.siticoneRoundedTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.siticoneRoundedTextBox1.DefaultText = "";
-            this.siticoneRoundedTextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.siticoneRoundedTextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.siticoneRoundedTextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.siticoneRoundedTextBox1.DisabledState.Parent = this.siticoneRoundedTextBox1;
-            this.siticoneRoundedTextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.siticoneRoundedTextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.siticoneRoundedTextBox1.FocusedState.Parent = this.siticoneRoundedTextBox1;
-            this.siticoneRoundedTextBox1.Font = new System.Drawing.Font("Consolas", 10F, System.Drawing.FontStyle.Bold);
-            this.siticoneRoundedTextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.siticoneRoundedTextBox1.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.siticoneRoundedTextBox1.HoveredState.Parent = this.siticoneRoundedTextBox1;
-            this.siticoneRoundedTextBox1.IconLeftSize = new System.Drawing.Size(35, 35);
-            this.siticoneRoundedTextBox1.IconRight = global::GetWell.Properties.Resources.appbar_magnify;
-            this.siticoneRoundedTextBox1.IconRightSize = new System.Drawing.Size(40, 40);
-            this.siticoneRoundedTextBox1.Location = new System.Drawing.Point(596, 65);
-            this.siticoneRoundedTextBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.siticoneRoundedTextBox1.Name = "siticoneRoundedTextBox1";
-            this.siticoneRoundedTextBox1.PasswordChar = '\0';
-            this.siticoneRoundedTextBox1.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.siticoneRoundedTextBox1.PlaceholderText = "Entrer Le nom de Patient";
-            this.siticoneRoundedTextBox1.SelectedText = "";
-            this.siticoneRoundedTextBox1.ShadowDecoration.Parent = this.siticoneRoundedTextBox1;
-            this.siticoneRoundedTextBox1.Size = new System.Drawing.Size(242, 36);
-            this.siticoneRoundedTextBox1.TabIndex = 19;
             // 
             // panel1
             // 
@@ -188,9 +71,270 @@ namespace GetWell
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(873, 37);
+            this.panel1.Size = new System.Drawing.Size(880, 37);
             this.panel1.TabIndex = 22;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Panel_MouseDown);
+            // 
+            // guna2GradientPanel1
+            // 
+            this.guna2GradientPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2GradientPanel1.BorderRadius = 20;
+            this.guna2GradientPanel1.Controls.Add(this.NoResult_lbl1);
+            this.guna2GradientPanel1.Controls.Add(this.search_txtbox);
+            this.guna2GradientPanel1.Controls.Add(this.siticoneGradientButton1);
+            this.guna2GradientPanel1.Controls.Add(this.dgv_teleconsultation);
+            this.guna2GradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(230)))), ((int)(((byte)(251)))));
+            this.guna2GradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(230)))), ((int)(((byte)(251)))));
+            this.guna2GradientPanel1.Location = new System.Drawing.Point(17, 52);
+            this.guna2GradientPanel1.Name = "guna2GradientPanel1";
+            this.guna2GradientPanel1.ShadowDecoration.Parent = this.guna2GradientPanel1;
+            this.guna2GradientPanel1.Size = new System.Drawing.Size(844, 478);
+            this.guna2GradientPanel1.TabIndex = 23;
+            // 
+            // siticoneGradientButton1
+            // 
+            this.siticoneGradientButton1.BackColor = System.Drawing.Color.Transparent;
+            this.siticoneGradientButton1.BorderRadius = 10;
+            this.siticoneGradientButton1.CheckedState.Parent = this.siticoneGradientButton1;
+            this.siticoneGradientButton1.CustomImages.Parent = this.siticoneGradientButton1;
+            this.siticoneGradientButton1.FillColor = System.Drawing.Color.Transparent;
+            this.siticoneGradientButton1.FillColor2 = System.Drawing.Color.Transparent;
+            this.siticoneGradientButton1.Font = new System.Drawing.Font("Consolas", 14F, System.Drawing.FontStyle.Bold);
+            this.siticoneGradientButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.siticoneGradientButton1.HoveredState.FillColor = System.Drawing.Color.Transparent;
+            this.siticoneGradientButton1.HoveredState.FillColor2 = System.Drawing.Color.Transparent;
+            this.siticoneGradientButton1.HoveredState.Parent = this.siticoneGradientButton1;
+            this.siticoneGradientButton1.Location = new System.Drawing.Point(12, 9);
+            this.siticoneGradientButton1.Name = "siticoneGradientButton1";
+            this.siticoneGradientButton1.ShadowDecoration.Parent = this.siticoneGradientButton1;
+            this.siticoneGradientButton1.Size = new System.Drawing.Size(816, 45);
+            this.siticoneGradientButton1.TabIndex = 4;
+            this.siticoneGradientButton1.Text = "Liste de Tele-Consultations";
+            this.siticoneGradientButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.siticoneGradientButton1.UseTransparentBackground = true;
+            // 
+            // dgv_teleconsultation
+            // 
+            this.dgv_teleconsultation.AllowUserToAddRows = false;
+            this.dgv_teleconsultation.AllowUserToDeleteRows = false;
+            this.dgv_teleconsultation.AllowUserToResizeColumns = false;
+            this.dgv_teleconsultation.AllowUserToResizeRows = false;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(229)))), ((int)(((byte)(251)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgv_teleconsultation.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.dgv_teleconsultation.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv_teleconsultation.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(230)))), ((int)(((byte)(251)))));
+            this.dgv_teleconsultation.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgv_teleconsultation.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgv_teleconsultation.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(243)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_teleconsultation.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            this.dgv_teleconsultation.ColumnHeadersHeight = 40;
+            this.dgv_teleconsultation.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(237)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(197)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_teleconsultation.DefaultCellStyle = dataGridViewCellStyle6;
+            this.dgv_teleconsultation.EnableHeadersVisualStyles = false;
+            this.dgv_teleconsultation.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(230)))), ((int)(((byte)(251)))));
+            this.dgv_teleconsultation.Location = new System.Drawing.Point(17, 63);
+            this.dgv_teleconsultation.MultiSelect = false;
+            this.dgv_teleconsultation.Name = "dgv_teleconsultation";
+            this.dgv_teleconsultation.ReadOnly = true;
+            this.dgv_teleconsultation.RowHeadersVisible = false;
+            this.dgv_teleconsultation.RowTemplate.Height = 40;
+            this.dgv_teleconsultation.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgv_teleconsultation.Size = new System.Drawing.Size(809, 393);
+            this.dgv_teleconsultation.TabIndex = 2;
+            this.dgv_teleconsultation.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.LightBlue;
+            this.dgv_teleconsultation.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(229)))), ((int)(((byte)(251)))));
+            this.dgv_teleconsultation.ThemeStyle.AlternatingRowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgv_teleconsultation.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.dgv_teleconsultation.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.dgv_teleconsultation.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.dgv_teleconsultation.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(230)))), ((int)(((byte)(251)))));
+            this.dgv_teleconsultation.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(230)))), ((int)(((byte)(251)))));
+            this.dgv_teleconsultation.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(243)))));
+            this.dgv_teleconsultation.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgv_teleconsultation.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgv_teleconsultation.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.dgv_teleconsultation.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dgv_teleconsultation.ThemeStyle.HeaderStyle.Height = 40;
+            this.dgv_teleconsultation.ThemeStyle.ReadOnly = true;
+            this.dgv_teleconsultation.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(237)))), ((int)(((byte)(252)))));
+            this.dgv_teleconsultation.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgv_teleconsultation.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.dgv_teleconsultation.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.dgv_teleconsultation.ThemeStyle.RowsStyle.Height = 40;
+            this.dgv_teleconsultation.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(197)))), ((int)(((byte)(247)))));
+            this.dgv_teleconsultation.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgv_teleconsultation.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_teleconsultation_CellContentClick);
+            this.dgv_teleconsultation.SelectionChanged += new System.EventHandler(this.dgv_teleconsultation_SelectionChanged);
+            this.dgv_teleconsultation.Click += new System.EventHandler(this.dgv_teleconsultation_Click);
+            // 
+            // siticonePanel1
+            // 
+            this.siticonePanel1.BackColor = System.Drawing.Color.Transparent;
+            this.siticonePanel1.BorderRadius = 20;
+            this.siticonePanel1.Controls.Add(this.label1);
+            this.siticonePanel1.Controls.Add(this.siticoneButton1);
+            this.siticonePanel1.Controls.Add(this.Response_text);
+            this.siticonePanel1.FillColor = System.Drawing.Color.WhiteSmoke;
+            this.siticonePanel1.Location = new System.Drawing.Point(344, 590);
+            this.siticonePanel1.Name = "siticonePanel1";
+            this.siticonePanel1.ShadowDecoration.Parent = this.siticonePanel1;
+            this.siticonePanel1.Size = new System.Drawing.Size(517, 130);
+            this.siticonePanel1.TabIndex = 24;
+            this.siticonePanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.siticonePanel1_Paint);
+            // 
+            // Response_text
+            // 
+            this.Response_text.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.Response_text.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Response_text.Font = new System.Drawing.Font("Segoe Script", 10F);
+            this.Response_text.Location = new System.Drawing.Point(35, 26);
+            this.Response_text.Name = "Response_text";
+            this.Response_text.Size = new System.Drawing.Size(425, 95);
+            this.Response_text.TabIndex = 0;
+            this.Response_text.Text = "";
+            this.Response_text.TextChanged += new System.EventHandler(this.Description_text_TextChanged);
+            // 
+            // Email_textbox
+            // 
+            this.Email_textbox.Animated = false;
+            this.Email_textbox.BorderThickness = 0;
+            this.Email_textbox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.Email_textbox.DefaultText = "";
+            this.Email_textbox.DisabledState.BorderColor = System.Drawing.Color.Transparent;
+            this.Email_textbox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.Email_textbox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.Email_textbox.DisabledState.Parent = this.Email_textbox;
+            this.Email_textbox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.Email_textbox.Enabled = false;
+            this.Email_textbox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.Email_textbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.Email_textbox.FocusedState.Parent = this.Email_textbox;
+            this.Email_textbox.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.Email_textbox.ForeColor = System.Drawing.Color.Silver;
+            this.Email_textbox.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.Email_textbox.HoveredState.Parent = this.Email_textbox;
+            this.Email_textbox.IconLeft = global::GetWell.Properties.Resources.appbar_email2;
+            this.Email_textbox.IconLeftSize = new System.Drawing.Size(40, 40);
+            this.Email_textbox.Location = new System.Drawing.Point(17, 668);
+            this.Email_textbox.Name = "Email_textbox";
+            this.Email_textbox.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.Email_textbox.PasswordChar = '\0';
+            this.Email_textbox.PlaceholderText = "Email";
+            this.Email_textbox.SelectedText = "";
+            this.Email_textbox.ShadowDecoration.Parent = this.Email_textbox;
+            this.Email_textbox.Size = new System.Drawing.Size(299, 43);
+            this.Email_textbox.TabIndex = 25;
+            // 
+            // patient_TextBox
+            // 
+            this.patient_TextBox.Animated = false;
+            this.patient_TextBox.BorderThickness = 0;
+            this.patient_TextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.patient_TextBox.DefaultText = "";
+            this.patient_TextBox.DisabledState.BorderColor = System.Drawing.Color.Transparent;
+            this.patient_TextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.patient_TextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.patient_TextBox.DisabledState.Parent = this.patient_TextBox;
+            this.patient_TextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.patient_TextBox.Enabled = false;
+            this.patient_TextBox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.patient_TextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.patient_TextBox.FocusedState.Parent = this.patient_TextBox;
+            this.patient_TextBox.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.patient_TextBox.ForeColor = System.Drawing.Color.Silver;
+            this.patient_TextBox.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.patient_TextBox.HoveredState.Parent = this.patient_TextBox;
+            this.patient_TextBox.IconLeft = global::GetWell.Properties.Resources.user22;
+            this.patient_TextBox.IconLeftOffset = new System.Drawing.Point(12, 0);
+            this.patient_TextBox.Location = new System.Drawing.Point(17, 603);
+            this.patient_TextBox.Name = "patient_TextBox";
+            this.patient_TextBox.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.patient_TextBox.PasswordChar = '\0';
+            this.patient_TextBox.PlaceholderText = "Patient";
+            this.patient_TextBox.SelectedText = "";
+            this.patient_TextBox.ShadowDecoration.Parent = this.patient_TextBox;
+            this.patient_TextBox.Size = new System.Drawing.Size(299, 43);
+            this.patient_TextBox.TabIndex = 25;
+            this.patient_TextBox.TextOffset = new System.Drawing.Point(10, 0);
+            // 
+            // siticoneButton1
+            // 
+            this.siticoneButton1.BorderRadius = 20;
+            this.siticoneButton1.CheckedState.Parent = this.siticoneButton1;
+            this.siticoneButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.siticoneButton1.CustomImages.Parent = this.siticoneButton1;
+            this.siticoneButton1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(129)))), ((int)(((byte)(171)))));
+            this.siticoneButton1.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.siticoneButton1.ForeColor = System.Drawing.Color.White;
+            this.siticoneButton1.HoveredState.Parent = this.siticoneButton1;
+            this.siticoneButton1.Image = global::GetWell.Properties.Resources.send;
+            this.siticoneButton1.ImageSize = new System.Drawing.Size(18, 18);
+            this.siticoneButton1.Location = new System.Drawing.Point(466, 81);
+            this.siticoneButton1.Name = "siticoneButton1";
+            this.siticoneButton1.ShadowDecoration.Parent = this.siticoneButton1;
+            this.siticoneButton1.Size = new System.Drawing.Size(40, 40);
+            this.siticoneButton1.TabIndex = 25;
+            this.siticoneButton1.UseTransparentBackground = true;
+            this.siticoneButton1.Click += new System.EventHandler(this.siticoneButton1_Click);
+            // 
+            // NoResult_lbl1
+            // 
+            this.NoResult_lbl1.Font = new System.Drawing.Font("Perpetua", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NoResult_lbl1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.NoResult_lbl1.Image = global::GetWell.Properties.Resources.icons8_fingerprint_error_100;
+            this.NoResult_lbl1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.NoResult_lbl1.Location = new System.Drawing.Point(324, 188);
+            this.NoResult_lbl1.Name = "NoResult_lbl1";
+            this.NoResult_lbl1.Size = new System.Drawing.Size(192, 141);
+            this.NoResult_lbl1.TabIndex = 6;
+            this.NoResult_lbl1.Text = "aucune resultat !";
+            this.NoResult_lbl1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.NoResult_lbl1.Visible = false;
+            // 
+            // search_txtbox
+            // 
+            this.search_txtbox.Animated = false;
+            this.search_txtbox.BorderThickness = 0;
+            this.search_txtbox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.search_txtbox.DefaultText = "";
+            this.search_txtbox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.search_txtbox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.search_txtbox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.search_txtbox.DisabledState.Parent = this.search_txtbox;
+            this.search_txtbox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.search_txtbox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(239)))), ((int)(((byte)(252)))));
+            this.search_txtbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.search_txtbox.FocusedState.Parent = this.search_txtbox;
+            this.search_txtbox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.search_txtbox.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.search_txtbox.HoveredState.Parent = this.search_txtbox;
+            this.search_txtbox.IconRight = global::GetWell.Properties.Resources.appbar4;
+            this.search_txtbox.IconRightSize = new System.Drawing.Size(35, 35);
+            this.search_txtbox.Location = new System.Drawing.Point(621, 15);
+            this.search_txtbox.MaxLength = 30;
+            this.search_txtbox.Name = "search_txtbox";
+            this.search_txtbox.PasswordChar = '\0';
+            this.search_txtbox.PlaceholderText = "Entrer le nom de patient";
+            this.search_txtbox.SelectedText = "";
+            this.search_txtbox.ShadowDecoration.Parent = this.search_txtbox;
+            this.search_txtbox.Size = new System.Drawing.Size(204, 33);
+            this.search_txtbox.TabIndex = 5;
+            this.search_txtbox.TextChanged += new System.EventHandler(this.search_txtbox_TextChanged);
             // 
             // btn_Minimize
             // 
@@ -241,38 +385,100 @@ namespace GetWell
             this.siticoneButton4.Size = new System.Drawing.Size(99, 24);
             this.siticoneButton4.TabIndex = 0;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe Script", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(9, 3);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(74, 22);
+            this.label1.TabIndex = 26;
+            this.label1.Text = "Reponse:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label2.Font = new System.Drawing.Font("Bell MT", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label2.Location = new System.Drawing.Point(343, 559);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(211, 19);
+            this.label2.TabIndex = 27;
+            this.label2.Text = "Repondre au Tele-Consultation";
+            // 
+            // siticoneSeparator2
+            // 
+            this.siticoneSeparator2.FillColor = System.Drawing.Color.Gray;
+            this.siticoneSeparator2.FillStyle = System.Drawing.Drawing2D.DashStyle.Dash;
+            this.siticoneSeparator2.Location = new System.Drawing.Point(-6, 541);
+            this.siticoneSeparator2.Name = "siticoneSeparator2";
+            this.siticoneSeparator2.Size = new System.Drawing.Size(892, 10);
+            this.siticoneSeparator2.TabIndex = 26;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label3.Font = new System.Drawing.Font("Bell MT", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label3.Location = new System.Drawing.Point(13, 559);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(127, 19);
+            this.label3.TabIndex = 27;
+            this.label3.Text = "Patient Selectioné";
+            // 
             // TeleConsultation_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(47)))), ((int)(((byte)(50)))));
-            this.ClientSize = new System.Drawing.Size(873, 683);
-            this.Controls.Add(this.panel1);
+            this.ClientSize = new System.Drawing.Size(880, 749);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.Email_textbox);
+            this.Controls.Add(this.patient_TextBox);
+            this.Controls.Add(this.siticonePanel1);
             this.Controls.Add(this.guna2GradientPanel1);
-            this.Controls.Add(this.siticoneRoundedTextBox1);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.siticoneSeparator2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "TeleConsultation_Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TeleConsultation_Form";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.TeleConsultation_Form_FormClosing);
             this.Load += new System.EventHandler(this.TeleConsultation_Form_Load);
-            this.guna2GradientPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
+            this.Click += new System.EventHandler(this.TeleConsultation_Form_Click);
             this.panel1.ResumeLayout(false);
+            this.guna2GradientPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_teleconsultation)).EndInit();
+            this.siticonePanel1.ResumeLayout(false);
+            this.siticonePanel1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private Siticone.UI.WinForms.SiticoneElipse siticoneElipse1;
-        private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
-        private Siticone.UI.WinForms.SiticoneGradientButton siticoneGradientButton1;
-        private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
-        private Siticone.UI.WinForms.SiticoneRoundedTextBox siticoneRoundedTextBox1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btn_Minimize;
         private System.Windows.Forms.Button btn_Exit;
         private Siticone.UI.WinForms.SiticoneButton siticoneButton4;
+        private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
+        private System.Windows.Forms.Label NoResult_lbl1;
+        private Siticone.UI.WinForms.SiticoneRoundedTextBox search_txtbox;
+        private Siticone.UI.WinForms.SiticoneGradientButton siticoneGradientButton1;
+        private Guna.UI2.WinForms.Guna2DataGridView dgv_teleconsultation;
+        private Siticone.UI.WinForms.SiticoneButton siticoneButton1;
+        private Siticone.UI.WinForms.SiticonePanel siticonePanel1;
+        private System.Windows.Forms.RichTextBox Response_text;
+        private Siticone.UI.WinForms.SiticoneRoundedTextBox Email_textbox;
+        private Siticone.UI.WinForms.SiticoneRoundedTextBox patient_TextBox;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label3;
+        private Siticone.UI.WinForms.SiticoneSeparator siticoneSeparator2;
+        private System.Windows.Forms.Label label2;
     }
 }

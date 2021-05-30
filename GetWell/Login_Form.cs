@@ -192,6 +192,7 @@ namespace GetWell
         }
 
         
+        
         private void IsLoggedTimer_Tick(object sender, EventArgs e)
         {
             

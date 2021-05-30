@@ -45,13 +45,13 @@ namespace GetWell
             this.dgv_patient = new Guna.UI2.WinForms.Guna2DataGridView();
             this.siticoneElipse1 = new Siticone.UI.WinForms.SiticoneElipse(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
+            this.NoResult_lbl2 = new System.Windows.Forms.Label();
+            this.search_textbox2 = new Siticone.UI.WinForms.SiticoneRoundedTextBox();
             this.NoResult_lbl1 = new System.Windows.Forms.Label();
             this.search_txtbox = new Siticone.UI.WinForms.SiticoneRoundedTextBox();
             this.siticoneButton3 = new Siticone.UI.WinForms.SiticoneButton();
             this.btn_Minimize = new System.Windows.Forms.Button();
             this.btn_Exit = new System.Windows.Forms.Button();
-            this.NoResult_lbl2 = new System.Windows.Forms.Label();
-            this.search_textbox2 = new Siticone.UI.WinForms.SiticoneRoundedTextBox();
             this.panel1.SuspendLayout();
             this.guna2GradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_consultation)).BeginInit();
@@ -67,7 +67,7 @@ namespace GetWell
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1068, 37);
+            this.panel1.Size = new System.Drawing.Size(1060, 37);
             this.panel1.TabIndex = 3;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Panel_MouseDown);
             // 
@@ -282,98 +282,8 @@ namespace GetWell
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 1149);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1068, 100);
+            this.panel2.Size = new System.Drawing.Size(1060, 100);
             this.panel2.TabIndex = 23;
-            // 
-            // NoResult_lbl1
-            // 
-            this.NoResult_lbl1.Font = new System.Drawing.Font("Perpetua", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NoResult_lbl1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.NoResult_lbl1.Image = global::GetWell.Properties.Resources.icons8_fingerprint_error_100;
-            this.NoResult_lbl1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.NoResult_lbl1.Location = new System.Drawing.Point(417, 188);
-            this.NoResult_lbl1.Name = "NoResult_lbl1";
-            this.NoResult_lbl1.Size = new System.Drawing.Size(192, 141);
-            this.NoResult_lbl1.TabIndex = 6;
-            this.NoResult_lbl1.Text = "aucune resultat !";
-            this.NoResult_lbl1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.NoResult_lbl1.Visible = false;
-            // 
-            // search_txtbox
-            // 
-            this.search_txtbox.Animated = false;
-            this.search_txtbox.BorderThickness = 0;
-            this.search_txtbox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.search_txtbox.DefaultText = "";
-            this.search_txtbox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.search_txtbox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.search_txtbox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.search_txtbox.DisabledState.Parent = this.search_txtbox;
-            this.search_txtbox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.search_txtbox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(239)))), ((int)(((byte)(252)))));
-            this.search_txtbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.search_txtbox.FocusedState.Parent = this.search_txtbox;
-            this.search_txtbox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.search_txtbox.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.search_txtbox.HoveredState.Parent = this.search_txtbox;
-            this.search_txtbox.IconRight = global::GetWell.Properties.Resources.appbar4;
-            this.search_txtbox.IconRightSize = new System.Drawing.Size(35, 35);
-            this.search_txtbox.Location = new System.Drawing.Point(790, 15);
-            this.search_txtbox.Name = "search_txtbox";
-            this.search_txtbox.PasswordChar = '\0';
-            this.search_txtbox.PlaceholderText = "Entrer le nom de patient";
-            this.search_txtbox.SelectedText = "";
-            this.search_txtbox.ShadowDecoration.Parent = this.search_txtbox;
-            this.search_txtbox.Size = new System.Drawing.Size(218, 33);
-            this.search_txtbox.TabIndex = 5;
-            this.search_txtbox.TextChanged += new System.EventHandler(this.search_txtbox_TextChanged);
-            // 
-            // siticoneButton3
-            // 
-            this.siticoneButton3.BorderRadius = 80;
-            this.siticoneButton3.CheckedState.Parent = this.siticoneButton3;
-            this.siticoneButton3.CustomImages.Parent = this.siticoneButton3;
-            this.siticoneButton3.FillColor = System.Drawing.Color.Transparent;
-            this.siticoneButton3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.siticoneButton3.ForeColor = System.Drawing.Color.White;
-            this.siticoneButton3.HoveredState.Parent = this.siticoneButton3;
-            this.siticoneButton3.Image = global::GetWell.Properties.Resources.Logo3;
-            this.siticoneButton3.ImageSize = new System.Drawing.Size(100, 100);
-            this.siticoneButton3.Location = new System.Drawing.Point(-1, 6);
-            this.siticoneButton3.Name = "siticoneButton3";
-            this.siticoneButton3.ShadowDecoration.Parent = this.siticoneButton3;
-            this.siticoneButton3.Size = new System.Drawing.Size(111, 24);
-            this.siticoneButton3.TabIndex = 3;
-            // 
-            // btn_Minimize
-            // 
-            this.btn_Minimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_Minimize.BackgroundImage = global::GetWell.Properties.Resources.appbar_minus;
-            this.btn_Minimize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_Minimize.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Minimize.FlatAppearance.BorderSize = 0;
-            this.btn_Minimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Minimize.Location = new System.Drawing.Point(975, 4);
-            this.btn_Minimize.Name = "btn_Minimize";
-            this.btn_Minimize.Size = new System.Drawing.Size(30, 30);
-            this.btn_Minimize.TabIndex = 0;
-            this.btn_Minimize.UseVisualStyleBackColor = true;
-            this.btn_Minimize.Click += new System.EventHandler(this.btn_Minimize_Click);
-            // 
-            // btn_Exit
-            // 
-            this.btn_Exit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_Exit.BackgroundImage = global::GetWell.Properties.Resources.appbar_close;
-            this.btn_Exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_Exit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Exit.FlatAppearance.BorderSize = 0;
-            this.btn_Exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Exit.Location = new System.Drawing.Point(1012, 3);
-            this.btn_Exit.Name = "btn_Exit";
-            this.btn_Exit.Size = new System.Drawing.Size(30, 30);
-            this.btn_Exit.TabIndex = 0;
-            this.btn_Exit.UseVisualStyleBackColor = true;
-            this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click);
             // 
             // NoResult_lbl2
             // 
@@ -409,6 +319,7 @@ namespace GetWell
             this.search_textbox2.IconRight = global::GetWell.Properties.Resources.appbar4;
             this.search_textbox2.IconRightSize = new System.Drawing.Size(35, 35);
             this.search_textbox2.Location = new System.Drawing.Point(786, 15);
+            this.search_textbox2.MaxLength = 30;
             this.search_textbox2.Name = "search_textbox2";
             this.search_textbox2.PasswordChar = '\0';
             this.search_textbox2.PlaceholderText = "Entrer le nom de patient";
@@ -418,13 +329,104 @@ namespace GetWell
             this.search_textbox2.TabIndex = 5;
             this.search_textbox2.TextChanged += new System.EventHandler(this.search_textbox2_TextChanged);
             // 
+            // NoResult_lbl1
+            // 
+            this.NoResult_lbl1.Font = new System.Drawing.Font("Perpetua", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NoResult_lbl1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.NoResult_lbl1.Image = global::GetWell.Properties.Resources.icons8_fingerprint_error_100;
+            this.NoResult_lbl1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.NoResult_lbl1.Location = new System.Drawing.Point(417, 188);
+            this.NoResult_lbl1.Name = "NoResult_lbl1";
+            this.NoResult_lbl1.Size = new System.Drawing.Size(192, 141);
+            this.NoResult_lbl1.TabIndex = 6;
+            this.NoResult_lbl1.Text = "aucune resultat !";
+            this.NoResult_lbl1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.NoResult_lbl1.Visible = false;
+            // 
+            // search_txtbox
+            // 
+            this.search_txtbox.Animated = false;
+            this.search_txtbox.BorderThickness = 0;
+            this.search_txtbox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.search_txtbox.DefaultText = "";
+            this.search_txtbox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.search_txtbox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.search_txtbox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.search_txtbox.DisabledState.Parent = this.search_txtbox;
+            this.search_txtbox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.search_txtbox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(239)))), ((int)(((byte)(252)))));
+            this.search_txtbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.search_txtbox.FocusedState.Parent = this.search_txtbox;
+            this.search_txtbox.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.search_txtbox.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.search_txtbox.HoveredState.Parent = this.search_txtbox;
+            this.search_txtbox.IconRight = global::GetWell.Properties.Resources.appbar4;
+            this.search_txtbox.IconRightSize = new System.Drawing.Size(35, 35);
+            this.search_txtbox.Location = new System.Drawing.Point(790, 15);
+            this.search_txtbox.MaxLength = 30;
+            this.search_txtbox.Name = "search_txtbox";
+            this.search_txtbox.PasswordChar = '\0';
+            this.search_txtbox.PlaceholderText = "Entrer le nom de patient";
+            this.search_txtbox.SelectedText = "";
+            this.search_txtbox.ShadowDecoration.Parent = this.search_txtbox;
+            this.search_txtbox.Size = new System.Drawing.Size(218, 33);
+            this.search_txtbox.TabIndex = 5;
+            this.search_txtbox.TextChanged += new System.EventHandler(this.search_txtbox_TextChanged);
+            // 
+            // siticoneButton3
+            // 
+            this.siticoneButton3.BorderRadius = 80;
+            this.siticoneButton3.CheckedState.Parent = this.siticoneButton3;
+            this.siticoneButton3.CustomImages.Parent = this.siticoneButton3;
+            this.siticoneButton3.FillColor = System.Drawing.Color.Transparent;
+            this.siticoneButton3.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.siticoneButton3.ForeColor = System.Drawing.Color.White;
+            this.siticoneButton3.HoveredState.Parent = this.siticoneButton3;
+            this.siticoneButton3.Image = global::GetWell.Properties.Resources.Logo3;
+            this.siticoneButton3.ImageSize = new System.Drawing.Size(100, 100);
+            this.siticoneButton3.Location = new System.Drawing.Point(-1, 6);
+            this.siticoneButton3.Name = "siticoneButton3";
+            this.siticoneButton3.ShadowDecoration.Parent = this.siticoneButton3;
+            this.siticoneButton3.Size = new System.Drawing.Size(111, 24);
+            this.siticoneButton3.TabIndex = 3;
+            // 
+            // btn_Minimize
+            // 
+            this.btn_Minimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_Minimize.BackgroundImage = global::GetWell.Properties.Resources.appbar_minus;
+            this.btn_Minimize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_Minimize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Minimize.FlatAppearance.BorderSize = 0;
+            this.btn_Minimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Minimize.Location = new System.Drawing.Point(985, 4);
+            this.btn_Minimize.Name = "btn_Minimize";
+            this.btn_Minimize.Size = new System.Drawing.Size(30, 30);
+            this.btn_Minimize.TabIndex = 0;
+            this.btn_Minimize.UseVisualStyleBackColor = true;
+            this.btn_Minimize.Click += new System.EventHandler(this.btn_Minimize_Click);
+            // 
+            // btn_Exit
+            // 
+            this.btn_Exit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_Exit.BackgroundImage = global::GetWell.Properties.Resources.appbar_close;
+            this.btn_Exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_Exit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Exit.FlatAppearance.BorderSize = 0;
+            this.btn_Exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Exit.Location = new System.Drawing.Point(1022, 3);
+            this.btn_Exit.Name = "btn_Exit";
+            this.btn_Exit.Size = new System.Drawing.Size(30, 30);
+            this.btn_Exit.TabIndex = 0;
+            this.btn_Exit.UseVisualStyleBackColor = true;
+            this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click);
+            // 
             // listDiag_and_listPatient_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(47)))), ((int)(((byte)(50)))));
-            this.ClientSize = new System.Drawing.Size(1085, 627);
+            this.ClientSize = new System.Drawing.Size(1077, 627);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.guna2GradientPanel2);
             this.Controls.Add(this.guna2GradientPanel1);

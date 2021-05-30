@@ -12,7 +12,7 @@ namespace GetWell
 {
     public static class RendezvousController
     {
-        public static readonly string ConnectionString = ConfigurationManager.ConnectionStrings["conStringHosted"].ConnectionString;
+        public static readonly string ConnectionString = MedecinController.ConnectionString; 
         public static List<Rendezvous> rvList; 
 
         public static List<Rendezvous> GetNonValidatedRvs(int Id)
@@ -58,6 +58,80 @@ namespace GetWell
                 connection.Close();
             }
         }
+        public static DataTable GetRvList()
+        {
+            using (var connection = new SqlConnection(ConnectionString))
+            {
+                DataTable dt = new DataTable();
+                try
+                {
+                    string query = "RendezVousList";
+                    SqlCommand cmd = new SqlCommand(query, connection);
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("@Id_Doc", Medecin.Id_doc);
+                    connection.Open();
+                    SqlDataReader dr = cmd.ExecuteReader();
+                    dt.Load(dr);
+
+                }
+                catch (Exception)
+                {
+                }
+
+                return dt;
+            }
+        }
+
+        public static DataTable GetRvListByDate(DateTime date)
+        {
+            using (var connection = new SqlConnection(ConnectionString))
+            {
+                DataTable dt = new DataTable();
+                try
+                {
+                    string query = "RendezVousDate";
+                    SqlCommand cmd = new SqlCommand(query, connection);
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("@date", date);
+                    cmd.Parameters.AddWithValue("@Id_Doc", Medecin.Id_doc);
+                    connection.Open();
+                    SqlDataReader dr = cmd.ExecuteReader();
+                    dt.Load(dr);
+
+                }
+                catch (Exception)
+                {
+                }
+
+                return dt;
+            }
+        }
+
+        public static DataTable GetRvListSearchByPat(string nom)
+        {
+            using (var connection = new SqlConnection(ConnectionString))
+            {
+                DataTable dt = new DataTable();
+                try
+                {
+                    string query = "RendezVousSearch";
+                    SqlCommand cmd = new SqlCommand(query, connection);
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("@nom", nom);
+                    cmd.Parameters.AddWithValue("@Id_Doc", Medecin.Id_doc);
+                    connection.Open();
+                    SqlDataReader dr = cmd.ExecuteReader();
+                    dt.Load(dr);
+
+                }
+                catch (Exception)
+                {
+                }
+
+                return dt;
+            }
+        }
+
 
     }
 

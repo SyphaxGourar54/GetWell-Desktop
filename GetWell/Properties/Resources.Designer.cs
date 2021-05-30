@@ -253,6 +253,16 @@ namespace GetWell.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap appbar_email2 {
+            get {
+                object obj = ResourceManager.GetObject("appbar.email2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap appbar_eye {
             get {
                 object obj = ResourceManager.GetObject("appbar.eye", resourceCulture);
@@ -393,6 +403,16 @@ namespace GetWell.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap appbar_refresh {
+            get {
+                object obj = ResourceManager.GetObject("appbar.refresh", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap appbar_settings {
             get {
                 object obj = ResourceManager.GetObject("appbar.settings", resourceCulture);
@@ -506,6 +526,16 @@ namespace GetWell.Properties {
         internal static System.Drawing.Bitmap appbar4 {
             get {
                 object obj = ResourceManager.GetObject("appbar4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap appbar5 {
+            get {
+                object obj = ResourceManager.GetObject("appbar5", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -873,6 +903,16 @@ namespace GetWell.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap send {
+            get {
+                object obj = ResourceManager.GetObject("send", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap undraw_Online_calendar_re_wk3t {
             get {
                 object obj = ResourceManager.GetObject("undraw_Online_calendar_re_wk3t", resourceCulture);
@@ -956,6 +996,16 @@ namespace GetWell.Properties {
         internal static System.Drawing.Bitmap user21 {
             get {
                 object obj = ResourceManager.GetObject("user21", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap user22 {
+            get {
+                object obj = ResourceManager.GetObject("user22", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -35,19 +35,19 @@ namespace GetWell
             this.DateTimePicker1 = new Siticone.UI.WinForms.SiticoneRoundedDateTimePicker();
             this.siticonePanel1 = new Siticone.UI.WinForms.SiticonePanel();
             this.Description_text = new System.Windows.Forms.RichTextBox();
-            this.btn_save = new Siticone.UI.WinForms.SiticoneButton();
             this.label1 = new System.Windows.Forms.Label();
             this.siticoneSeparator1 = new Siticone.UI.WinForms.SiticoneSeparator();
             this.siticoneSeparator2 = new Siticone.UI.WinForms.SiticoneSeparator();
             this.label2 = new System.Windows.Forms.Label();
             this.siticoneSeparator3 = new Siticone.UI.WinForms.SiticoneSeparator();
             this.label3 = new System.Windows.Forms.Label();
-            this.btn_Minimize = new System.Windows.Forms.Button();
-            this.btn_Exit = new System.Windows.Forms.Button();
-            this.siticoneButton3 = new Siticone.UI.WinForms.SiticoneButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.show_consultations_btn = new System.Windows.Forms.Button();
+            this.siticoneButton3 = new Siticone.UI.WinForms.SiticoneButton();
+            this.btn_Minimize = new System.Windows.Forms.Button();
+            this.btn_Exit = new System.Windows.Forms.Button();
+            this.btn_save = new Siticone.UI.WinForms.SiticoneButton();
             this.siticonePanel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -112,27 +112,6 @@ namespace GetWell
             this.Description_text.TabIndex = 0;
             this.Description_text.Text = "";
             // 
-            // btn_save
-            // 
-            this.btn_save.BorderRadius = 22;
-            this.btn_save.CheckedState.Parent = this.btn_save;
-            this.btn_save.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_save.CustomImages.Parent = this.btn_save;
-            this.btn_save.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(87)))), ((int)(((byte)(159)))));
-            this.btn_save.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.btn_save.ForeColor = System.Drawing.Color.White;
-            this.btn_save.HoveredState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(139)))), ((int)(((byte)(184)))));
-            this.btn_save.HoveredState.Parent = this.btn_save;
-            this.btn_save.Image = global::GetWell.Properties.Resources.appbar_clipboard_paper_check;
-            this.btn_save.ImageSize = new System.Drawing.Size(40, 40);
-            this.btn_save.Location = new System.Drawing.Point(116, 477);
-            this.btn_save.Name = "btn_save";
-            this.btn_save.ShadowDecoration.Parent = this.btn_save;
-            this.btn_save.Size = new System.Drawing.Size(569, 44);
-            this.btn_save.TabIndex = 14;
-            this.btn_save.Text = "Ajoutter";
-            this.btn_save.Click += new System.EventHandler(this.btn_save_Click);
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -187,6 +166,64 @@ namespace GetWell
             this.label3.TabIndex = 19;
             this.label3.Text = "Date Consultation";
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.btn_Minimize);
+            this.panel2.Controls.Add(this.btn_Exit);
+            this.panel2.Controls.Add(this.label4);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(800, 42);
+            this.panel2.TabIndex = 25;
+            this.panel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Panel_MouseDown);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Bell MT", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label4.Location = new System.Drawing.Point(12, 13);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(168, 19);
+            this.label4.TabIndex = 19;
+            this.label4.Text = "Ajout d\'une consultation";
+            // 
+            // show_consultations_btn
+            // 
+            this.show_consultations_btn.BackColor = System.Drawing.Color.Transparent;
+            this.show_consultations_btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.show_consultations_btn.FlatAppearance.BorderSize = 0;
+            this.show_consultations_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.show_consultations_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.show_consultations_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.show_consultations_btn.Font = new System.Drawing.Font("MCS ROUND", 10F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.show_consultations_btn.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.show_consultations_btn.Location = new System.Drawing.Point(249, 541);
+            this.show_consultations_btn.Name = "show_consultations_btn";
+            this.show_consultations_btn.Size = new System.Drawing.Size(302, 23);
+            this.show_consultations_btn.TabIndex = 26;
+            this.show_consultations_btn.Text = "Afficher liste de consultations et patients";
+            this.show_consultations_btn.UseVisualStyleBackColor = false;
+            this.show_consultations_btn.Click += new System.EventHandler(this.show_consultations_btn_Click);
+            // 
+            // siticoneButton3
+            // 
+            this.siticoneButton3.BorderRadius = 22;
+            this.siticoneButton3.CheckedState.Parent = this.siticoneButton3;
+            this.siticoneButton3.CustomImages.Parent = this.siticoneButton3;
+            this.siticoneButton3.FillColor = System.Drawing.Color.Transparent;
+            this.siticoneButton3.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.siticoneButton3.ForeColor = System.Drawing.Color.White;
+            this.siticoneButton3.HoveredState.Parent = this.siticoneButton3;
+            this.siticoneButton3.Image = global::GetWell.Properties.Resources.Logo3;
+            this.siticoneButton3.ImageSize = new System.Drawing.Size(200, 200);
+            this.siticoneButton3.Location = new System.Drawing.Point(308, 48);
+            this.siticoneButton3.Name = "siticoneButton3";
+            this.siticoneButton3.ShadowDecoration.Parent = this.siticoneButton3;
+            this.siticoneButton3.Size = new System.Drawing.Size(184, 52);
+            this.siticoneButton3.TabIndex = 22;
+            // 
             // btn_Minimize
             // 
             this.btn_Minimize.BackgroundImage = global::GetWell.Properties.Resources.appbar_minus;
@@ -219,62 +256,26 @@ namespace GetWell
             this.btn_Exit.UseVisualStyleBackColor = true;
             this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click);
             // 
-            // siticoneButton3
+            // btn_save
             // 
-            this.siticoneButton3.BorderRadius = 22;
-            this.siticoneButton3.CheckedState.Parent = this.siticoneButton3;
-            this.siticoneButton3.CustomImages.Parent = this.siticoneButton3;
-            this.siticoneButton3.FillColor = System.Drawing.Color.Transparent;
-            this.siticoneButton3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.siticoneButton3.ForeColor = System.Drawing.Color.White;
-            this.siticoneButton3.HoveredState.Parent = this.siticoneButton3;
-            this.siticoneButton3.Image = global::GetWell.Properties.Resources.Logo3;
-            this.siticoneButton3.ImageSize = new System.Drawing.Size(200, 200);
-            this.siticoneButton3.Location = new System.Drawing.Point(308, 48);
-            this.siticoneButton3.Name = "siticoneButton3";
-            this.siticoneButton3.ShadowDecoration.Parent = this.siticoneButton3;
-            this.siticoneButton3.Size = new System.Drawing.Size(184, 52);
-            this.siticoneButton3.TabIndex = 22;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.btn_Minimize);
-            this.panel2.Controls.Add(this.btn_Exit);
-            this.panel2.Controls.Add(this.label4);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(800, 42);
-            this.panel2.TabIndex = 25;
-            this.panel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Panel_MouseDown);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Bell MT", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label4.Location = new System.Drawing.Point(12, 13);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(168, 19);
-            this.label4.TabIndex = 19;
-            this.label4.Text = "Ajout d\'une consultation";
-            // 
-            // show_consultations_btn
-            // 
-            this.show_consultations_btn.BackColor = System.Drawing.Color.Transparent;
-            this.show_consultations_btn.FlatAppearance.BorderSize = 0;
-            this.show_consultations_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.show_consultations_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.show_consultations_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.show_consultations_btn.Font = new System.Drawing.Font("MCS ROUND", 10F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.show_consultations_btn.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.show_consultations_btn.Location = new System.Drawing.Point(116, 541);
-            this.show_consultations_btn.Name = "show_consultations_btn";
-            this.show_consultations_btn.Size = new System.Drawing.Size(569, 23);
-            this.show_consultations_btn.TabIndex = 26;
-            this.show_consultations_btn.Text = "Afficher liste de consultations et patients";
-            this.show_consultations_btn.UseVisualStyleBackColor = false;
-            this.show_consultations_btn.Click += new System.EventHandler(this.show_consultations_btn_Click);
+            this.btn_save.BorderRadius = 22;
+            this.btn_save.CheckedState.Parent = this.btn_save;
+            this.btn_save.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_save.CustomImages.Parent = this.btn_save;
+            this.btn_save.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(87)))), ((int)(((byte)(159)))));
+            this.btn_save.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.btn_save.ForeColor = System.Drawing.Color.White;
+            this.btn_save.HoveredState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(139)))), ((int)(((byte)(184)))));
+            this.btn_save.HoveredState.Parent = this.btn_save;
+            this.btn_save.Image = global::GetWell.Properties.Resources.appbar_clipboard_paper_check;
+            this.btn_save.ImageSize = new System.Drawing.Size(40, 40);
+            this.btn_save.Location = new System.Drawing.Point(116, 477);
+            this.btn_save.Name = "btn_save";
+            this.btn_save.ShadowDecoration.Parent = this.btn_save;
+            this.btn_save.Size = new System.Drawing.Size(569, 44);
+            this.btn_save.TabIndex = 14;
+            this.btn_save.Text = "Ajoutter";
+            this.btn_save.Click += new System.EventHandler(this.btn_save_Click);
             // 
             // Consultation_Form
             // 

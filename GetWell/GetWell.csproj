@@ -216,6 +216,7 @@
     <Compile Include="Settings_Form.Designer.cs">
       <DependentUpon>Settings_Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="TeleConsultationController.cs" />
     <Compile Include="TeleConsultation_Form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -345,6 +346,8 @@
     <None Include="Resources\passwordiconOrange.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\user22.png" />
+    <None Include="Resources\send.png" />
     <None Include="Resources\Untitled-111.png" />
     <None Include="Resources\Untitled-122.png" />
     <None Include="Resources\Untitled-1223.png" />
@@ -422,6 +425,11 @@
     <None Include="Resources\LogoInline.png" />
     <None Include="Resources\appbar.magnify1.png" />
     <None Include="Resources\icons8-fingerprint-error-100.png" />
+    <None Include="Resources\appbar.email.minimal2.png" />
+    <None Include="Resources\appbar.refresh.png" />
+    <None Include="Resources\Image1AA.bmp" />
+    <None Include="Resources\Image12.bmp" />
+    <None Include="Resources\appbar.refresh1.png" />
     <Content Include="Resources\profileIconOrange.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

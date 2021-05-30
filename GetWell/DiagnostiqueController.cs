@@ -12,7 +12,7 @@ namespace GetWell
 {
     public static class DiagnostiqueController
     {
-        public static readonly string ConnectionString = ConfigurationManager.ConnectionStrings["conStringHosted"].ConnectionString;
+        public static readonly string ConnectionString = MedecinController.ConnectionString; 
         
 
         public static void AddDiag(Diagnostique diag)
