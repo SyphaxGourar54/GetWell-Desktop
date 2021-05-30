@@ -127,14 +127,13 @@ namespace GetWell
                 else
                 {
                     //
-                    label_error.Visible = true;
-                    label_error.Text = "incorrect user name or password!";
+                    MessageBox.Show("incorrect user name or password!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    
                 }
             }
             else
             {
-                label_error.Visible = true;
-                label_error.Text = "merci de remplire tout les champs!";
+                MessageBox.Show("merci de remplire tout les champs!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -162,24 +161,28 @@ namespace GetWell
 
         private void Login_Form_Load(object sender, EventArgs e)
         {
-            //Properties.Settings.Default.UserName = "Test1";  //String.Empty;
+            //Properties.Settings.Default.UserName = "Gourar54";  //String.Empty;
             //Properties.Settings.Default.Save();
             //MessageBox.Show(Properties.Settings.Default.UserName); 
-
-
+            //MedecinController.UpdatePasword("azerty", 23); 
+            //MessageBox.Show(MedecinController.GetDocData().ToString());
+            //MessageBox.Show(MedecinController.error); 
 
             checkInternetConnection();
 
 
             this.Name = "MainForm";
 
-
             if (Properties.Settings.Default.UserName != String.Empty)
             {
                 this.WindowState = FormWindowState.Minimized;
                 this.ShowInTaskbar = false;
                 if (MedecinController.GetDocData())
+                {
+                   
                     hf.Show();
+                }
+                    
                 else
                     Properties.Settings.Default.UserName = String.Empty;
             }
@@ -195,8 +198,9 @@ namespace GetWell
         
         private void IsLoggedTimer_Tick(object sender, EventArgs e)
         {
-            
-            checkInternetConnection();
+
+
+            //checkInternetConnection();
             
             if (Properties.Settings.Default.UserName == String.Empty)
             {
@@ -257,6 +261,11 @@ namespace GetWell
         }
 
         private void siticonePictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void siticonePictureBox3_Click(object sender, EventArgs e)
         {
 
         }

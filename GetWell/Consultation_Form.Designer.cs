@@ -30,6 +30,7 @@ namespace GetWell
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Consultation_Form));
             this.siticoneElipse1 = new Siticone.UI.WinForms.SiticoneElipse(this.components);
             this.Patient_combobox = new Siticone.UI.WinForms.SiticoneRoundedComboBox();
             this.DateTimePicker1 = new Siticone.UI.WinForms.SiticoneRoundedDateTimePicker();
@@ -42,14 +43,16 @@ namespace GetWell
             this.siticoneSeparator3 = new Siticone.UI.WinForms.SiticoneSeparator();
             this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btn_Minimize = new System.Windows.Forms.Button();
+            this.btn_Exit = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.show_consultations_btn = new System.Windows.Forms.Button();
             this.siticoneButton3 = new Siticone.UI.WinForms.SiticoneButton();
-            this.btn_Minimize = new System.Windows.Forms.Button();
-            this.btn_Exit = new System.Windows.Forms.Button();
             this.btn_save = new Siticone.UI.WinForms.SiticoneButton();
+            this.siticonePictureBox3 = new Siticone.UI.WinForms.SiticonePictureBox();
             this.siticonePanel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.siticonePictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // siticoneElipse1
@@ -77,6 +80,7 @@ namespace GetWell
             // DateTimePicker1
             // 
             this.DateTimePicker1.CheckedState.Parent = this.DateTimePicker1;
+            this.DateTimePicker1.FillColor = System.Drawing.Color.SteelBlue;
             this.DateTimePicker1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.DateTimePicker1.HoveredState.Parent = this.DateTimePicker1;
@@ -100,6 +104,7 @@ namespace GetWell
             this.siticonePanel1.ShadowDecoration.Parent = this.siticonePanel1;
             this.siticonePanel1.Size = new System.Drawing.Size(569, 190);
             this.siticonePanel1.TabIndex = 4;
+            this.siticonePanel1.UseTransparentBackground = true;
             // 
             // Description_text
             // 
@@ -125,10 +130,12 @@ namespace GetWell
             // 
             // siticoneSeparator1
             // 
+            this.siticoneSeparator1.BackColor = System.Drawing.Color.Transparent;
             this.siticoneSeparator1.Location = new System.Drawing.Point(116, 237);
             this.siticoneSeparator1.Name = "siticoneSeparator1";
             this.siticoneSeparator1.Size = new System.Drawing.Size(569, 10);
             this.siticoneSeparator1.TabIndex = 18;
+            this.siticoneSeparator1.UseTransparentBackground = true;
             // 
             // siticoneSeparator2
             // 
@@ -178,6 +185,38 @@ namespace GetWell
             this.panel2.TabIndex = 25;
             this.panel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Panel_MouseDown);
             // 
+            // btn_Minimize
+            // 
+            this.btn_Minimize.BackgroundImage = global::GetWell.Properties.Resources.appbar_minus;
+            this.btn_Minimize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_Minimize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Minimize.FlatAppearance.BorderSize = 0;
+            this.btn_Minimize.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn_Minimize.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn_Minimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Minimize.Location = new System.Drawing.Point(722, 7);
+            this.btn_Minimize.Name = "btn_Minimize";
+            this.btn_Minimize.Size = new System.Drawing.Size(30, 30);
+            this.btn_Minimize.TabIndex = 23;
+            this.btn_Minimize.UseVisualStyleBackColor = true;
+            this.btn_Minimize.Click += new System.EventHandler(this.btn_Minimize_Click);
+            // 
+            // btn_Exit
+            // 
+            this.btn_Exit.BackgroundImage = global::GetWell.Properties.Resources.appbar_close;
+            this.btn_Exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_Exit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Exit.FlatAppearance.BorderSize = 0;
+            this.btn_Exit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn_Exit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn_Exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Exit.Location = new System.Drawing.Point(758, 7);
+            this.btn_Exit.Name = "btn_Exit";
+            this.btn_Exit.Size = new System.Drawing.Size(30, 30);
+            this.btn_Exit.TabIndex = 24;
+            this.btn_Exit.UseVisualStyleBackColor = true;
+            this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click);
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -224,40 +263,9 @@ namespace GetWell
             this.siticoneButton3.Size = new System.Drawing.Size(184, 52);
             this.siticoneButton3.TabIndex = 22;
             // 
-            // btn_Minimize
-            // 
-            this.btn_Minimize.BackgroundImage = global::GetWell.Properties.Resources.appbar_minus;
-            this.btn_Minimize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_Minimize.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Minimize.FlatAppearance.BorderSize = 0;
-            this.btn_Minimize.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btn_Minimize.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btn_Minimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Minimize.Location = new System.Drawing.Point(722, 7);
-            this.btn_Minimize.Name = "btn_Minimize";
-            this.btn_Minimize.Size = new System.Drawing.Size(30, 30);
-            this.btn_Minimize.TabIndex = 23;
-            this.btn_Minimize.UseVisualStyleBackColor = true;
-            this.btn_Minimize.Click += new System.EventHandler(this.btn_Minimize_Click);
-            // 
-            // btn_Exit
-            // 
-            this.btn_Exit.BackgroundImage = global::GetWell.Properties.Resources.appbar_close;
-            this.btn_Exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_Exit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Exit.FlatAppearance.BorderSize = 0;
-            this.btn_Exit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btn_Exit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btn_Exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Exit.Location = new System.Drawing.Point(758, 7);
-            this.btn_Exit.Name = "btn_Exit";
-            this.btn_Exit.Size = new System.Drawing.Size(30, 30);
-            this.btn_Exit.TabIndex = 24;
-            this.btn_Exit.UseVisualStyleBackColor = true;
-            this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click);
-            // 
             // btn_save
             // 
+            this.btn_save.BackColor = System.Drawing.Color.Transparent;
             this.btn_save.BorderRadius = 22;
             this.btn_save.CheckedState.Parent = this.btn_save;
             this.btn_save.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -275,7 +283,21 @@ namespace GetWell
             this.btn_save.Size = new System.Drawing.Size(569, 44);
             this.btn_save.TabIndex = 14;
             this.btn_save.Text = "Ajoutter";
+            this.btn_save.UseTransparentBackground = true;
             this.btn_save.Click += new System.EventHandler(this.btn_save_Click);
+            // 
+            // siticonePictureBox3
+            // 
+            this.siticonePictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.siticonePictureBox3.Image = global::GetWell.Properties.Resources.Untitled_13;
+            this.siticonePictureBox3.Location = new System.Drawing.Point(-201, 388);
+            this.siticonePictureBox3.Name = "siticonePictureBox3";
+            this.siticonePictureBox3.ShadowDecoration.Parent = this.siticonePictureBox3;
+            this.siticonePictureBox3.Size = new System.Drawing.Size(543, 324);
+            this.siticonePictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.siticonePictureBox3.TabIndex = 27;
+            this.siticonePictureBox3.TabStop = false;
+            this.siticonePictureBox3.UseTransparentBackground = true;
             // 
             // Consultation_Form
             // 
@@ -296,7 +318,9 @@ namespace GetWell
             this.Controls.Add(this.siticonePanel1);
             this.Controls.Add(this.DateTimePicker1);
             this.Controls.Add(this.Patient_combobox);
+            this.Controls.Add(this.siticonePictureBox3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Consultation_Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consultation_Form";
@@ -305,6 +329,7 @@ namespace GetWell
             this.siticonePanel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.siticonePictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -330,5 +355,6 @@ namespace GetWell
         private System.Windows.Forms.Button btn_Exit;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button show_consultations_btn;
+        private Siticone.UI.WinForms.SiticonePictureBox siticonePictureBox3;
     }
 }

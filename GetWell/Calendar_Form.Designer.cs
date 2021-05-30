@@ -33,6 +33,7 @@ namespace GetWell
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Calendar_Form));
             this.siticoneElipse1 = new Siticone.UI.WinForms.SiticoneElipse(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.date = new Siticone.UI.WinForms.SiticoneRoundedDateTimePicker();
@@ -49,6 +50,7 @@ namespace GetWell
             this.btn_Minimize = new System.Windows.Forms.Button();
             this.siticonePictureBox1 = new Siticone.UI.WinForms.SiticonePictureBox();
             this.siticoneButton1 = new Siticone.UI.WinForms.SiticoneButton();
+            this.siticoneElipse2 = new Siticone.UI.WinForms.SiticoneElipse(this.components);
             this.panel1.SuspendLayout();
             this.siticoneGradientPanel1.SuspendLayout();
             this.guna2GradientPanel1.SuspendLayout();
@@ -160,7 +162,7 @@ namespace GetWell
             this.siticoneGradientButton1.CustomImages.Parent = this.siticoneGradientButton1;
             this.siticoneGradientButton1.FillColor = System.Drawing.Color.Transparent;
             this.siticoneGradientButton1.FillColor2 = System.Drawing.Color.Transparent;
-            this.siticoneGradientButton1.Font = new System.Drawing.Font("Consolas", 14F, System.Drawing.FontStyle.Bold);
+            this.siticoneGradientButton1.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.siticoneGradientButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.siticoneGradientButton1.HoveredState.FillColor = System.Drawing.Color.Transparent;
             this.siticoneGradientButton1.HoveredState.FillColor2 = System.Drawing.Color.Transparent;
@@ -170,7 +172,7 @@ namespace GetWell
             this.siticoneGradientButton1.ShadowDecoration.Parent = this.siticoneGradientButton1;
             this.siticoneGradientButton1.Size = new System.Drawing.Size(757, 45);
             this.siticoneGradientButton1.TabIndex = 4;
-            this.siticoneGradientButton1.Text = "Liste de Tele-Consultations";
+            this.siticoneGradientButton1.Text = "Liste des Rendez-Vous";
             this.siticoneGradientButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.siticoneGradientButton1.UseTransparentBackground = true;
             // 
@@ -370,6 +372,11 @@ namespace GetWell
             this.siticoneButton1.TabIndex = 8;
             this.siticoneButton1.UseTransparentBackground = true;
             // 
+            // siticoneElipse2
+            // 
+            this.siticoneElipse2.BorderRadius = 30;
+            this.siticoneElipse2.TargetControl = this.dgv_rvs;
+            // 
             // Calendar_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -383,6 +390,7 @@ namespace GetWell
             this.Controls.Add(this.date);
             this.Controls.Add(this.siticoneGradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Calendar_Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calendar_Form";
@@ -417,5 +425,6 @@ namespace GetWell
         private Siticone.UI.WinForms.SiticoneGradientButton siticoneGradientButton1;
         private Guna.UI2.WinForms.Guna2DataGridView dgv_rvs;
         private Siticone.UI.WinForms.SiticoneButton siticoneButton2;
+        private Siticone.UI.WinForms.SiticoneElipse siticoneElipse2;
     }
 }

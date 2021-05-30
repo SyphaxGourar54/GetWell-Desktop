@@ -30,6 +30,7 @@ namespace GetWell
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConnectionError_Form));
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_Exit = new System.Windows.Forms.Button();
             this.siticoneElipse1 = new Siticone.UI.WinForms.SiticoneElipse(this.components);
@@ -51,6 +52,7 @@ namespace GetWell
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(704, 65);
             this.panel1.TabIndex = 5;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Panel_MouseDown);
             // 
             // btn_Exit
@@ -138,9 +140,11 @@ namespace GetWell
             this.Controls.Add(this.panel_error);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ConnectionError_Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ConnectionError_Form";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ConnectionError_Form_FormClosing);
             this.panel1.ResumeLayout(false);
             this.panel_error.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.refresh_img)).EndInit();

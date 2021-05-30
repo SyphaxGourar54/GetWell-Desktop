@@ -156,6 +156,7 @@ namespace GetWell
             this.Controls.Add(this.siticoneButton1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ConfirmLocalusation_Form";
+            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "ConfirmLocalusation_Form";
             this.Load += new System.EventHandler(this.ConfirmLocalusation_Form_Load);

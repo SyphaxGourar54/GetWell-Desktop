@@ -148,6 +148,7 @@ namespace GetWell
             this.Controls.Add(this.siticoneShadowPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "OperationDone_Form";
+            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "OprationDone_Form";
             this.Load += new System.EventHandler(this.OperationDone_Form_Load);

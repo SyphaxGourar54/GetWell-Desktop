@@ -36,6 +36,7 @@ namespace GetWell
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(listDiag_and_listPatient_Form));
             this.panel1 = new System.Windows.Forms.Panel();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.siticoneGradientButton1 = new Siticone.UI.WinForms.SiticoneGradientButton();
@@ -52,6 +53,8 @@ namespace GetWell
             this.siticoneButton3 = new Siticone.UI.WinForms.SiticoneButton();
             this.btn_Minimize = new System.Windows.Forms.Button();
             this.btn_Exit = new System.Windows.Forms.Button();
+            this.siticoneElipse2 = new Siticone.UI.WinForms.SiticoneElipse(this.components);
+            this.siticoneElipse3 = new Siticone.UI.WinForms.SiticoneElipse(this.components);
             this.panel1.SuspendLayout();
             this.guna2GradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_consultation)).BeginInit();
@@ -67,7 +70,7 @@ namespace GetWell
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1060, 37);
+            this.panel1.Size = new System.Drawing.Size(1077, 37);
             this.panel1.TabIndex = 3;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Panel_MouseDown);
             // 
@@ -282,7 +285,7 @@ namespace GetWell
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 1149);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1060, 100);
+            this.panel2.Size = new System.Drawing.Size(1077, 100);
             this.panel2.TabIndex = 23;
             // 
             // NoResult_lbl2
@@ -319,7 +322,6 @@ namespace GetWell
             this.search_textbox2.IconRight = global::GetWell.Properties.Resources.appbar4;
             this.search_textbox2.IconRightSize = new System.Drawing.Size(35, 35);
             this.search_textbox2.Location = new System.Drawing.Point(786, 15);
-            this.search_textbox2.MaxLength = 30;
             this.search_textbox2.Name = "search_textbox2";
             this.search_textbox2.PasswordChar = '\0';
             this.search_textbox2.PlaceholderText = "Entrer le nom de patient";
@@ -363,7 +365,6 @@ namespace GetWell
             this.search_txtbox.IconRight = global::GetWell.Properties.Resources.appbar4;
             this.search_txtbox.IconRightSize = new System.Drawing.Size(35, 35);
             this.search_txtbox.Location = new System.Drawing.Point(790, 15);
-            this.search_txtbox.MaxLength = 30;
             this.search_txtbox.Name = "search_txtbox";
             this.search_txtbox.PasswordChar = '\0';
             this.search_txtbox.PlaceholderText = "Entrer le nom de patient";
@@ -398,7 +399,7 @@ namespace GetWell
             this.btn_Minimize.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Minimize.FlatAppearance.BorderSize = 0;
             this.btn_Minimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Minimize.Location = new System.Drawing.Point(985, 4);
+            this.btn_Minimize.Location = new System.Drawing.Point(1002, 4);
             this.btn_Minimize.Name = "btn_Minimize";
             this.btn_Minimize.Size = new System.Drawing.Size(30, 30);
             this.btn_Minimize.TabIndex = 0;
@@ -413,12 +414,22 @@ namespace GetWell
             this.btn_Exit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Exit.FlatAppearance.BorderSize = 0;
             this.btn_Exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Exit.Location = new System.Drawing.Point(1022, 3);
+            this.btn_Exit.Location = new System.Drawing.Point(1039, 3);
             this.btn_Exit.Name = "btn_Exit";
             this.btn_Exit.Size = new System.Drawing.Size(30, 30);
             this.btn_Exit.TabIndex = 0;
             this.btn_Exit.UseVisualStyleBackColor = true;
             this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click);
+            // 
+            // siticoneElipse2
+            // 
+            this.siticoneElipse2.BorderRadius = 30;
+            this.siticoneElipse2.TargetControl = this.dgv_consultation;
+            // 
+            // siticoneElipse3
+            // 
+            this.siticoneElipse3.BorderRadius = 30;
+            this.siticoneElipse3.TargetControl = this.dgv_patient;
             // 
             // listDiag_and_listPatient_Form
             // 
@@ -426,12 +437,13 @@ namespace GetWell
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(47)))), ((int)(((byte)(50)))));
-            this.ClientSize = new System.Drawing.Size(1077, 627);
+            this.ClientSize = new System.Drawing.Size(1094, 627);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.guna2GradientPanel2);
             this.Controls.Add(this.guna2GradientPanel1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "listDiag_and_listPatient_Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "listDiag_and_listPatient_Form";
@@ -463,5 +475,7 @@ namespace GetWell
         private System.Windows.Forms.Label NoResult_lbl1;
         private System.Windows.Forms.Label NoResult_lbl2;
         private Siticone.UI.WinForms.SiticoneRoundedTextBox search_textbox2;
+        private Siticone.UI.WinForms.SiticoneElipse siticoneElipse2;
+        private Siticone.UI.WinForms.SiticoneElipse siticoneElipse3;
     }
 }

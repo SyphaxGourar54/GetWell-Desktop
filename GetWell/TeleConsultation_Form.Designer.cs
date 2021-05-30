@@ -30,16 +30,21 @@ namespace GetWell
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TeleConsultation_Form));
             this.siticoneElipse1 = new Siticone.UI.WinForms.SiticoneElipse(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.siticoneGradientButton1 = new Siticone.UI.WinForms.SiticoneGradientButton();
             this.dgv_teleconsultation = new Guna.UI2.WinForms.Guna2DataGridView();
             this.siticonePanel1 = new Siticone.UI.WinForms.SiticonePanel();
+            this.label1 = new System.Windows.Forms.Label();
             this.Response_text = new System.Windows.Forms.RichTextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.siticoneSeparator2 = new Siticone.UI.WinForms.SiticoneSeparator();
+            this.label3 = new System.Windows.Forms.Label();
             this.Email_textbox = new Siticone.UI.WinForms.SiticoneRoundedTextBox();
             this.patient_TextBox = new Siticone.UI.WinForms.SiticoneRoundedTextBox();
             this.siticoneButton1 = new Siticone.UI.WinForms.SiticoneButton();
@@ -48,10 +53,7 @@ namespace GetWell
             this.btn_Minimize = new System.Windows.Forms.Button();
             this.btn_Exit = new System.Windows.Forms.Button();
             this.siticoneButton4 = new Siticone.UI.WinForms.SiticoneButton();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.siticoneSeparator2 = new Siticone.UI.WinForms.SiticoneSeparator();
-            this.label3 = new System.Windows.Forms.Label();
+            this.siticoneElipse2 = new Siticone.UI.WinForms.SiticoneElipse(this.components);
             this.panel1.SuspendLayout();
             this.guna2GradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_teleconsultation)).BeginInit();
@@ -119,32 +121,32 @@ namespace GetWell
             this.dgv_teleconsultation.AllowUserToDeleteRows = false;
             this.dgv_teleconsultation.AllowUserToResizeColumns = false;
             this.dgv_teleconsultation.AllowUserToResizeRows = false;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(229)))), ((int)(((byte)(251)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgv_teleconsultation.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(229)))), ((int)(((byte)(251)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgv_teleconsultation.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgv_teleconsultation.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_teleconsultation.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(230)))), ((int)(((byte)(251)))));
             this.dgv_teleconsultation.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgv_teleconsultation.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgv_teleconsultation.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(243)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_teleconsultation.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(243)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_teleconsultation.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgv_teleconsultation.ColumnHeadersHeight = 40;
             this.dgv_teleconsultation.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(237)))), ((int)(((byte)(252)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(197)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_teleconsultation.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(237)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(197)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_teleconsultation.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgv_teleconsultation.EnableHeadersVisualStyles = false;
             this.dgv_teleconsultation.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(230)))), ((int)(((byte)(251)))));
             this.dgv_teleconsultation.Location = new System.Drawing.Point(17, 63);
@@ -197,6 +199,16 @@ namespace GetWell
             this.siticonePanel1.TabIndex = 24;
             this.siticonePanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.siticonePanel1_Paint);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe Script", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(9, 3);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(74, 22);
+            this.label1.TabIndex = 26;
+            this.label1.Text = "Reponse:";
+            // 
             // Response_text
             // 
             this.Response_text.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -208,6 +220,39 @@ namespace GetWell
             this.Response_text.TabIndex = 0;
             this.Response_text.Text = "";
             this.Response_text.TextChanged += new System.EventHandler(this.Description_text_TextChanged);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label2.Font = new System.Drawing.Font("Bell MT", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label2.Location = new System.Drawing.Point(343, 559);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(211, 19);
+            this.label2.TabIndex = 27;
+            this.label2.Text = "Repondre au Tele-Consultation";
+            // 
+            // siticoneSeparator2
+            // 
+            this.siticoneSeparator2.FillColor = System.Drawing.Color.Gray;
+            this.siticoneSeparator2.FillStyle = System.Drawing.Drawing2D.DashStyle.Dash;
+            this.siticoneSeparator2.Location = new System.Drawing.Point(-6, 541);
+            this.siticoneSeparator2.Name = "siticoneSeparator2";
+            this.siticoneSeparator2.Size = new System.Drawing.Size(892, 10);
+            this.siticoneSeparator2.TabIndex = 26;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label3.Font = new System.Drawing.Font("Bell MT", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label3.Location = new System.Drawing.Point(13, 559);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(127, 19);
+            this.label3.TabIndex = 27;
+            this.label3.Text = "Patient Selectioné";
             // 
             // Email_textbox
             // 
@@ -231,6 +276,7 @@ namespace GetWell
             this.Email_textbox.IconLeft = global::GetWell.Properties.Resources.appbar_email2;
             this.Email_textbox.IconLeftSize = new System.Drawing.Size(40, 40);
             this.Email_textbox.Location = new System.Drawing.Point(17, 668);
+            this.Email_textbox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Email_textbox.Name = "Email_textbox";
             this.Email_textbox.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.Email_textbox.PasswordChar = '\0';
@@ -262,6 +308,7 @@ namespace GetWell
             this.patient_TextBox.IconLeft = global::GetWell.Properties.Resources.user22;
             this.patient_TextBox.IconLeftOffset = new System.Drawing.Point(12, 0);
             this.patient_TextBox.Location = new System.Drawing.Point(17, 603);
+            this.patient_TextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.patient_TextBox.Name = "patient_TextBox";
             this.patient_TextBox.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.patient_TextBox.PasswordChar = '\0';
@@ -326,7 +373,6 @@ namespace GetWell
             this.search_txtbox.IconRight = global::GetWell.Properties.Resources.appbar4;
             this.search_txtbox.IconRightSize = new System.Drawing.Size(35, 35);
             this.search_txtbox.Location = new System.Drawing.Point(621, 15);
-            this.search_txtbox.MaxLength = 30;
             this.search_txtbox.Name = "search_txtbox";
             this.search_txtbox.PasswordChar = '\0';
             this.search_txtbox.PlaceholderText = "Entrer le nom de patient";
@@ -385,48 +431,10 @@ namespace GetWell
             this.siticoneButton4.Size = new System.Drawing.Size(99, 24);
             this.siticoneButton4.TabIndex = 0;
             // 
-            // label1
+            // siticoneElipse2
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe Script", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(9, 3);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(74, 22);
-            this.label1.TabIndex = 26;
-            this.label1.Text = "Reponse:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label2.Font = new System.Drawing.Font("Bell MT", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label2.Location = new System.Drawing.Point(343, 559);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(211, 19);
-            this.label2.TabIndex = 27;
-            this.label2.Text = "Repondre au Tele-Consultation";
-            // 
-            // siticoneSeparator2
-            // 
-            this.siticoneSeparator2.FillColor = System.Drawing.Color.Gray;
-            this.siticoneSeparator2.FillStyle = System.Drawing.Drawing2D.DashStyle.Dash;
-            this.siticoneSeparator2.Location = new System.Drawing.Point(-6, 541);
-            this.siticoneSeparator2.Name = "siticoneSeparator2";
-            this.siticoneSeparator2.Size = new System.Drawing.Size(892, 10);
-            this.siticoneSeparator2.TabIndex = 26;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label3.Font = new System.Drawing.Font("Bell MT", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label3.Location = new System.Drawing.Point(13, 559);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(127, 19);
-            this.label3.TabIndex = 27;
-            this.label3.Text = "Patient Selectioné";
+            this.siticoneElipse2.BorderRadius = 30;
+            this.siticoneElipse2.TargetControl = this.dgv_teleconsultation;
             // 
             // TeleConsultation_Form
             // 
@@ -443,6 +451,7 @@ namespace GetWell
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.siticoneSeparator2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TeleConsultation_Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TeleConsultation_Form";
@@ -480,5 +489,6 @@ namespace GetWell
         private System.Windows.Forms.Label label3;
         private Siticone.UI.WinForms.SiticoneSeparator siticoneSeparator2;
         private System.Windows.Forms.Label label2;
+        private Siticone.UI.WinForms.SiticoneElipse siticoneElipse2;
     }
 }

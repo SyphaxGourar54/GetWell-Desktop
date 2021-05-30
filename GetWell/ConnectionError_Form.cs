@@ -87,5 +87,24 @@ namespace GetWell
                 refresh_img.Visible = true; 
             }
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void ConnectionError_Form_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult r; 
+            if(IsConnectedToInternet() == false)
+            {
+                r = MessageBox.Show("voulez Vous quittiez l'application?", "information!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (r == DialogResult.Yes)
+                {
+                    Application.Exit(); 
+                }
+            
+            }
+        }
     }
 }

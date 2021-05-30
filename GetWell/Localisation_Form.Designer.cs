@@ -30,6 +30,7 @@ namespace GetWell
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Localisation_Form));
             this.map = new GMap.NET.WindowsForms.GMapControl();
             this.siticoneElipse1 = new Siticone.UI.WinForms.SiticoneElipse(this.components);
             this.siticoneElipse2 = new Siticone.UI.WinForms.SiticoneElipse(this.components);
@@ -369,6 +370,7 @@ namespace GetWell
             this.Controls.Add(this.siticoneButton4);
             this.Controls.Add(this.panel_error);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Localisation_Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Localisation_Form";

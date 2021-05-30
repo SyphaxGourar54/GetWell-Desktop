@@ -40,10 +40,10 @@ namespace GetWell
             return result; 
         }
 
-
+        public static string error = "no error"; 
         public static bool GetDocData()
         {
-            var userName = Properties.Settings.Default.UserName;
+            string userName = Properties.Settings.Default.UserName;
             if (userName != String.Empty)
             {
                 try
@@ -52,12 +52,12 @@ namespace GetWell
 
                     using (var connection = new SqlConnection(ConnectionString))
                     {
-                        var sql = "select * from medecin where Username = @Username";
+                        
 
                         if (connection.State != ConnectionState.Closed)
                             connection.Open();
 
-                        var Med = connection.QuerySingle(sql, new { Username = userName });
+                        var Med = connection.QuerySingle("GetMedecinByUserName", new { Username = userName }, commandType: CommandType.StoredProcedure);
 
                         connection.Close();
                         if (Med != null)
@@ -82,12 +82,18 @@ namespace GetWell
                             Medecin.latitude = Med.latitude;
                             Medecin.longitude = Med.longitude;
                         }
+                        else
+                        {
+                            return false;
+                        }
                     }
                     return true; 
                 }
-                catch (Exception)
+                catch (Exception ex)
                 {
-                    return false; 
+                    MedecinController.error = ex.Message;
+                    return true;
+                    
                 }
             }
             else
