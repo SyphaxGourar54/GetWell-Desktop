@@ -132,10 +132,6 @@ namespace GetWell
                 
                 
                 
-                
-                string reponse = @"<h1 style='color:whitesmoke;'>de: " + Medecin.Nom + " " +
-                    Medecin.Prenom + "</h1>\ncorps de l'e-mail:\n" + Response_text.Text
-                    + "";
                 MailMessage mm = new MailMessage(Medecin.Email, Email_textbox.Text, "Reponse au TeleConsultation(GetWell)", body);
                 mm.IsBodyHtml = true;
                 SmtpClient smtp = new SmtpClient();
